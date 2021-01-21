@@ -5,11 +5,10 @@ const cleanCSS = require('gulp-clean-css');
 const sass = require('gulp-sass');
 
 const srcFiles = [
-  './assets/styles/sass/*',
+  './assets/styles/sass/*/*.scss',
 ];
 const watchDirs = [
-  // './assets/styles/sass/*/*.scss',
-  './assets/styles/sass/*',
+  './assets/styles/sass/*/*.scss',
 ];
 const destDir = './assets/styles/css';
 const concatFile = 'all_styles.css';
