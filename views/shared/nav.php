@@ -8,7 +8,7 @@
   <span>This is the nav</span>
   <?php
     foreach ($links as $text => $link) {
-      echo '<a href="'.$link.'">'.$text.'</a>';
+      echo '<a class="nav-item" href="'.$link.'">'.$text.'</a>';
     }
   ?>
 </div>

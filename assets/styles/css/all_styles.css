@@ -4,6 +4,9 @@ body {
 .ns-shop-section {
   background-color: hotpink; }
 
+.ns-nav .nav-item {
+  margin-left: 1rem; }
+
 .ns-home .h1 {
   color: red; }
 
