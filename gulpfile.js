@@ -5,7 +5,7 @@ const cleanCSS = require('gulp-clean-css');
 const sass = require('gulp-sass');
 
 const srcFiles = [
-  './assets/styles/sass/*/*.scss',
+  './assets/styles/sass/styles.scss',
 ];
 const watchDirs = [
   './assets/styles/sass/*/*.scss',
@@ -21,8 +21,8 @@ const rollupCSS = function() {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    // .pipe(concat(concatFile)) // concatenate
-    .pipe(cleanCSS({compatibility: 'ie8'})) // minify
+    .pipe(concat(concatFile)) // concatenate
+    // .pipe(cleanCSS({compatibility: 'ie8'})) // minify
     .pipe(gulp.dest(destDir)) // write
 };
 
