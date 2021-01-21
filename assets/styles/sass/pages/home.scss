@@ -1,5 +1,42 @@
 .ns-home {
-  .h1 {
-    color: red;
+  .section {
+    padding: 2rem;
+  }
+
+  .andc-background {
+
+  }
+
+  .grey-background {
+    background-color: #f2f1ee;
+  }
+
+  .title {
+    font-weight: normal;
+    margin-bottom: 2rem;
+  }
+
+  .english-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .pickupitem {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+
+    .flex-child {
+      @include sp-only {
+        flex: 0 1 100%;
+      }
+      @include pc-only {
+        flex: 0 1 50%;
+      }
+    }
+    .image {
+      width: 80%;
+    }
   }
 }

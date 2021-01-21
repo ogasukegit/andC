@@ -5,14 +5,72 @@
 body {
   margin: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+div, p {
+  margin: 0; }
+
+.layout {
+  max-width: 767px;
+  margin: 0 auto; }
+
+.txt-bold {
+  font-weight: bold; }
+
+.txt-center {
+  text-align: center; }
+
+@media (max-width: 767px) {
+  .hide-sp {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .hide-pc {
+    display: none; } }
+
 .ns-shop-section {
   background-color: hotpink; }
 
 .ns-nav .nav-item {
   margin-left: 1rem; }
 
-.ns-home .h1 {
-  color: red; }
+.ns-home .section {
+  padding: 2rem; }
+
+.ns-home .grey-background {
+  background-color: #f2f1ee; }
+
+.ns-home .title {
+  font-weight: normal;
+  margin-bottom: 2rem; }
+
+.ns-home .english-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+.ns-home .pickupitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse; }
+  @media (max-width: 767px) {
+    .ns-home .pickupitem .flex-child {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%; } }
+  @media (min-width: 768px) {
+    .ns-home .pickupitem .flex-child {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+      flex: 0 1 50%; } }
+  .ns-home .pickupitem .image {
+    width: 80%; }
 
 .ns-product .h1 {
   color: green; }
