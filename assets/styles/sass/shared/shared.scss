@@ -1,0 +1,32 @@
+$layoutWidth: 767px;
+$breakpoint: 767px;
+
+.layout {
+  max-width: $layoutWidth;
+  margin: 0 auto;
+}
+.txt-bold {
+  font-weight: bold;
+}
+
+@mixin sp-only {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin pc-only {
+  @media (min-width: $breakpoint + 1) {
+    @content;
+  }
+}
+
+.hide-sp {
+  @include sp-only {
+    display: none;
+  }
+}
+.hide-pc {
+  @include pc-only {
+    display: none;
+  }
+}
