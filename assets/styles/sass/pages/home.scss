@@ -7,11 +7,15 @@
 
   }
 
-  .grey-background {
+  .brown-background {
     background-color: #f2f1ee;
   }
 
-  .title {
+  .grey-background {
+    background-color: #f8fafd;
+  }
+
+  .main-title {
     font-weight: normal;
     margin-bottom: 2rem;
   }
@@ -37,6 +41,61 @@
     }
     .image {
       width: 80%;
+    }
+  }
+
+  .lineup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .article {
+      @include sp-only {
+        flex: 0 1 100%;
+        padding: 1rem;
+      }
+      @include pc-only {
+        flex: 0 0 33.33%;
+        padding: 0 1rem;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;;
+
+      .image {
+        margin-bottom: 1rem;
+        max-width: 100%;
+      }
+
+      .title {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #9dbdd5;
+        color: #9dbdd5;
+        text-align: center;
+        @include sp-only {
+          height: 3rem;
+        }
+        @include pc-only {
+          height: 5rem;
+        }
+      }
+
+      .description {
+        margin-bottom: 1rem;
+      }
+
+      .button-container {
+        text-align: center;
+
+        .button {
+          appearance: none;
+          border: 2px solid #d7d7d7;
+          background-color: white;
+          padding: 0.5rem;
+        }
+      }
     }
   }
 }

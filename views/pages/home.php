@@ -1,8 +1,29 @@
 <?php include('../shared/head.php'); ?>
+
+<?php
+$articles = array(
+  array(
+    "Image" => "/assets/images/home/lineup_1.png",
+    "Title" => "エアコン室外機カバー（ホワイト ・ ブラウン）",
+    "Description" => 'サビ・腐食に強く、キレイな状態が長持ちします。お庭に調和しながら、室外機を人目から隠します。'
+  ),
+  array(
+    "Image" => "/assets/images/home/lineup_2.png",
+    "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
+    "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
+  ),
+  array(
+    "Image" => "/assets/images/home/lineup_3.png",
+    "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
+    "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
+  ),
+);
+?>
+
 <div class="ns-home">
   <div class="section andc-background">
     <div class="layout">
-      <h2 class="title  txt-center">
+      <h2 class="main-title  txt-center">
         商品の素材感、美しさを体感してください
       </h2>
       <p class="txt-center">
@@ -13,12 +34,12 @@
       </p>
     </div>
   </div>
-  <div class="section grey-background">
+  <div class="section brown-background">
     <div class="layout">
       <h2 class="english-title txt-center">
         PICK UP ITEM
       </h2>
-      <h2 class="title txt-center">
+      <h2 class="main-title txt-center">
         ピックアップアイテム
       </h2>
       <div class="pickupitem">
@@ -34,5 +55,37 @@
       </div>
     </div>
   </div>
+  <div class="section grey-background">
+    <div class="layout">
+      <h2 class="english-title txt-center">
+        LINEUP
+      </h2>
+      <h2 class="main-title txt-center">
+        ラインナップ
+      </h2>
+      <div class="lineup">
+        <?php
+        foreach ($articles as $article) {
+        ?>
+          <div class="article">
+            <img class="image" src=<?php echo $article["Image"]; ?>>
+            <div class="title">
+              <p><?php echo $article["Title"]; ?></p>
+            </div>
+            <p class="description"><?php echo $article["Description"]; ?></p>
+            <div class="button-container">
+              <button class="button">
+                商品名が入ります<br>
+                商品詳細はこちら
+              </button>
+            </div>
+          </div>
+        <?php 
+        }
+        ?>
+      </div>
+    </div>
+  </div>
 </div>
+
 <?php include('../shared/foot.php'); ?>

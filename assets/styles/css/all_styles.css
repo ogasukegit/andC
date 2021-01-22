@@ -38,10 +38,13 @@ div, p {
 .ns-home .section {
   padding: 2rem; }
 
-.ns-home .grey-background {
+.ns-home .brown-background {
   background-color: #f2f1ee; }
 
-.ns-home .title {
+.ns-home .grey-background {
+  background-color: #f8fafd; }
+
+.ns-home .main-title {
   font-weight: normal;
   margin-bottom: 2rem; }
 
@@ -71,6 +74,65 @@ div, p {
       flex: 0 1 50%; } }
   .ns-home .pickupitem .image {
     width: 80%; }
+
+.ns-home .lineup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .ns-home .lineup .article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .ns-home .lineup .article {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+        padding: 1rem; } }
+    @media (min-width: 768px) {
+      .ns-home .lineup .article {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
+        padding: 0 1rem; } }
+    .ns-home .lineup .article .image {
+      margin-bottom: 1rem;
+      max-width: 100%; }
+    .ns-home .lineup .article .title {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #9dbdd5;
+      color: #9dbdd5;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .ns-home .lineup .article .title {
+          height: 3rem; } }
+      @media (min-width: 768px) {
+        .ns-home .lineup .article .title {
+          height: 5rem; } }
+    .ns-home .lineup .article .description {
+      margin-bottom: 1rem; }
+    .ns-home .lineup .article .button-container {
+      text-align: center; }
+      .ns-home .lineup .article .button-container .button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 2px solid #d7d7d7;
+        background-color: white;
+        padding: 0.5rem; }
 
 .ns-product .h1 {
   color: green; }
