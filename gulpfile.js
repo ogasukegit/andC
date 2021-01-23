@@ -14,9 +14,14 @@ const destDir = './assets/styles/css';
 const concatFile = 'all_styles.css';
 
 // functions
+const swallowError = function(error) {
+  console.log(error.toString());
+  this.emit('end');
+}
 const rollupCSS = function() {
   return gulp.src(srcFiles)
     .pipe(sass()) // compile sass
+    .on('error', swallowError)
     .pipe(autoprefixer({ // add vendor prefixes
       browsers: ['last 2 versions'],
       cascade: false
