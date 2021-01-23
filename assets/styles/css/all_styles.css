@@ -25,9 +25,8 @@ body {
   background-color: hotpink; }
 
 .ns-nav {
-  position: relative; }
-  .ns-nav .nav {
-    position: absolute;
+  position: absolute; }
+  .ns-nav .nav-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }

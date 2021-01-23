@@ -19,13 +19,15 @@
   ];
 ?>
 <div class="ns-nav">
-  <div class="nav layout">
-    <div class="nav-left">
-    </div>
-    <div class="nav-right">
-      <?php foreach ($links as $link): ?>
-        <a class="nav-item" href="<?= $link['url'] ?>"><?= $link['text'] ?></a>
-      <?php endforeach; ?>
+  <div class="layout">
+    <div class="nav-wrapper">
+      <div class="nav-left">
+      </div>
+      <div class="nav-right">
+        <?php foreach ($links as $link): ?>
+          <a class="nav-item" href="<?= $link['url'] ?>"><?= $link['text'] ?></a>
+        <?php endforeach; ?>
+      </div>
     </div>
   </div>
 </div>
