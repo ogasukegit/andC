@@ -1,17 +1,6 @@
 $layoutWidth: 1000px;
 $breakpoint: 767px;
 
-.layout {
-  max-width: $layoutWidth;
-  margin: 0 auto;
-}
-.txt-bold {
-  font-weight: bold;
-}
-.txt-center {
-  text-align: center;
-}
-
 @mixin sp-only {
   @media (max-width: $breakpoint) {
     @content;
@@ -21,6 +10,20 @@ $breakpoint: 767px;
   @media (min-width: $breakpoint + 1) {
     @content;
   }
+}
+
+.layout {
+  max-width: $layoutWidth;
+  margin: 0 auto;
+  @include sp-only {
+    margin: 0 10px;
+  }
+}
+.txt-bold {
+  font-weight: bold;
+}
+.txt-center {
+  text-align: center;
 }
 
 .hide-sp {
