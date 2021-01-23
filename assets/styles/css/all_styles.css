@@ -5,11 +5,34 @@
 body {
   margin: 0; }
 
+.layout {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.txt-bold {
+  font-weight: bold; }
+
+@media (max-width: 767px) {
+  .hide-sp {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .hide-pc {
+    display: none; } }
+
 .ns-shop-section {
   background-color: hotpink; }
 
-.ns-nav .nav-item {
-  margin-left: 1rem; }
+.ns-nav {
+  position: relative; }
+  .ns-nav .nav {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .ns-nav .nav-item {
+    margin-left: 1rem; }
 
 .ns-home .h1 {
   color: red; }
