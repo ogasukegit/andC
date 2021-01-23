@@ -5,6 +5,10 @@
 body {
   margin: 0; }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #000000; }
+
 .layout {
   width: 100%;
   max-width: 1000px;
@@ -25,16 +29,78 @@ body {
   background-color: hotpink; }
 
 .ns-nav {
-  position: absolute; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7); }
   .ns-nav .nav-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 60px; }
+  .ns-nav .nav-left .nav-left__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 1.5rem 0.5rem 0.5rem;
+    color: #333333; }
+  .ns-nav .nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
   .ns-nav .nav-item {
+    position: relative;
     margin-left: 1rem; }
+  .ns-nav .nav-item__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0.5rem;
+    color: #333333; }
+    .ns-nav .nav-item__link:hover {
+      color: #efefef;
+      background-color: #666666; }
+      .ns-nav .nav-item__link:hover + .nav-item__submenu {
+        display: block; }
+  .ns-nav .nav-item__submenu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+    padding-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.7); }
+    .ns-nav .nav-item__submenu:hover {
+      display: block; }
+  .ns-nav .nav-item__submenu-link {
+    display: block;
+    padding: 1rem 1rem;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #333333; }
+    .ns-nav .nav-item__submenu-link:hover {
+      color: #efefef;
+      background-color: #666666; }
 
 .ns-home .h1 {
   color: red; }
 
-.ns-product .h1 {
-  color: green; }
+.ns-product {
+  background-color: #666;
+  padding: 1px; }
+  .ns-product .h1 {
+    color: green; }
