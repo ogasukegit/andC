@@ -1,7 +1,8 @@
 <?php include('../shared/head.php'); ?>
 
 <?php
-$articles = array(
+$slider_images = array("/assets/images/home/top_image_1.png", "/assets/images/home/top_image_2.png");
+$lineup_articles = array(
   array(
     "Image" => "/assets/images/home/lineup_1.png",
     "Title" => "エアコン室外機カバー（ホワイト ・ ブラウン）",
@@ -21,6 +22,10 @@ $articles = array(
 ?>
 
 <div class="ns-home">
+  <div class="slider-container">
+    <div class="slide" style="background-image: url(<?php echo $slider_images[0]; ?>)"></div>
+    <div class="slide" style="background-image: url(<?php echo $slider_images[1]; ?>)"></div>
+  </div>
   <div class="section andc-background">
     <div class="layout">
       <h2 class="main-title  txt-center">
@@ -65,7 +70,7 @@ $articles = array(
       </h2>
       <div class="lineup">
         <?php
-        foreach ($articles as $article) {
+        foreach ($lineup_articles as $article) {
         ?>
           <div class="article">
             <img class="image" src=<?php echo $article["Image"]; ?>>
@@ -80,12 +85,25 @@ $articles = array(
               </button>
             </div>
           </div>
-        <?php 
+        <?php
         }
         ?>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  let index = 0;
+  showSlides();
+
+  function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    slides[index].style.display = "block";
+    slides[index === 1 ? 0 : 1].style.display = "none";
+    index = index === 1 ? 0 : 1;
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }
+</script>
 
 <?php include('../shared/foot.php'); ?>
