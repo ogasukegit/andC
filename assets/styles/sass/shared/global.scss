@@ -48,7 +48,7 @@ a {
   max-width: $layoutWidth;
   margin: 0 auto;
   @include sp-only {
-    margin: 0 10px;
+    padding: 0 10px;
   }
 }
 
