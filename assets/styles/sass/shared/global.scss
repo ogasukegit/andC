@@ -2,6 +2,9 @@ $layoutWidth: 1000px;
 $breakpoint: 767px;
 $navHeight: 60px;
 
+// colors
+$blueAccent: #8db1ce;
+
 @mixin sp-only {
   @media (max-width: $breakpoint) {
     @content;
@@ -48,7 +51,7 @@ a {
   max-width: $layoutWidth;
   margin: 0 auto;
   @include sp-only {
-    margin: 0 10px;
+    padding: 0 10px;
   }
 }
 
@@ -82,5 +85,45 @@ a {
     height: $navHeight;
     box-shadow: 0 0 12px #888888;
     z-index: 1;
+  }
+}
+
+@keyframes animateButtonArrow {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 82px;
+  }
+}
+.button {
+  width: 268px;
+  height: 70px;
+  margin-left: 24px;
+  padding: 0.5rem;
+  padding-left: 84px;
+  text-align: left;
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+  cursor: pointer;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: -24px;
+    width: 82px;
+    height: 8px;
+    border-right: 1px solid #8a8a8a;
+    border-bottom: 1px solid #8a8a8a;
+    transform: translateY(-50%) skewX(45deg);
+  }
+  &:hover {
+    border-color: #000000;
+    &::before {
+      border-color: #000000;
+      animation: animateButtonArrow 0.5s;
+    }
   }
 }
