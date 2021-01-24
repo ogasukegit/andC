@@ -19,6 +19,7 @@ $linkColor: #333333;
     height: 100%;
     .nav-left__text {
       padding: 24px 0 0 10px;
+      font-size: 16px;
       color: $linkColor;
       font-weight: bold;
     }
@@ -66,6 +67,7 @@ $linkColor: #333333;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
       .nav-ham__line {
         width: 26px;
         height: 2px;
@@ -90,9 +92,9 @@ $linkColor: #333333;
     align-items: center;
     height: 100%;
     padding: 1rem 0.5rem;
+    font-size: 16px;
     color: $linkColor;
     &:hover {
-      // color: #888888;
       @include pc-only {
         & + .nav-item__submenu {
           display: block;
@@ -119,12 +121,10 @@ $linkColor: #333333;
   }
   .nav-item__submenu-link {
     display: block;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
     white-space: nowrap;
     text-decoration: none;
     color: $linkColor;
-    &:hover {
-      // color: #888888;
-    }
   }
 }
