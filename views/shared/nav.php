@@ -21,7 +21,7 @@
         <a href="/"><img class="nav-left__logo" src="../../assets/logo.png" alt="andC logo"></a>
         <span class="nav-left__text">庭と家との調和</span>
       </div>
-      <div class="nav-menu">
+      <div class="nav-menu" id="nav-menu">
         <div class="nav-item">
           <a class="nav-item__link" href="/">TOP</a>
         </div>
@@ -40,8 +40,8 @@
           <a class="nav-item__link" href="/inquiry">商品注文：お問い合わせ</a>
         </div>
       </div>
-      <div class="overlay"></div>
-      <div class="nav-ham">
+      <div class="overlay" id="overlay"></div>
+      <div class="nav-ham" id="nav-ham">
         <span class="nav-ham__line"></span>
         <span class="nav-ham__line"></span>
         <span class="nav-ham__line"></span>
@@ -49,9 +49,9 @@
     </div>
   </div>
   <script type="text/javascript">
-    const navMenu = document.querySelector('.nav-menu');
-    const navHam = document.querySelector('.nav-ham');
-    const overlay = document.querySelector('.overlay');
+    const navMenu = document.getElementById('nav-menu');
+    const navHam = document.getElementById('nav-ham');
+    const overlay = document.getElementById('overlay');
 
     function toggleMenu() {
       if (navMenu.classList.contains('open')) {

@@ -136,7 +136,8 @@ a:link, a:visited, a:hover, a:active {
       align-items: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      cursor: pointer; }
       .ns-nav .nav-ham .nav-ham__line {
         width: 26px;
         height: 2px;
