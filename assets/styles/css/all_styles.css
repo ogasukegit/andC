@@ -33,7 +33,9 @@ a:link, a:visited, a:hover, a:active {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 10px #666666;
+  box-shadow: 0 0 10px #666666; }
   .ns-nav .nav-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -99,8 +101,5 @@ a:link, a:visited, a:hover, a:active {
 .ns-home .h1 {
   color: red; }
 
-.ns-product {
-  background-color: #666;
-  padding: 1px; }
-  .ns-product .h1 {
-    color: green; }
+.ns-product .h1 {
+  color: green; }

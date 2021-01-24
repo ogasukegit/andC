@@ -1,5 +1,5 @@
 $navHeight: 60px;
-$backgroundColor: rgba(255, 255, 255, 0.7);
+$navBackground: rgba(255, 255, 255, 0.7);
 $linkColor: #333333;
 
 .ns-nav {
@@ -7,7 +7,8 @@ $linkColor: #333333;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $backgroundColor;
+  background-color: $navBackground;
+  box-shadow: 0 0 10px #666666;
   .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -53,7 +54,7 @@ $linkColor: #333333;
       display: block;
     }
     padding-bottom: 1rem;
-    background-color: $backgroundColor;
+    background-color: $navBackground;
   }
   .nav-item__submenu-link {
     display: block;
