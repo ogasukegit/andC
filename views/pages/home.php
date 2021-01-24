@@ -191,7 +191,24 @@ $lineup_articles = [
             </div>
           </div>
         </div>
+        <div class="button-container">
+          <button class="button">
+            私たちについて
+          </button>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="section section--no-top-padding">
+    <div class="layout">
+      <h2>
+        <p class="english-title txt-center">
+          NEWS
+        </p>
+        <p class="main-title txt-center">
+          お知らせ
+        </p>
+      </h2>
     </div>
   </div>
 </div>
