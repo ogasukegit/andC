@@ -1,11 +1,6 @@
 $navBackground: rgba(255, 255, 255, 0.7);
 $linkColor: #333333;
 
-@include sp-only {
-}
-@include pc-only {
-}
-
 .ns-nav {
   position: absolute;
   top: 0;
