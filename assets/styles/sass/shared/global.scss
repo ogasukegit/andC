@@ -1,0 +1,63 @@
+$layoutWidth: 1000px;
+$breakpoint: 767px;
+
+// mixins
+
+@mixin sp-only {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin pc-only {
+  @media (min-width: $breakpoint + 1) {
+    @content;
+  }
+}
+
+// reset
+
+* {
+  box-sizing: border-box;
+}
+html {
+  @include pc-only {
+    font-size: 20px;
+  }
+}
+body {
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+div, p {
+  margin: 0;
+}
+
+// shared
+
+.layout {
+  max-width: $layoutWidth;
+  margin: 0 auto;
+  @include sp-only {
+    margin: 0 10px;
+  }
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+.txt-center {
+  text-align: center;
+}
+
+.hide-sp {
+  @include sp-only {
+    display: none;
+  }
+}
+.hide-pc {
+  @include pc-only {
+    display: none;
+  }
+}
