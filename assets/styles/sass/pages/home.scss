@@ -196,5 +196,100 @@
     .description {
       margin-bottom: 3rem;
     }
+
+    .point {
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap-reverse;
+      margin-bottom: 3rem;
+    }
+
+    .point--opposite {
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .point__image {
+      @include sp-only {
+        flex: 0 1 100%;
+        max-width: 100%;
+      }
+      @include pc-only {
+        z-index: 1;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+
+    .point__content {
+      @include sp-only {
+        flex: 0 1 100%;
+      }
+      @include pc-only {
+        flex: 0 0 50%;
+        margin-top: 40px;
+        margin-left: -5%;
+      }
+    }
+
+    .point__content--opposite {
+      @include pc-only {
+        margin-right: -5%;
+      }
+    }
+
+    .point__logo {
+      margin-left: 20%;
+      margin-bottom: -1rem;
+      width: 140px;
+      height: 75px;
+    }
+
+    .point__blue-bg {
+      background-color: #e9f1f7;
+      @include sp-only {
+        padding: 2rem;
+      }
+      @include pc-only {
+        z-index: -1;
+        position: relative;
+        height: 16rem;
+        padding: 2rem 2rem 2rem 4rem;
+      }
+    }
+
+    .point__blue-bg--opposite {
+      @include pc-only {
+        padding: 2rem 4rem 2rem 2rem;
+      }
+    }
+
+    .point__square {
+      position: absolute;
+      top: -92px;
+      right: -40px;
+      background-color: #f8fbfd;
+      width: 40%;
+      height: 40%;
+      mix-blend-mode: multiply;
+    }
+
+    .point__square--opposite {
+      top: -92px;
+      left: -50px;
+    }
+
+    .point__title {
+      font-size: 1rem;
+      padding-left: .5rem;
+      margin-bottom: 1rem;
+      border-left: 3px solid #d3dbd7;
+    }
+
+    .point__description {
+      font-size: 18px;
+    }
   }
+
 }

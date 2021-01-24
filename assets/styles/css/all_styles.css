@@ -383,5 +383,103 @@ a:link, a:visited, a:hover, a:active {
 .ns-home .technology .description {
   margin-bottom: 3rem; }
 
+.ns-home .technology .point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 3rem; }
+
+.ns-home .technology .point--opposite {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+@media (max-width: 767px) {
+  .ns-home .technology .point__image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    max-width: 100%; } }
+
+@media (min-width: 768px) {
+  .ns-home .technology .point__image {
+    z-index: 1;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; } }
+
+@media (max-width: 767px) {
+  .ns-home .technology .point__content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%; } }
+
+@media (min-width: 768px) {
+  .ns-home .technology .point__content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    margin-top: 40px;
+    margin-left: -5%; } }
+
+@media (min-width: 768px) {
+  .ns-home .technology .point__content--opposite {
+    margin-right: -5%; } }
+
+.ns-home .technology .point__logo {
+  margin-left: 20%;
+  margin-bottom: -1rem;
+  width: 140px;
+  height: 75px; }
+
+.ns-home .technology .point__blue-bg {
+  background-color: #e9f1f7; }
+  @media (max-width: 767px) {
+    .ns-home .technology .point__blue-bg {
+      padding: 2rem; } }
+  @media (min-width: 768px) {
+    .ns-home .technology .point__blue-bg {
+      z-index: -1;
+      position: relative;
+      height: 16rem;
+      padding: 2rem 2rem 2rem 4rem; } }
+
+@media (min-width: 768px) {
+  .ns-home .technology .point__blue-bg--opposite {
+    padding: 2rem 4rem 2rem 2rem; } }
+
+.ns-home .technology .point__square {
+  position: absolute;
+  top: -92px;
+  right: -40px;
+  background-color: #f8fbfd;
+  width: 40%;
+  height: 40%;
+  mix-blend-mode: multiply; }
+
+.ns-home .technology .point__square--opposite {
+  top: -92px;
+  left: -50px; }
+
+.ns-home .technology .point__title {
+  font-size: 1rem;
+  padding-left: .5rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid #d3dbd7; }
+
+.ns-home .technology .point__description {
+  font-size: 18px; }
+
 .ns-product .h1 {
   color: green; }
