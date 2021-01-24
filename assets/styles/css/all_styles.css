@@ -1,3 +1,20 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px; } }
+
+body {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+div, p {
+  margin: 0; }
+
 .layout {
   max-width: 1000px;
   margin: 0 auto; }
@@ -18,23 +35,6 @@
 @media (min-width: 768px) {
   .hide-pc {
     display: none; } }
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-@media (min-width: 768px) {
-  html {
-    font-size: 20px; } }
-
-body {
-  margin: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0; }
-
-div, p {
-  margin: 0; }
 
 .ns-shop-section {
   background-color: hotpink; }
