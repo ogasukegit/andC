@@ -1,7 +1,6 @@
 $layoutWidth: 1000px;
 $breakpoint: 767px;
-
-// mixins
+$navHeight: 60px;
 
 @mixin sp-only {
   @media (max-width: $breakpoint) {
@@ -33,10 +32,19 @@ h1, h2, h3, h4, h5, h6 {
 div, p {
   margin: 0;
 }
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
 
 // shared
 
 .layout {
+  width: 100%;
   max-width: $layoutWidth;
   margin: 0 auto;
   @include sp-only {
@@ -59,5 +67,20 @@ div, p {
 .hide-pc {
   @include pc-only {
     display: none;
+  }
+}
+
+// applied to all pages except the home page to apply the navigation menu shadow
+.page {
+  margin-top: $navHeight;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $navHeight;
+    box-shadow: 0 0 12px #888888;
+    z-index: 1;
   }
 }
