@@ -7,22 +7,11 @@ $navHeight: 60px;
   max-width: $layoutWidth;
   margin: 0 auto;
 }
-// applied to all pages except the home page to apply the navigation menu shadow
-.page {
-  margin-top: $navHeight;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: $navHeight;
-    box-shadow: 0 0 12px #888888;
-    z-index: 1;
-  }
-}
 .txt-bold {
   font-weight: bold;
+}
+.txt-center {
+  text-align: center;
 }
 
 @mixin sp-only {
@@ -44,5 +33,20 @@ $navHeight: 60px;
 .hide-pc {
   @include pc-only {
     display: none;
+  }
+}
+
+// applied to all pages except the home page to apply the navigation menu shadow
+.page {
+  margin-top: $navHeight;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $navHeight;
+    box-shadow: 0 0 12px #888888;
+    z-index: 1;
   }
 }
