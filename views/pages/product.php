@@ -8,8 +8,7 @@
 ?>
 
 <?php include('../shared/head.php'); ?>
-<div class="ns-product">
-
+<div class="page ns-product">
   <h1>Product page</h1>
   <h1>Product page</h1>
   <?php foreach ($articles as $article): ?>
@@ -18,6 +17,5 @@
       <p><?= $article["description"] ?></p>
     </div>
   <?php endforeach ?>
-
 </div>
 <?php include('../shared/foot.php'); ?>

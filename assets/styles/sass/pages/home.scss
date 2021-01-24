@@ -1,5 +1,12 @@
+// .ns-nav .nav-bg {
+//   box-shadow: none;
+// }
 .ns-home {
-  .h1 {
-    color: red;
+  font-size: 0;
+  .hero {
+    width: 100%;
+    @include pc-only {
+      margin-top: -9rem;
+    }
   }
 }

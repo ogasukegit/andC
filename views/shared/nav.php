@@ -1,34 +1,16 @@
 <?php
-  $links = [
+  $products = [
     [
-      "text" => "TOP",
-      "url" => "/",
+      "text" => "エアコン室外機カバー",
+      "url" => "/products/product1",
     ],
     [
-      "text" => "PRODUCTS",
-      "url" => "/products",
-      "submenu" => [
-        [
-          "text" => "エアコン室外機カバー",
-          "url" => "/products/product1",
-        ],
-        [
-          "text" => "商品名を追加",
-          "url" => "/products/product2",
-        ],
-        [
-          "text" => "商品名を追加",
-          "url" => "/products/product3",
-        ],
-      ],
+      "text" => "商品名を追加",
+      "url" => "/products/product2",
     ],
     [
-      "text" => "私たちについて",
-      "url" => "/contact",
-    ],
-    [
-      "text" => "商品注文：お問い合わせ",
-      "url" => "/inquiry",
+      "text" => "商品名を追加",
+      "url" => "/products/product3",
     ],
   ];
 ?>
@@ -36,25 +18,52 @@
   <div class="layout">
     <div class="nav-wrapper">
       <div class="nav-left">
-        <a class="nav-left__logo" href="/">
-          <img src="" alt="andC logo">
-          <span>庭と家との調和</span>
-        </a>
+        <a href="/"><img class="nav-left__logo" src="../../assets/logo.png" alt="andC logo"></a>
+        <span class="nav-left__text">庭と家との調和</span>
       </div>
-      <div class="nav-right">
-        <?php foreach ($links as $link): ?>
-          <div class="nav-item">
-            <a class="nav-item__link" href="<?= $link['url'] ?>"><?= $link['text'] ?></a>
-            <?php if ($link['submenu']): ?>
-              <span class="nav-item__submenu">
-                <?php foreach ($link['submenu'] as $submenuLink): ?>
-                  <a class="nav-item__submenu-link" href="<?= $submenuLink['url'] ?>">ー<?= $submenuLink['text'] ?></a>
-                <?php endforeach; ?>
-              </span>
-            <?php endif ?>
-          </div>
-        <?php endforeach; ?>
+      <div class="nav-menu">
+        <div class="nav-item">
+          <a class="nav-item__link" href="/">TOP</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-item__link" href="products">PRODUCTS</a>
+          <span class="nav-item__submenu">
+            <?php foreach ($products as $product): ?>
+              <a class="nav-item__submenu-link" href="<?= $product['url'] ?>">ー<?= $product['text'] ?></a>
+            <?php endforeach; ?>
+          </span>
+        </div>
+        <div class="nav-item">
+          <a class="nav-item__link" href="/contact" target="_blank">私たちについて<img class="external-link" src="../../assets/new-window.png"></a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-item__link" href="/inquiry">商品注文：お問い合わせ</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="nav-ham">
+        <span class="nav-ham__line"></span>
+        <span class="nav-ham__line"></span>
+        <span class="nav-ham__line"></span>
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    const navMenu = document.querySelector('.nav-menu');
+    const navHam = document.querySelector('.nav-ham');
+    const overlay = document.querySelector('.overlay');
+
+    function toggleMenu() {
+      if (navMenu.classList.contains('open')) {
+        navMenu.classList.remove('open');
+        overlay.classList.remove('open');
+      } else {
+        navMenu.classList.add('open');
+        overlay.classList.add('open');
+      }
+    }
+
+    navHam.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+  </script>
 </div>

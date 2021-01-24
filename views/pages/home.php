@@ -1,6 +1,9 @@
 <?php include('../shared/head.php'); ?>
 <div class="ns-home">
-  <h1 class="h1">This is the home page!</h1>
+  <img class="hero" src="tokyo.jpeg">
+  <img class="hero" src="tokyo.jpeg">
+  <img class="hero" src="tokyo.jpeg">
+  <img class="hero" src="tokyo.jpeg">
 
 </div>
 <?php include('../shared/foot.php'); ?>
