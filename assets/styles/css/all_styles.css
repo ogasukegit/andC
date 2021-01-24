@@ -24,7 +24,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 0 auto; }
   @media (max-width: 767px) {
     .layout {
-      margin: 0 10px; } }
+      padding: 0 10px; } }
 
 .txt-bold {
   font-weight: bold; }
