@@ -1,5 +1,130 @@
+$navBackground: rgba(255, 255, 255, 0.7);
+$linkColor: #333333;
+
 .ns-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $navBackground;
+  z-index: 2;
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: $navHeight;
+  }
+  .nav-left {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    .nav-left__text {
+      padding: 24px 0 0 10px;
+      font-size: 16px;
+      color: $linkColor;
+      font-weight: bold;
+    }
+  }
+  .nav-menu {
+    @include sp-only {
+      position: absolute;
+      top: $navHeight;
+      right: 0;
+      padding: 0 1rem;
+      background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1));
+      transition: height 0.2s;
+      overflow: hidden;
+      height: 0;
+      &.open {
+        height: 230px;
+        z-index: 99;
+      }
+    }
+    @include pc-only {
+      display: flex;
+      align-items: stretch;
+    }
+  }
+  .overlay {
+    display: none;
+    z-index: 98;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    &.open {
+      display: block;
+    }
+  }
+  .nav-ham {
+    @include sp-only {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $navHeight;
+      height: $navHeight;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .nav-ham__line {
+        width: 26px;
+        height: 2px;
+        background-color: #333333;
+        &:nth-child(2) {
+          margin: 6px 0;
+        }
+      }
+    }
+    @include pc-only {
+      display: none;
+    }
+  }
   .nav-item {
-    margin-left: 1rem;
+    position: relative;
+    @include pc-only {
+      margin-left: 1rem;
+    }
+  }
+  .nav-item__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 16px;
+    color: $linkColor;
+    &:hover {
+      @include pc-only {
+        & + .nav-item__submenu {
+          display: block;
+        }
+      }
+    }
+    .external-link {
+      height: 12px;
+      margin-left: 2px;
+    }
+  }
+  .nav-item__submenu {
+    position: absolute;
+    top: $navHeight;
+    left: 0;
+    display: none;
+    @include pc-only {
+      &:hover {
+        display: block;
+      }
+    }
+    padding-bottom: 1rem;
+    background-color: $navBackground;
+  }
+  .nav-item__submenu-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: $linkColor;
   }
 }

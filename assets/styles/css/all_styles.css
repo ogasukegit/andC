@@ -2,15 +2,35 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+@media (min-width: 768px) {
+  html {
+    font-size: 20px; } }
+
 body {
   margin: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+div, p {
+  margin: 0; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
 .layout {
-  max-width: 767px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto; }
+  @media (max-width: 767px) {
+    .layout {
+      margin: 0 10px; } }
 
 .txt-bold {
   font-weight: bold; }
+
+.txt-center {
+  text-align: center; }
 
 @media (max-width: 767px) {
   .hide-sp {
@@ -20,14 +40,348 @@ body {
   .hide-pc {
     display: none; } }
 
+.page {
+  margin-top: 60px; }
+  .page:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    -webkit-box-shadow: 0 0 12px #888888;
+    box-shadow: 0 0 12px #888888;
+    z-index: 1; }
+
 .ns-shop-section {
   background-color: hotpink; }
 
-.ns-nav .nav-item {
-  margin-left: 1rem; }
+.ns-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 2; }
+  .ns-nav .nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 60px; }
+  .ns-nav .nav-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: 100%; }
+    .ns-nav .nav-left .nav-left__text {
+      padding: 24px 0 0 10px;
+      font-size: 16px;
+      color: #333333;
+      font-weight: bold; }
+  @media (max-width: 767px) {
+    .ns-nav .nav-menu {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      padding: 0 1rem;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(white));
+      background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, white);
+      -webkit-transition: height 0.2s;
+      transition: height 0.2s;
+      overflow: hidden;
+      height: 0; }
+      .ns-nav .nav-menu.open {
+        height: 230px;
+        z-index: 99; } }
+  @media (min-width: 768px) {
+    .ns-nav .nav-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch; } }
+  .ns-nav .overlay {
+    display: none;
+    z-index: 98;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; }
+    .ns-nav .overlay.open {
+      display: block; }
+  @media (max-width: 767px) {
+    .ns-nav .nav-ham {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      cursor: pointer; }
+      .ns-nav .nav-ham .nav-ham__line {
+        width: 26px;
+        height: 2px;
+        background-color: #333333; }
+        .ns-nav .nav-ham .nav-ham__line:nth-child(2) {
+          margin: 6px 0; } }
+  @media (min-width: 768px) {
+    .ns-nav .nav-ham {
+      display: none; } }
+  .ns-nav .nav-item {
+    position: relative; }
+    @media (min-width: 768px) {
+      .ns-nav .nav-item {
+        margin-left: 1rem; } }
+  .ns-nav .nav-item__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 16px;
+    color: #333333; }
+    @media (min-width: 768px) {
+      .ns-nav .nav-item__link:hover + .nav-item__submenu {
+        display: block; } }
+    .ns-nav .nav-item__link .external-link {
+      height: 12px;
+      margin-left: 2px; }
+  .ns-nav .nav-item__submenu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+    padding-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.7); }
+    @media (min-width: 768px) {
+      .ns-nav .nav-item__submenu:hover {
+        display: block; } }
+  .ns-nav .nav-item__submenu-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #333333; }
 
-.ns-home .h1 {
-  color: red; }
+.ns-home .slider-container .slide {
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 767px) {
+    .ns-home .slider-container .slide {
+      height: 80vw; } }
+  @media (min-width: 768px) {
+    .ns-home .slider-container .slide {
+      height: 40vw; } }
+  .ns-home .slider-container .slide .slide-content {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white; }
+    @media (max-width: 767px) {
+      .ns-home .slider-container .slide .slide-content .slide-title {
+        font-size: 1.5rem; } }
+    @media (min-width: 768px) {
+      .ns-home .slider-container .slide .slide-content .slide-title {
+        font-size: 2.5rem; } }
+    .ns-home .slider-container .slide .slide-content .slide-description {
+      padding-top: 2rem;
+      font-size: 1rem; }
+
+.ns-home .section {
+  padding: 3rem 0; }
+
+.ns-home .brown-background {
+  background-color: #f2f1ee; }
+
+.ns-home .grey-background {
+  background-color: #f8fafd; }
+
+.ns-home .main-title {
+  font-weight: normal;
+  font-size: 2rem;
+  margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .ns-home .main-title {
+      font-size: 1.5rem; } }
+  @media (min-width: 768px) {
+    .ns-home .main-title {
+      font-size: 2.5rem; } }
+
+.ns-home .english-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+.ns-home .pickup-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse; }
+  .ns-home .pickup-item .flex-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media (max-width: 767px) {
+      .ns-home .pickup-item .flex-child {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%; } }
+    @media (min-width: 768px) {
+      .ns-home .pickup-item .flex-child {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+        flex: 0 1 50%; } }
+  .ns-home .pickup-item .image {
+    margin: 0 auto;
+    width: 80%; }
+    .ns-home .pickup-item .image:first-child {
+      margin-bottom: 1rem; }
+    @media (max-width: 767px) {
+      .ns-home .pickup-item .image:first-child {
+        margin-top: 1rem; } }
+  .ns-home .pickup-item .description-head {
+    margin-bottom: 2rem; }
+  .ns-home .pickup-item .green-text {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    background-color: #d3dbd7;
+    color: #476556; }
+  .ns-home .pickup-item .text {
+    margin-bottom: 1rem; }
+  .ns-home .pickup-item .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; }
+  .ns-home .pickup-item .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #d7d7d7;
+    background-color: white;
+    padding: 0.5rem;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 100%; }
+
+.ns-home .lineup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .ns-home .lineup .article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .ns-home .lineup .article {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+        padding: 1rem 0; } }
+    @media (min-width: 768px) {
+      .ns-home .lineup .article {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
+        padding: 0 1rem; } }
+  .ns-home .lineup .image {
+    margin-bottom: 1rem;
+    max-width: 100%; }
+  .ns-home .lineup .title {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #9dbdd5;
+    color: #9dbdd5;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .ns-home .lineup .title {
+        min-height: 3rem;
+        height: 3rem; } }
+    @media (min-width: 768px) {
+      .ns-home .lineup .title {
+        min-height: 5rem;
+        height: 5rem; } }
+  .ns-home .lineup .description {
+    margin-bottom: 1rem; }
+  .ns-home .lineup .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; }
+  .ns-home .lineup .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #d7d7d7;
+    background-color: white;
+    padding: 0.5rem;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 100%; }
+
+.ns-home .technology .description {
+  margin-bottom: 3rem; }
 
 .ns-product .h1 {
   color: green; }
