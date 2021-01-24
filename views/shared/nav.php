@@ -18,7 +18,7 @@
   <div class="layout">
     <div class="nav-wrapper">
       <div class="nav-left">
-        <a href="/"><img class="nav-left__logo" src="../../assets/logo.png" alt="andC logo"></a>
+        <a href="/"><img class="nav-left__logo" src="../../assets/images/shared/logo.png" alt="andC logo"></a>
         <span class="nav-left__text">庭と家との調和</span>
       </div>
       <div class="nav-menu" id="nav-menu">
@@ -34,7 +34,7 @@
           </span>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="/contact" target="_blank">私たちについて<img class="external-link" src="../../assets/new-window.png"></a>
+          <a class="nav-item__link" href="/contact" target="_blank">私たちについて<img class="external-link" src="../../assets/images/shared/new-window.png"></a>
         </div>
         <div class="nav-item">
           <a class="nav-item__link" href="/inquiry">商品注文：お問い合わせ</a>
