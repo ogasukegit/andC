@@ -35,8 +35,41 @@ div, p {
 .ns-nav .nav-item {
   margin-left: 1rem; }
 
+.ns-home .slider-container .slide {
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 767px) {
+    .ns-home .slider-container .slide {
+      height: 80vw; } }
+  @media (min-width: 768px) {
+    .ns-home .slider-container .slide {
+      height: 40vw; } }
+  .ns-home .slider-container .slide .slide-content {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white; }
+    @media (max-width: 767px) {
+      .ns-home .slider-container .slide .slide-content .slide-title {
+        font-size: 1.5rem; } }
+    @media (min-width: 768px) {
+      .ns-home .slider-container .slide .slide-content .slide-title {
+        font-size: 2.5rem; } }
+    .ns-home .slider-container .slide .slide-content .slide-description {
+      padding-top: 2rem;
+      font-size: 1rem; }
+
 .ns-home .section {
-  padding: 2rem; }
+  padding: 3rem 0; }
 
 .ns-home .brown-background {
   background-color: #f2f1ee; }
@@ -46,14 +79,21 @@ div, p {
 
 .ns-home .main-title {
   font-weight: normal;
+  font-size: 2rem;
   margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .ns-home .main-title {
+      font-size: 1.5rem; } }
+  @media (min-width: 768px) {
+    .ns-home .main-title {
+      font-size: 2.5rem; } }
 
 .ns-home .english-title {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem; }
 
-.ns-home .pickupitem {
+.ns-home .pickup-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,18 +102,60 @@ div, p {
   justify-content: center;
   -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse; }
-  @media (max-width: 767px) {
-    .ns-home .pickupitem .flex-child {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 1 100%;
-      flex: 0 1 100%; } }
-  @media (min-width: 768px) {
-    .ns-home .pickupitem .flex-child {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-      flex: 0 1 50%; } }
-  .ns-home .pickupitem .image {
+  .ns-home .pickup-item .flex-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media (max-width: 767px) {
+      .ns-home .pickup-item .flex-child {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%; } }
+    @media (min-width: 768px) {
+      .ns-home .pickup-item .flex-child {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+        flex: 0 1 50%; } }
+  .ns-home .pickup-item .image {
+    margin: 0 auto;
     width: 80%; }
+    .ns-home .pickup-item .image:first-child {
+      margin-bottom: 1rem; }
+    @media (max-width: 767px) {
+      .ns-home .pickup-item .image:first-child {
+        margin-top: 1rem; } }
+  .ns-home .pickup-item .description-head {
+    margin-bottom: 2rem; }
+  .ns-home .pickup-item .green-text {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    background-color: #d3dbd7;
+    color: #476556; }
+  .ns-home .pickup-item .text {
+    margin-bottom: 1rem; }
+  .ns-home .pickup-item .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; }
+  .ns-home .pickup-item .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #d7d7d7;
+    background-color: white;
+    padding: 0.5rem;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 100%; }
 
 .ns-home .lineup {
   display: -webkit-box;
@@ -100,39 +182,54 @@ div, p {
         -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
         flex: 0 1 100%;
-        padding: 1rem; } }
+        padding: 1rem 0; } }
     @media (min-width: 768px) {
       .ns-home .lineup .article {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33%;
         flex: 0 0 33.33%;
         padding: 0 1rem; } }
-    .ns-home .lineup .article .image {
-      margin-bottom: 1rem;
-      max-width: 100%; }
-    .ns-home .lineup .article .title {
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid #9dbdd5;
-      color: #9dbdd5;
-      text-align: center; }
-      @media (max-width: 767px) {
-        .ns-home .lineup .article .title {
-          height: 3rem; } }
-      @media (min-width: 768px) {
-        .ns-home .lineup .article .title {
-          height: 5rem; } }
-    .ns-home .lineup .article .description {
-      margin-bottom: 1rem; }
-    .ns-home .lineup .article .button-container {
-      text-align: center; }
-      .ns-home .lineup .article .button-container .button {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        border: 2px solid #d7d7d7;
-        background-color: white;
-        padding: 0.5rem; }
+  .ns-home .lineup .image {
+    margin-bottom: 1rem;
+    max-width: 100%; }
+  .ns-home .lineup .title {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #9dbdd5;
+    color: #9dbdd5;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .ns-home .lineup .title {
+        min-height: 3rem;
+        height: 3rem; } }
+    @media (min-width: 768px) {
+      .ns-home .lineup .title {
+        min-height: 5rem;
+        height: 5rem; } }
+  .ns-home .lineup .description {
+    margin-bottom: 1rem; }
+  .ns-home .lineup .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; }
+  .ns-home .lineup .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #d7d7d7;
+    background-color: white;
+    padding: 0.5rem;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 100%; }
+
+.ns-home .technology .description {
+  margin-bottom: 3rem; }
 
 .ns-product .h1 {
   color: green; }
