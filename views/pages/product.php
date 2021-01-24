@@ -8,7 +8,7 @@
 ?>
 
 <?php include('../shared/head.php'); ?>
-<div class="ns-product">
+<div class="ns-product page">
 
   <h1>Product page</h1>
   <h1>Product page</h1>
