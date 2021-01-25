@@ -19,5 +19,5 @@
   })(window,document,'script','dataLayer','GTM-TS2LD28');</script>
   <!-- End Google Tag Manager -->
 </head>
-<body>
-  <?php include('../shared/nav.php'); ?>
+<body id="scroll-to-top-anchor">
+  <?php include('../shared/navigation.php'); ?>
