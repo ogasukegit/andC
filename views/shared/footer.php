@@ -3,14 +3,14 @@
     <div class="footer-wrapper">
       <div class="footer-left">
         <p class="footer-left__text">庭と家との調和</p>
-        <a href="/"><img class="footer-left__logo" src="../../assets/images/shared/logo_lg.png" alt="andC logo"></a>
+        <a href="/"><img class="footer-left__logo" src="<?= $imgPath ?>/shared/logo_lg.png" alt="andC logo"></a>
       </div>
       <div class="footer-right">
         <div class="footer-menu">
           <a class="footer-menu__link" href="/">TOP</a>
           <a class="footer-menu__link" href="products">PRODUCTS</a>
-          <a class="footer-menu__link" href="/contact" target="_blank">私たちについて<img class="external-link" src="../../assets/images/shared/new-window.png"></a>
-          <a class="footer-menu__link" href="/contact" target="_blank">プライバシーポリシー<img class="external-link" src="../../assets/images/shared/new-window.png"></a>
+          <a class="footer-menu__link" href="/contact" target="_blank">私たちについて<img class="external-link" src="<?= $imgPath ?>/shared/new-window.png"></a>
+          <a class="footer-menu__link" href="/contact" target="_blank">プライバシーポリシー<img class="external-link" src="<?= $imgPath ?>/shared/new-window.png"></a>
           <a class="footer-menu__link" href="/inquiry">商品注文・お問い合わせ</a>
         </div>
       </div>

@@ -2,22 +2,22 @@
 
 <?php
 $slider_images = [
-  "/assets/images/home/top_image_1.png",
-  "/assets/images/home/top_image_2.png"
+  "/home/top_image_1.png",
+  "/home/top_image_2.png"
 ];
 $lineup_articles = [
   [
-    "Image" => "/assets/images/home/lineup_1.png",
+    "Image" => "/home/lineup_1.png",
     "Title" => "エアコン室外機カバー（ホワイト ・ ブラウン）",
     "Description" => 'サビ・腐食に強く、キレイな状態が長持ちします。お庭に調和しながら、室外機を人目から隠します。'
   ],
   [
-    "Image" => "/assets/images/home/lineup_2.png",
+    "Image" => "/home/lineup_2.png",
     "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
     "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
   ],
   [
-    "Image" => "/assets/images/home/lineup_3.png",
+    "Image" => "/home/lineup_3.png",
     "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
     "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
   ],
@@ -27,7 +27,7 @@ $lineup_articles = [
 <div class="ns-home">
   <div class="slider-container">
     <?php foreach ($slider_images as $image) : ?>
-      <div class="slide" style="background-image: url(<?= $image ?>)">
+      <div class="slide" style="background-image: url(<?= $imgPath . $image ?>)">
         <div class="slide-content layout">
           <p class="slide-title">
             優れたコーティング技術をインテリアに。<br>
@@ -65,8 +65,8 @@ $lineup_articles = [
         </h2>
         <div class="pickup-item">
           <div class="flex-child">
-            <img class="image" src="/assets/images/home/pickup_item_1.png" alt="pickup_item_1">
-            <img class="image" src="/assets/images/home/pickup_item_2.png" alt="pickup_item_2">
+            <img class="image" src="<?= $imgPath ?>/home/pickup_item_1.png" alt="pickup_item_1">
+            <img class="image" src="<?= $imgPath ?>/home/pickup_item_2.png" alt="pickup_item_2">
           </div>
           <div class="flex-child">
             <h3 class="description-head">
@@ -107,7 +107,7 @@ $lineup_articles = [
         <div class="lineup">
           <?php foreach ($lineup_articles as $article) : ?>
             <div class="article">
-              <img class="image" src=<?= $article["Image"] ?>>
+              <img class="image" src=<?= $imgPath . $article["Image"] ?>>
               <div class="title">
                 <p><?= $article["Title"] ?></p>
               </div>
