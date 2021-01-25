@@ -1,5 +1,24 @@
+@include sp-only {
+}
+@include pc-only {
+}
 .ns-product {
-  .h1 {
-    color: green;
+  display: flex;
+
+  .left {
+    flex: 0 1 20%;
+    // width: 20%;
+    max-width: 200px;
+    margin-left: auto;
+    text-align: right;
+    @include sp-only {
+      display: none;
+    }
+  }
+  .right {
+    flex: 0 1 80%;
+    // width: 80%;
+    max-width: 800px;
+    margin-right: auto;
   }
 }

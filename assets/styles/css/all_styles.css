@@ -383,5 +383,23 @@ a:link, a:visited, a:hover, a:active {
 .ns-home .technology .description {
   margin-bottom: 3rem; }
 
-.ns-product .h1 {
-  color: green; }
+.ns-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .ns-product .left {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 20%;
+    flex: 0 1 20%;
+    max-width: 200px;
+    margin-left: auto;
+    text-align: right; }
+    @media (max-width: 767px) {
+      .ns-product .left {
+        display: none; } }
+  .ns-product .right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 80%;
+    flex: 0 1 80%;
+    max-width: 800px;
+    margin-right: auto; }
