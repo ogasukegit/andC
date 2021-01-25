@@ -38,7 +38,7 @@
           <a class="nav-item__link" href="/contact" target="_blank">私たちについて<img class="external-link" src="../../assets/images/shared/new-window.png"></a>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="/inquiry">商品注文：お問い合わせ</a>
+          <a class="nav-item__link" href="/inquiry">商品注文・お問い合わせ</a>
         </div>
       </div>
       <div class="overlay" id="overlay"></div>
@@ -50,6 +50,7 @@
     </div>
   </div>
   <script type="text/javascript">
+    // open/close mobile navigation
     const navMenu = document.getElementById('nav-menu');
     const navHam = document.getElementById('nav-ham');
     const overlay = document.getElementById('overlay');
