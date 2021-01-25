@@ -2,22 +2,22 @@
 
 <?php
 $slider_images = [
-  "/assets/images/home/top_image_1.png",
-  "/assets/images/home/top_image_2.png"
+  "/home/top_image_1.png",
+  "/home/top_image_2.png"
 ];
 $lineup_articles = [
   [
-    "Image" => "/assets/images/home/lineup_1.png",
+    "Image" => "/home/lineup_1.png",
     "Title" => "エアコン室外機カバー（ホワイト ・ ブラウン）",
     "Description" => 'サビ・腐食に強く、キレイな状態が長持ちします。お庭に調和しながら、室外機を人目から隠します。'
   ],
   [
-    "Image" => "/assets/images/home/lineup_2.png",
+    "Image" => "/home/lineup_2.png",
     "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
     "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
   ],
   [
-    "Image" => "/assets/images/home/lineup_3.png",
+    "Image" => "/home/lineup_3.png",
     "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
     "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
   ],
@@ -27,7 +27,7 @@ $lineup_articles = [
 <div class="ns-home">
   <div class="slider-container">
     <?php foreach ($slider_images as $image) : ?>
-      <div class="slide" style="background-image: url(<?= $image ?>)">
+      <div class="slide" style="background-image: url(<?= $imgPath . $image ?>)">
         <div class="slide-content layout">
           <p class="slide-title">
             優れたコーティング技術をインテリアに。<br>
@@ -108,7 +108,7 @@ $lineup_articles = [
       <div class="lineup">
         <?php foreach ($lineup_articles as $article) : ?>
           <div class="article">
-            <img class="image" src=<?= $article["Image"] ?>>
+            <img class="image" src=<?= $imgPath . $article["Image"] ?>>
             <div class="title">
               <p><?= $article["Title"] ?></p>
             </div>
@@ -145,9 +145,9 @@ $lineup_articles = [
           新たな魅力を引き出すことをテーマに、商品を開発してまいります。
         </p>
         <div class="point">
-          <img class="point__image" src="/assets/images/home/technology1.png">
+          <img class="point__image" src=<?= $imgPath . "/home/technology1.png"?>>
           <div class="point__content">
-            <img class="point__logo" src="/assets/images/home/point1.png">
+            <img class="point__logo" src=<?= $imgPath . "/home/point1.png"?>>
             <div class="point__blue-bg">
               <div class="point__square hide-sp"></div>
               <h3 class="point__title">
@@ -162,7 +162,7 @@ $lineup_articles = [
         </div>
         <div class="point point--opposite">
           <div class="point__content point__content--opposite">
-            <img class="point__logo" src="/assets/images/home/point2.png">
+            <img class="point__logo" src=<?= $imgPath . "/home/point2.png"?>>
             <div class="point__blue-bg point__blue-bg--opposite">
               <div class="point__square point__square--opposite hide-sp"></div>
               <h3 class="point__title">
@@ -174,12 +174,12 @@ $lineup_articles = [
               </p>
             </div>
           </div>
-          <img class="point__image" src="/assets/images/home/technology2.png">
+          <img class="point__image" src=<?= $imgPath . "/home/technology2.png"?>>
         </div>
         <div class="point">
-          <img class="point__image" src="/assets/images/home/technology3.png">
+          <img class="point__image" src=<?= $imgPath . "/home/technology3.png"?>>
           <div class="point__content">
-            <img class="point__logo" src="/assets/images/home/point3.png">
+            <img class="point__logo" src=<?= $imgPath . "/home/point3.png"?>>
             <div class="point__blue-bg">
               <div class="point__square hide-sp"></div>
               <h3 class="point__title">

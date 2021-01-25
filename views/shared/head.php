@@ -1,3 +1,4 @@
+<?php include('../../settings.php'); ?>
 <!doctype html>
 <html lang="jp">
 <head>
@@ -9,8 +10,8 @@
   <link rel="shortcut icon" sizes="196x196" href="/assets/favicon.png">
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/favicon.png">
   <link rel="stylesheet" type="text/css" href="../../assets/styles/css/all_styles.css">
-  <link rel="shortcut icon" sizes="196x196" href="../../assets/images/shared/favicon.png">
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/shared/favicon.png">
+  <link rel="shortcut icon" sizes="196x196" href="<?= $imgPath ?>/shared/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?= $imgPath ?>/shared/favicon.png">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -19,5 +20,5 @@
   })(window,document,'script','dataLayer','GTM-TS2LD28');</script>
   <!-- End Google Tag Manager -->
 </head>
-<body>
-  <?php include('../shared/nav.php'); ?>
+<body id="scroll-to-top-anchor">
+  <?php include('../shared/navigation.php'); ?>
