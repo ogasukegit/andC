@@ -24,7 +24,8 @@
       <p>岩谷マテリアル株式会社　大阪支店</p>
       <p>金属・コーティング本部</p>
       <p>担当：佐藤</p>
-      <p></p>TEL：06-6261-1946</p>
+      <p class="hide-sp">TEL：06-6261-1946</a></p>
+      <p class="hide-pc"><a href="tel:06-6261-1946">TEL：06-6261-1946</a></p>
     </div>
     <div class="button-wrapper">
       <a class="button button--black-ghost" href="home.php">＆Cトップへ</a>
