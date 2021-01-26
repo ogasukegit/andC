@@ -1,9 +1,15 @@
 <?php include('../shared/head.php'); ?>
 
 <?php
-$slider_images = [
-  "/home/top_image_1.png",
-  "/home/top_image_2.png"
+$slides = [
+  [
+    "Image" => "/home/top_image_1.png",
+    "Description" => "樹脂コーティングのパイオニアとして、<br>金属と樹脂の技術を融合・応用した商品をお客様にお届けいたします"
+  ],
+  [
+    "Image" => "/home/top_image_2.png",
+    "Description" => "「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。"
+  ]
 ];
 $lineup_articles = [
   [
@@ -22,20 +28,33 @@ $lineup_articles = [
     "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
   ],
 ];
+$news_list = [
+  [
+    "Date" => "2021.2.22",
+    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  ],
+  [
+    "Date" => "2021.1.11",
+    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  ],
+  [
+    "Date" => "2021.12.1",
+    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  ]
+]
 ?>
 
 <div class="ns-home">
   <div class="slider-container">
-    <?php foreach ($slider_images as $image) : ?>
-      <div class="slide" style="background-image: url(<?= $imgPath . $image ?>)">
+    <?php foreach ($slides as $slide) : ?>
+      <div class="slide" style="background-image: url(<?= $imgPath . $slide["Image"] ?>)">
         <div class="slide-content layout">
           <p class="slide-title">
             優れたコーティング技術をインテリアに。<br>
             機能的で、 より美しく。
           </p>
           <p class="slide-description">
-            樹脂コーティングのパイオニアとして、<br>
-            金属と樹脂の技術を融合・応用した商品をお客様にお届けいたします
+            <?= $slide["Description"] ?>
           </p>
         </div>
       </div>
@@ -145,9 +164,9 @@ $lineup_articles = [
           新たな魅力を引き出すことをテーマに、商品を開発してまいります。
         </p>
         <div class="point">
-          <img class="point__image" src=<?= $imgPath . "/home/technology1.png"?>>
+          <img class="point__image" src=<?= $imgPath . "/home/technology1.png" ?>>
           <div class="point__content">
-            <img class="point__logo" src=<?= $imgPath . "/home/point1.png"?>>
+            <img class="point__logo" src=<?= $imgPath . "/home/point1.png" ?>>
             <div class="point__blue-bg">
               <div class="point__square hide-sp"></div>
               <h3 class="point__title">
@@ -162,7 +181,7 @@ $lineup_articles = [
         </div>
         <div class="point point--opposite">
           <div class="point__content point__content--opposite">
-            <img class="point__logo" src=<?= $imgPath . "/home/point2.png"?>>
+            <img class="point__logo" src=<?= $imgPath . "/home/point2.png" ?>>
             <div class="point__blue-bg point__blue-bg--opposite">
               <div class="point__square point__square--opposite hide-sp"></div>
               <h3 class="point__title">
@@ -174,12 +193,12 @@ $lineup_articles = [
               </p>
             </div>
           </div>
-          <img class="point__image" src=<?= $imgPath . "/home/technology2.png"?>>
+          <img class="point__image" src=<?= $imgPath . "/home/technology2.png" ?>>
         </div>
         <div class="point">
-          <img class="point__image" src=<?= $imgPath . "/home/technology3.png"?>>
+          <img class="point__image" src=<?= $imgPath . "/home/technology3.png" ?>>
           <div class="point__content">
-            <img class="point__logo" src=<?= $imgPath . "/home/point3.png"?>>
+            <img class="point__logo" src=<?= $imgPath . "/home/point3.png" ?>>
             <div class="point__blue-bg">
               <div class="point__square hide-sp"></div>
               <h3 class="point__title">
@@ -209,8 +228,17 @@ $lineup_articles = [
           お知らせ
         </p>
       </h2>
+      <div class="news">
+        <?php foreach ($news_list as $news_item) : ?>
+          <div class="news-item">
+            <p class="news-item__date"><?= $news_item["Date"] ?></p>
+            <p class="news-item__content"><?= $news_item["Content"] ?></p>
+          </div>
+        <?php endforeach ?>
+      </div>
     </div>
   </div>
+  <?php include('../shared/shop-section.php'); ?>
 </div>
 
 <script>
