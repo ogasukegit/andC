@@ -361,6 +361,10 @@ a:link, a:visited, a:hover, a:active {
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg); }
 
+.ns-breadcrumb .link::after {
+  content: ' >';
+  padding: 0 0.5rem; }
+
 .ns-shop-section {
   background-color: #f8fafd;
   padding-top: 3rem;

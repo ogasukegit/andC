@@ -1,0 +1,8 @@
+.ns-breadcrumb {
+  .link {
+    &::after {
+      content: ' >';
+      padding: 0 0.5rem;
+    }
+  }
+}
