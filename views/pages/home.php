@@ -91,11 +91,6 @@ $lineup_articles = [
               商品詳細はこちら
             </button>
           </div>
-          <br>
-          <button class="blue-button">
-            エアコン室外機カバー<br>
-            商品詳細はこちら
-          </button>
         </div>
       </div>
     </div>
