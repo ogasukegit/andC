@@ -29,11 +29,11 @@
     □同意します
 
     <div class="button-wrapper">
-      <a class="button button--blue" href="inquiry.php">送信</a>
+      <a class="button button--blue" href="inquiry-input.php">送信</a>
       <a class="button button--black-ghost" href="inquiry-complete.php">修正する</a>
     </div>
   </div>
   <div class="go-to-first-view__wrapper">
-    <a class="go-to-first-view__button" href="inquiry.php">ページ上部へ</a>
+    <a class="go-to-first-view__button" href="inquiry-input.php">ページ上部へ</a>
   </div>
 <?php include './_inquiry-foot.php'; ?>

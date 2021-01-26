@@ -29,7 +29,7 @@
     </div>
   </div>
   <div class="go-to-first-view__wrapper">
-    <a class="go-to-first-view__button" href="inquiry.php">ページ上部へ</a>
+    <a class="go-to-first-view__button" href="inquiry-input.php">ページ上部へ</a>
   </div>
 <?php include './_inquiry-foot.php'; ?>
 
