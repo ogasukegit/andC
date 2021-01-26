@@ -14,11 +14,12 @@
     ],
   ];
 ?>
+
 <div class="ns-nav">
   <div class="layout">
     <div class="nav-wrapper">
       <div class="nav-left">
-        <a href="/"><img class="nav-left__logo" src="../../assets/images/shared/logo.png" alt="andC logo"></a>
+        <a href="/"><img class="nav-left__logo" src="<?= $imgPath ?>/shared/logo.png" alt="andC logo"></a>
         <span class="nav-left__text">庭と家との調和</span>
       </div>
       <div class="nav-menu" id="nav-menu">
@@ -34,10 +35,10 @@
           </span>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="/contact" target="_blank">私たちについて<img class="external-link" src="../../assets/images/shared/new-window.png"></a>
+          <a class="nav-item__link" href="/contact" target="_blank">私たちについて<img class="external-link" src="<?= $imgPath ?>/shared/new-window.png"></a>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="/inquiry">商品注文：お問い合わせ</a>
+          <a class="nav-item__link" href="/inquiry">商品注文・お問い合わせ</a>
         </div>
       </div>
       <div class="overlay" id="overlay"></div>
@@ -49,6 +50,7 @@
     </div>
   </div>
   <script type="text/javascript">
+    // open/close mobile navigation
     const navMenu = document.getElementById('nav-menu');
     const navHam = document.getElementById('nav-ham');
     const overlay = document.getElementById('overlay');
