@@ -108,12 +108,12 @@ a:link, a:visited, a:hover, a:active {
     background-color: #5d99b6; }
 
 .button--black-ghost {
-  border: 1px solid #666666;
+  border: 1px solid #333333;
   background-color: #ffffff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s; }
   .button--black-ghost:link, .button--black-ghost:visited, .button--black-ghost:hover, .button--black-ghost:active {
-    color: #666666; }
+    color: #333333; }
   .button--black-ghost:hover {
     color: #000000;
     border-color: #000000; }
@@ -378,7 +378,7 @@ a:link, a:visited, a:hover, a:active {
       transform: rotate(45deg); }
 
 .ns-breadcrumb {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0;
   font-size: 0.8rem; }
   @media (max-width: 767px) {
     .ns-breadcrumb {
@@ -755,12 +755,12 @@ a:link, a:visited, a:hover, a:active {
 
 .ns-inquiry {
   padding-bottom: 5rem; }
-  .ns-inquiry .h1 {
+  .ns-inquiry .inquiry-h1 {
     padding: 1rem 0;
     text-align: center;
     font-size: 1.2rem;
     background-color: #ebebeb; }
-  .ns-inquiry .h2 {
+  .ns-inquiry .inquiry-h2 {
     padding: 2rem 0;
     text-align: center; }
   .ns-inquiry .required:after {
@@ -836,3 +836,9 @@ a:link, a:visited, a:hover, a:active {
     .ns-inquiry .go-to-first-view__button:hover {
       background-color: #5d99b6;
       font-weight: bold; }
+  @media (max-width: 767px) {
+    .ns-inquiry .complete-message {
+      margin: 2rem 0; } }
+  @media (min-width: 768px) {
+    .ns-inquiry .complete-message {
+      margin: 2rem; } }

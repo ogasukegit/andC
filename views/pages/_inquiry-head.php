@@ -11,9 +11,9 @@
 
 <?php include '../shared/head.php'; ?>
 <div class="ns-inquiry page">
-  <h1 class="h1">業務用（法人の方）<br/>ご注文・お問い合わせ</h1>
-  <?php include '../shared/breadcrumb.php'; ?>
+  <h1 class="inquiry-h1">業務用（法人の方）<br/>ご注文・お問い合わせ</h1>
   <div class="layout">
+    <?php include '../shared/breadcrumb.php'; ?>
     <div class="form-status">
       <?= formStatusLink(1, $step, "入力"); ?>
       <?= formStatusLink(2, $step, "入力内容確認"); ?>

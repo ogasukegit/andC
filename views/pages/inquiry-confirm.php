@@ -14,14 +14,14 @@
 ?>
 <?php include './_inquiry-head.php'; ?>
   <div class="layout">
-    <h2 class="h2">入力内容確認</h2>
+    <h2 class="inquiry-h2">入力内容確認</h2>
     <p>下記内容でお間違いありませんか？</p>
 
     <hr>
     <h1>CONFIRM</h1>
     <hr>
 
-    <h2 class="h2">個人情報の取り扱い</h2>
+    <h2 class="inquiry-h2">個人情報の取り扱い</h2>
     <p>個人情報の取り扱いについて、詳しくは弊社のプライバシーポリシーをご覧ください。</p>
 
     個人情報の取り扱い
