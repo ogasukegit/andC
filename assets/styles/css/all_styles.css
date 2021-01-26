@@ -410,7 +410,7 @@ a:link, a:visited, a:hover, a:active {
   background-position: center; }
   @media (max-width: 767px) {
     .ns-home .slider-container .slide {
-      height: 80vw; } }
+      height: 120vw; } }
   @media (min-width: 768px) {
     .ns-home .slider-container .slide {
       height: 40vw; } }

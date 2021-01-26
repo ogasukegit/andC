@@ -7,7 +7,7 @@
       background-size: cover;
       background-position: center;
       @include sp-only {
-        height: 80vw;
+        height: 120vw;
       }
       @include pc-only {
         height: 40vw;
