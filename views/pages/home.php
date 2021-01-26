@@ -234,10 +234,11 @@ $news_list = [
             <p class="news-item__date"><?= $news_item["Date"] ?></p>
             <p class="news-item__content"><?= $news_item["Content"] ?></p>
           </div>
-        <?php endforeach; ?>
+        <?php endforeach ?>
       </div>
     </div>
   </div>
+  <?php include('../shared/shop-section.php'); ?>
 </div>
 
 <script>

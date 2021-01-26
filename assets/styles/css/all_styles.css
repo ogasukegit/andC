@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -338,7 +339,70 @@ a:link, a:visited, a:hover, a:active {
       transform: rotate(45deg); }
 
 .ns-shop-section {
-  background-color: hotpink; }
+  background-color: #f8fafd;
+  padding: 3rem 0; }
+  .ns-shop-section .english-title {
+    margin-bottom: 1.5rem;
+    font-weight: bold; }
+  .ns-shop-section .main-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1.5rem; }
+    .ns-shop-section .main-title .main-title__logo {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      padding-right: 1rem; }
+    .ns-shop-section .main-title .main-title__text {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      font-weight: normal;
+      font-size: 2rem; }
+      @media (max-width: 767px) {
+        .ns-shop-section .main-title .main-title__text {
+          font-size: 1.5rem; } }
+      @media (min-width: 768px) {
+        .ns-shop-section .main-title .main-title__text {
+          font-size: 2.5rem; } }
+  .ns-shop-section .description {
+    margin-bottom: 3rem; }
+  .ns-shop-section .lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .ns-shop-section .lists .list {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto; }
+    .ns-shop-section .lists .list__title {
+      padding: .5rem 1rem;
+      margin-bottom: 1rem;
+      border-left: 3px solid #d3dbd7;
+      font-size: 1.5rem; }
+    .ns-shop-section .lists .list__link {
+      display: block;
+      color: #466455;
+      padding-left: 1.5rem;
+      margin-bottom: .8rem;
+      text-decoration: underline; }
+    .ns-shop-section .lists .list__link::before {
+      content: '●'; }
+    .ns-shop-section .lists .list__link--indent {
+      padding-left: 4rem; }
+    .ns-shop-section .lists .list__link--indent::before {
+      content: ''; }
 
 .ns-home .slider-container .slide {
   width: 100%;
@@ -397,7 +461,7 @@ a:link, a:visited, a:hover, a:active {
       font-size: 2.5rem; } }
 
 .ns-home .english-title {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem; }
 

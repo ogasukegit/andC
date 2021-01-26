@@ -1,3 +1,75 @@
 .ns-shop-section {
-  background-color: hotpink;
+  background-color: #f8fafd;
+  padding: 3rem 0;
+
+  .english-title {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+
+  .main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    .main-title__logo {
+      flex: 0 1 auto;
+      padding-right: 1rem;
+    }
+
+    .main-title__text {
+      flex: 0 1 auto;
+      @include sp-only {
+        font-size: 1.5rem;
+      }
+      @include pc-only {
+        font-size: 2.5rem;
+      }
+      font-weight: normal;
+      font-size: 2rem;
+    }
+  }
+
+  .description {
+    margin-bottom: 3rem;
+  }
+
+  .lists {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .list {
+      flex: 0 1 auto;
+    }
+
+    .list__title {
+      padding: .5rem 1rem;
+      margin-bottom: 1rem;
+      border-left: 3px solid #d3dbd7;
+      font-size: 1.5rem;
+    }
+
+    .list__link {
+      display: block;
+      color: #466455;
+      padding-left: 1.5rem;
+      margin-bottom: .8rem;
+      text-decoration: underline;
+    }
+
+    .list__link::before {
+      content: '●';
+    }
+
+    .list__link--indent {
+      padding-left: 4rem;
+    }
+
+    .list__link--indent::before {
+      content: '';
+    }
+
+  }
 }
