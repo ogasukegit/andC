@@ -29,8 +29,8 @@
     □同意します
 
     <div class="button-wrapper">
-      <a class="blue-button" href="inquiry.php">送信</a>
-      <a class="blue-button" href="inquiry-complete.php">修正する</a>
+      <a class="button button--blue" href="inquiry.php">送信</a>
+      <a class="button button--black-ghost" href="inquiry-complete.php">修正する</a>
     </div>
   </div>
   <div class="go-to-first-view__wrapper">

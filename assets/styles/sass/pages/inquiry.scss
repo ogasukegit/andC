@@ -1,4 +1,5 @@
 .ns-inquiry {
+  padding-bottom: 5rem;
   .h1 {
     padding: 1rem 0;
     text-align: center;
@@ -6,6 +7,7 @@
     background-color: $ltGray;
   }
   .h2 {
+    padding: 2rem 0;
     text-align: center;
   }
   .required {
@@ -54,6 +56,7 @@
   }
   .button-wrapper {
     display: flex;
+    justify-content: center;
   }
   .go-to-first-view__wrapper {
     display: flex;

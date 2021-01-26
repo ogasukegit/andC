@@ -39,26 +39,40 @@
   }
 }
 
-.blue-button {
+.button {
   display: flex;
   align-self: center;
   justify-content: center;
   width: 209px;
   max-height: 86px;
+  margin: 0.5rem;
   padding: 1rem 0.5rem;
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    color: #ffffff;
-  }
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px;
-  background-color: $blueAccentLt;
+}
+
+.button--blue {
+  @include link {
+    color: #ffffff;
+  }
   border: none;
+  background-color: $blueAccentLt;
   transition: background-color 0.2s;
   &:hover {
     background-color: $blueAccentDk;
+  }
+}
+
+.button--black-ghost {
+  @include link {
+    color: #666666;
+  }
+  border: 1px solid #666666;
+  background-color: #ffffff;
+  transition: color 0.2s;
+  &:hover {
+    color: #000000;
+    border-color: #000000;
   }
 }

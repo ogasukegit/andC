@@ -25,7 +25,7 @@
     □同意します
 
     <div class="button-wrapper">
-      <a class="blue-button" href="inquiry-confirm.php">入力内容確認</a>
+      <a class="button button--blue" href="inquiry-confirm.php">入力内容確認</a>
     </div>
   </div>
   <div class="go-to-first-view__wrapper">
