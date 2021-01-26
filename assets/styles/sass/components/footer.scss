@@ -1,7 +1,6 @@
 .ns-footer {
   $footerBreakpoint: 870px;
-
-  background-color: #ebebeb;
+  background-color: $ltGray;
   position: relative;
 
   .external-link {

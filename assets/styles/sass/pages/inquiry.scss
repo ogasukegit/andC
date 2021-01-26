@@ -1,19 +1,71 @@
 .ns-inquiry {
   .h1 {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: $ltGray;
   }
   .h2 {
+    text-align: center;
+  }
+  .required {
+    &:after {
+      content: '*';
+      color: #ff0000;
+    }
   }
   .form-status {
     display: flex;
+    margin: 2rem 0;
   }
   .form-status__step {
     flex: 1 1 auto;
-    &:nth-child(2) {
-      margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+    color: $blueAccentDk;
+    border: 1px solid $blueAccentLt;
+    @include sp-only {
+      font-size: 0.8rem;
+      &:nth-child(2) {
+        margin: 0 0.7rem;
+      }
     }
-    border: 1px solid #000000;
-    .form-status__step--active {
+    @include pc-only {
+      font-size: 1rem;
+      &:nth-child(2) {
+        margin: 0 1.5rem;
+      }
+    }
+    &.form-status__step--active {
+      font-weight: bold;
+      color: #ffffff;
+      border-color: $blueAccentLt;
       background-color: $blueAccentLt;
+    }
+    .top-text {
+      flex: 0 1 auto;
+    }
+    .bottom-text {
+      flex: 0 1 auto;
+    }
+  }
+  .button-wrapper {
+    display: flex;
+  }
+  .go-to-first-view__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .go-to-first-view__button {
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: $blueAccentLt;
+    &:hover {
+      background-color: $blueAccentDk;
       font-weight: bold;
     }
   }
