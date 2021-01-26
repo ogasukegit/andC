@@ -86,11 +86,16 @@ $lineup_articles = [
             趣味でガーデニングをされる方や、　オーナメントやイルミネーションで飾り付けをされる方におススメのシンプルで秋の来ないデザインです。
           </p>
           <div class="button-container">
-            <button class="button">
+            <button class="arrow-button">
               エアコン室外機カバー<br>
               商品詳細はこちら
             </button>
           </div>
+          <br>
+          <button class="blue-button">
+            エアコン室外機カバー<br>
+            商品詳細はこちら
+          </button>
         </div>
       </div>
     </div>
@@ -116,7 +121,7 @@ $lineup_articles = [
               <?= $article["Description"] ?>
             </div>
             <div class="button-container">
-              <button class="button">
+              <button class="arrow-button">
                 商品名が入ります<br>
                 商品詳細はこちら
               </button>
@@ -192,7 +197,7 @@ $lineup_articles = [
           </div>
         </div>
         <div class="button-container">
-          <button class="button">
+          <button class="arrow-button">
             私たちについて
           </button>
         </div>

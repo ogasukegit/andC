@@ -73,7 +73,7 @@
     @include pc-only {
       @include scrollToTopButtonSizing(66px);
     }
-    background-color: #8db1ce;
+    background-color: $blueAccentLt;
     display: flex;
     flex-direction: column;
     align-items: center;

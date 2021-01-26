@@ -1,5 +1,12 @@
 <?php include('../shared/head.php'); ?>
-<div class="ns-product">
+<div class="ns-product page">
+  <h1 class="h1">This is the product page!</h1>
+  <h1 class="h1">This is the product page!</h1>
+  <h1 class="h1">This is the product page!</h1>
+  <h1 class="h1">This is the product page!</h1>
+  <h1 class="h1">This is the product page!</h1>
+  <h1 class="h1">This is the product page!</h1>
+  <h1 class="h1">This is the product page!</h1>
   <h1 class="h1">This is the product page!</h1>
 
 </div>
