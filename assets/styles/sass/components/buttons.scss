@@ -1,0 +1,59 @@
+.arrow-button {
+  @keyframes animateButtonArrow {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 82px;
+    }
+  }
+
+  width: 268px;
+  height: 70px;
+  margin-left: 24px;
+  padding: 0.5rem;
+  padding-left: 84px;
+  text-align: left;
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+  cursor: pointer;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: -24px;
+    width: 82px;
+    height: 8px;
+    border-right: 1px solid #8a8a8a;
+    border-bottom: 1px solid #8a8a8a;
+    transform: translateY(-50%) skewX(45deg);
+  }
+  &:hover {
+    border-color: #000000;
+    &::before {
+      border-color: #000000;
+      animation: animateButtonArrow 0.5s;
+    }
+  }
+}
+
+.blue-button {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 209px;
+  max-height: 86px;
+  padding: 1rem 0.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: $blueAccentLt;
+  border: none;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: $blueAccentDk;
+  }
+}
