@@ -1,3 +1,18 @@
+// applied to all pages except the home page to apply the nav menu shadow
+.page {
+  margin-top: $navHeight;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $navHeight;
+    box-shadow: 0 0 12px #888888;
+    z-index: 1;
+  }
+}
+
 .ns-nav {
   $navBackground: rgba(255, 255, 255, 0.7);
   $linkColor: #333333;
@@ -126,5 +141,8 @@
     white-space: nowrap;
     text-decoration: none;
     color: $linkColor;
+    &::before {
+      content: 'ー';
+    }
   }
 }
