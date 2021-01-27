@@ -141,5 +141,8 @@
     white-space: nowrap;
     text-decoration: none;
     color: $linkColor;
+    &::before {
+      content: 'ー';
+    }
   }
 }
