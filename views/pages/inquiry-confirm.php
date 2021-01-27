@@ -31,7 +31,7 @@
     <h2 class="inquiry-h2">入力内容確認</h2>
 
     <!-- change post destination (handle send and redirect to /inquiry/complete) -->
-    <form class="form" method="post" action="inquiry-confirm.php">
+    <form class="form" method="post" action="inquiry-complete.php">
       <p class="form__top-text">下記内容でお間違いありませんか？</p>
       <div class="form__row">
         <div class="form__row-left">お問い合わせ項目</div>
