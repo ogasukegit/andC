@@ -1,16 +1,7 @@
 <?php include('../shared/head.php'); ?>
 
 <?php
-$slides = [
-  [
-    "Image" => "/home/top_image_1.png",
-    "Description" => "「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。"
-  ],
-  [
-    "Image" => "/home/top_image_2.png",
-    "Description" => "「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。"
-  ]
-];
+$slides = ["/home/top_image_1.png", "/home/top_image_2.png"];
 $lineup_articles = [
   [
     "Image" => "/home/lineup_1.png",
@@ -47,14 +38,14 @@ $news_list = [
 <div class="ns-home">
   <div class="slider-container">
     <?php foreach ($slides as $slide) : ?>
-      <div class="slide" style="background-image: url(<?= $imgPath . $slide["Image"] ?>)">
+      <div class="slide" style="background-image: url(<?= $imgPath . $slide ?>)">
         <div class="slide-content layout">
           <p class="slide-title">
             優れたコーティング技術をエクステリアに。<br>
             機能的で、 より美しく。
           </p>
           <p class="slide-description">
-            <?= $slide["Description"] ?>
+            「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。
           </p>
         </div>
       </div>
