@@ -81,14 +81,6 @@
         <div class="form__row-left">お問い合わせ内容</div>
         <div class="form__row-right form__row-output"><?= $message ?></div>
       </div>
-      <h2 class="inquiry-h2">個人情報の取り扱い</h2>
-      <p>個人情報の取り扱いについて、詳しくは弊社の<a href="https://www.imcjpn.co.jp/policy/">プライバシーポリシー</a>をご覧ください。</p>
-      <div class="form__row">
-        <div class="form__row-left">個人情報の取り扱い</div>
-        <div class="form__row-right">
-          <label class="clickable"><input type="checkbox" id="personal-info" required>&nbsp;同意します</label>
-        </div>
-      </div>
       <div class="button-wrapper">
         <input class="button button--blue" type="submit" value="修正する">
         <a class="button button--black-ghost" href="inquiry-input.php">送信</a>
@@ -96,9 +88,4 @@
     </form>
 
   </div>
-
-  <!-- <div class="go-to-first-view__wrapper"> -->
-    <!-- change link to "/inquiry" -->
-    <!-- <a class="go-to-first-view__button" href="inquiry-input.php">ページ上部へ</a> -->
-  <!-- </div> -->
 <?php include './_inquiry-foot.php'; ?>

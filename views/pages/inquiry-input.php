@@ -105,9 +105,4 @@
     </form>
 
   </div>
-
-  <!-- <div class="go-to-first-view__wrapper"> -->
-    <!-- change link to "/inquiry" -->
-    <!-- <a class="go-to-first-view__button" href="inquiry-input.php">ページ上部へ</a> -->
-  <!-- </div> -->
 <?php include './_inquiry-foot.php'; ?>
