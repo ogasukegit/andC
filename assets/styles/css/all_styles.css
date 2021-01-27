@@ -245,6 +245,8 @@ a:link, a:visited, a:hover, a:active {
     white-space: nowrap;
     text-decoration: none;
     color: #333333; }
+    .ns-nav .nav-item__submenu-link::before {
+      content: 'ー'; }
 
 .ns-footer {
   background-color: #ebebeb;

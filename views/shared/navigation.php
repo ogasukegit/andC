@@ -30,7 +30,7 @@
           <a class="nav-item__link" href="products">PRODUCTS</a>
           <span class="nav-item__submenu">
             <?php foreach ($products as $product): ?>
-              <a class="nav-item__submenu-link" href="<?= $product['url'] ?>">ー<?= $product['text'] ?></a>
+              <a class="nav-item__submenu-link" href="<?= $product['url'] ?>"><?= $product['text'] ?></a>
             <?php endforeach; ?>
           </span>
         </div>
