@@ -1,0 +1,144 @@
+.ns-inquiry {
+  padding-bottom: 5rem;
+  .inquiry-h1 {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: $ltGray;
+  }
+  .inquiry-h2 {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .form-status {
+    display: flex;
+    margin: 2rem 0;
+    .form-status__step {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0;
+      color: $blueAccentDk;
+      border: 1px solid $blueAccentLt;
+      @include sp-only {
+        font-size: 0.8rem;
+        &:nth-child(2) {
+          margin: 0 0.7rem;
+        }
+      }
+      @include pc-only {
+        font-size: 1rem;
+        &:nth-child(2) {
+          margin: 0 1.5rem;
+        }
+      }
+      &.form-status__step--active {
+        font-weight: bold;
+        color: #ffffff;
+        border-color: $blueAccentLt;
+        background-color: $blueAccentLt;
+      }
+      .top-text {
+        flex: 0 1 auto;
+      }
+      .bottom-text {
+        flex: 0 1 auto;
+      }
+    }
+  }
+  .required {
+    &:after {
+      content: '*';
+      color: #e01111;
+    }
+  }
+  .clickable {
+    cursor: pointer;
+  }
+  .spacer {
+    padding: 0 0.5rem;
+  }
+  .form {
+    max-width: 800px;
+    margin: 0 auto;
+    // font-size: 1.1rem;
+  }
+  .form__top-text {
+    margin-bottom: 2rem;
+  }
+  .form__row {
+    display: flex;
+    @include sp-only {
+      flex-direction: column;
+    }
+    @include pc-only {
+      flex-direction: row;
+    }
+    margin: 1rem 0;
+  }
+  .form__row-left {
+    @include sp-only {
+      flex: 0 1 100%;
+      text-align: left;
+    }
+    @include pc-only {
+      flex: 0 1 40%;
+      text-align: center;
+    }
+  }
+  .form__row-right {
+    @include sp-only {
+      flex: 0 1 100%;
+      margin: 0.5rem 0;
+    }
+    @include pc-only {
+      flex: 0 1 60%;
+    }
+  }
+  .form__text-input {
+    width: 100%;
+    font-size: 1rem;
+    @include sp-only {
+      padding: 0.7rem 1rem;
+    }
+    @include pc-only {
+      padding: 0.5rem 1rem;
+    }
+  }
+  .form__row-output {
+    @include sp-only {
+      margin-left: 1rem;
+    }
+  }
+  .form__text-input--postal {
+    max-width: 8rem;
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .go-to-first-view__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .go-to-first-view__button {
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: $blueAccentLt;
+    &:hover {
+      background-color: $blueAccentDk;
+      font-weight: bold;
+    }
+  }
+  .complete-message {
+    @include sp-only {
+      margin: 2rem 0;
+    }
+    @include pc-only {
+      margin: 2rem;
+    }
+  }
+}

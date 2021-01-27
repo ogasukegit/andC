@@ -1,8 +1,16 @@
 .ns-breadcrumb {
+  @include sp-only {
+    display: none;
+  }
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
   .link {
     &::after {
       content: ' >';
-      padding: 0 0.5rem;
+      position: relative;
+      top: -1px;
+      padding: 0 1rem;
+      color: #000000;
     }
   }
 }
