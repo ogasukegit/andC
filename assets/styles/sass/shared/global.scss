@@ -84,3 +84,10 @@ a {
     display: none;
   }
 }
+
+.hiragino {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+}
+@mixin font-hiragino {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+}
