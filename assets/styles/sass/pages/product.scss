@@ -1,24 +1,30 @@
-@include sp-only {
-}
-@include pc-only {
-}
 .ns-product {
   display: flex;
 
-  .left {
-    flex: 0 1 20%;
-    // width: 20%;
-    max-width: 200px;
-    margin-left: auto;
-    text-align: right;
-    @include sp-only {
-      display: none;
+  .nav {
+    flex: 0 0 15rem;
+    height: 100%;
+    padding: 2rem 2rem 2rem 4rem;
+    background-color: #f2f1ee;
+
+    .nav__title {
+      display: block;
+      width: 100%;
+      padding: 2rem 0;
+      border-bottom: 1px solid black;
+      font-size: 1.5rem;
+    }
+
+    .nav__item {
+      padding-top: 2rem;
     }
   }
-  .right {
-    flex: 0 1 80%;
-    // width: 80%;
-    max-width: 800px;
-    margin-right: auto;
+  
+  .product-main {
+    // margin-left: -1rem;
+  }
+
+  .flex-child {
+    flex: 0 0 15rem;
   }
 }

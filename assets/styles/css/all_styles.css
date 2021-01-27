@@ -524,19 +524,22 @@ a:link, a:visited, a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .ns-product .left {
+  .ns-product .nav {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 20%;
-    flex: 0 1 20%;
-    max-width: 200px;
-    margin-left: auto;
-    text-align: right; }
-    @media (max-width: 767px) {
-      .ns-product .left {
-        display: none; } }
-  .ns-product .right {
+    -ms-flex: 0 0 15rem;
+    flex: 0 0 15rem;
+    height: 100%;
+    padding: 2rem 2rem 2rem 4rem;
+    background-color: #f2f1ee; }
+    .ns-product .nav .nav__title {
+      display: block;
+      width: 100%;
+      padding: 2rem 0;
+      border-bottom: 1px solid black;
+      font-size: 1.5rem; }
+    .ns-product .nav .nav__item {
+      padding-top: 2rem; }
+  .ns-product .flex-child {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 80%;
-    flex: 0 1 80%;
-    max-width: 800px;
-    margin-right: auto; }
+    -ms-flex: 0 0 15rem;
+    flex: 0 0 15rem; }

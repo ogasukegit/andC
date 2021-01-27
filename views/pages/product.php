@@ -29,24 +29,20 @@
 
 <?php include('../shared/head.php'); ?>
 <div class="ns-product page">
-
-  <div class="left">
-    <?php foreach ($products as $product): ?>
-      <div class="">
-        <h3><?= $product["text"] ?></h3>
-        <p><?= $product["link"] ?></p>
-      </div>
-    <?php endforeach ?>
-    <div class="blue-button">商品注文・お問い合わせ</div>
+  <div class="nav">
+    <p class="nav__title">
+      PRODUCTS
+    </p>
+    <p class="nav__item">―室外機カバー</p>
+    <p class="nav__item">―室外機カバー</p>
+    <p class="nav__item">―室外機カバー</p>
+    <p class="nav__item">―室外機カバー</p>
+    <p class="nav__item">―室外機カバー</p>
+    <p class="nav__item">―室外機カバー</p>
+    <p class="nav__item">―室外機カバー</p>
+    <p class="nav__item">―室外機カバー</p>
   </div>
-
-  <div class="right">
-    <h1>Product page</h1>
-    <p>Lor em ip sum dol or sit am et co ns ec te tur, ad ip is ic ing el it. Qu asi, es se ul lam si nt sed, il lo vo lu pt at ib us ut re pu di an dae te mp or ib us ei us pe rf er en dis vo lu pt as. Qu ae di gn is si mos la ud an ti um in ve nt ore ma gni qu am pr ov id ent eos al iq uid.</p>
-    <p>Lor em ip sum dol or sit am et co ns ec te tur, ad ip is ic ing el it. Qu asi, es se ul lam si nt sed, il lo vo lu pt at ib us ut re pu di an dae te mp or ib us ei us pe rf er en dis vo lu pt as. Qu ae di gn is si mos la ud an ti um in ve nt ore ma gni qu am pr ov id ent eos al iq uid.</p>
-    <p>Lor em ip sum dol or sit am et co ns ec te tur, ad ip is ic ing el it. Qu asi, es se ul lam si nt sed, il lo vo lu pt at ib us ut re pu di an dae te mp or ib us ei us pe rf er en dis vo lu pt as. Qu ae di gn is si mos la ud an ti um in ve nt ore ma gni qu am pr ov id ent eos al iq uid.</p>
-    <p>Lor em ip sum dol or sit am et co ns ec te tur, ad ip is ic ing el it. Qu asi, es se ul lam si nt sed, il lo vo lu pt at ib us ut re pu di an dae te mp or ib us ei us pe rf er en dis vo lu pt as. Qu ae di gn is si mos la ud an ti um in ve nt ore ma gni qu am pr ov id ent eos al iq uid.</p>
+  <div class="layout product-main">
   </div>
-
 </div>
 <?php include('../shared/foot.php'); ?>
