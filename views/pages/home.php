@@ -1,6 +1,10 @@
-<?php include('../shared/head.php'); ?>
-
 <?php
+$metaData = [
+  "title" => "＆C｜ブランドサイト―優れた樹脂コーティングをインテリアに。機能的で美しく。",
+  "description" => "樹脂コーティングのパイオニアとして、金属と樹脂の技術を融合・応用した商品をお客様にお届けいたします。商品の美しさ・美しさをぜひ体感してください。",
+  "keywords" => "",
+];
+
 $slides = ["/home/top_image_1.png", "/home/top_image_2.png"];
 $lineup_articles = [
   [
@@ -35,6 +39,7 @@ $news_list = [
 ]
 ?>
 
+<?php include('../shared/head.php'); ?>
 <div class="ns-home">
   <style type="text/css">
     /* to make the nav product list submenu look right on the home page */
