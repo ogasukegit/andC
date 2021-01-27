@@ -45,6 +45,14 @@ $news_list = [
 ?>
 
 <div class="ns-home">
+  <style>
+    /* to make the nav product list submenu look right on the home page */
+    .ns-nav .nav-item__submenu {
+      background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9));
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  </style>
   <div class="slider-container">
     <?php foreach ($slides as $slide) : ?>
       <div class="slide" style="background-image: url(<?= $imgPath . $slide["Image"] ?>)">
