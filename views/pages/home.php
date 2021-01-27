@@ -211,7 +211,8 @@ $news_list = [
         </div>
         <div class="button-container">
           <button class="arrow-button">
-            私たちについて
+            &nbsp;私たちについて&nbsp;&nbsp;&nbsp;
+            <img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>>
           </button>
         </div>
       </div>
