@@ -53,10 +53,11 @@
 }
 
 .button--blue {
+  color: #ffffff;
   @include link {
     color: #ffffff;
   }
-  border: none;
+  border: 1px solid $blueAccentLt;
   background-color: $blueAccentLt;
   transition: background-color 0.2s;
   &:hover {
@@ -65,6 +66,7 @@
 }
 
 .button--black-ghost {
+  color: #333333;
   @include link {
     color: #333333;
   }

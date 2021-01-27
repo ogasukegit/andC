@@ -40,7 +40,7 @@
   }
   .footer-menu__link {
     @media(max-width: $footerBreakpoint) {
-      margin-right: 1rem;
+      // margin-right: 1rem;
     }
     @media(min-width: $footerBreakpoint + 1) {
       margin-left: 1.5%;
