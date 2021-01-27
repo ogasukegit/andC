@@ -21,4 +21,7 @@
   <!-- End Google Tag Manager -->
 </head>
 <body id="scroll-to-top-anchor">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS2LD28" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <?php include('../shared/navigation.php'); ?>

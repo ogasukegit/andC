@@ -30,12 +30,12 @@
           <a class="nav-item__link" href="products">PRODUCTS</a>
           <span class="nav-item__submenu">
             <?php foreach ($products as $product): ?>
-              <a class="nav-item__submenu-link" href="<?= $product['url'] ?>">ー<?= $product['text'] ?></a>
+              <a class="nav-item__submenu-link" href="<?= $product['url'] ?>"><?= $product['text'] ?></a>
             <?php endforeach; ?>
           </span>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="/contact" target="_blank">私たちについて<img class="external-link" src="<?= $imgPath ?>/shared/new-window.png"></a>
+          <a class="nav-item__link" href="https://www.imcjpn.co.jp/about/profile.html" target="_blank">私たちについて<img class="external-link" src="<?= $imgPath ?>/shared/new-window.png"></a>
         </div>
         <div class="nav-item">
           <a class="nav-item__link" href="/inquiry">商品注文・お問い合わせ</a>

@@ -8,8 +8,8 @@
       <h2 class="main-title__text">が買えるショップ</h2>
     </div>
     <p class="description txt-center">
-      下記テキストをクリックすると、　外部リンクに遷移いたします。<br>
-      購入に関するお問い合わせは、　各店舗様にお願いいたします。
+      下記テキストをクリックすると、外部リンクに遷移いたします。<br>
+      購入に関するお問い合わせは、各店舗様にお願いいたします。
     </p>
     <div class="lists">
       <div class="list">
