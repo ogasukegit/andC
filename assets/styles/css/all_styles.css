@@ -477,6 +477,58 @@ a:link, a:visited, a:hover, a:active {
     .ns-shop-section .lists .list__link--indent::before {
       content: ''; }
 
+.ns-contact-widget {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: #5d99b6;
+  color: #ffffff;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+  @media (max-width: 767px) {
+    .ns-contact-widget {
+      display: none; } }
+  .ns-contact-widget .close-button {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer; }
+    .ns-contact-widget .close-button::before, .ns-contact-widget .close-button::after {
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: 3.5px;
+      width: 16px;
+      height: 1px;
+      background-color: #ffffff; }
+    .ns-contact-widget .close-button::before {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .ns-contact-widget .close-button::after {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  .ns-contact-widget .link-button {
+    margin-top: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #000000;
+    border-radius: 5px;
+    background-color: #ffffff; }
+
 .ns-home .slider-container .slide {
   width: 100%;
   background-size: cover;
