@@ -109,10 +109,10 @@ $news_list = [
             趣味でガーデニングをされる方や、オーナメントやイルミネーションで飾り付けをされる方におススメのシンプルで秋の来ないデザインです。
           </p>
           <div class="button-container">
-            <button class="arrow-button">
+            <a class="arrow-button" href="">
               エアコン室外機カバー<br>
               商品詳細はこちら
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -139,10 +139,10 @@ $news_list = [
               <?= $article["Description"] ?>
             </div>
             <div class="button-container">
-              <button class="arrow-button">
+              <a class="arrow-button" href="">
                 商品名が入ります<br>
                 商品詳細はこちら
-              </button>
+              </a>
             </div>
           </div>
         <?php endforeach ?>
@@ -215,10 +215,10 @@ $news_list = [
           </div>
         </div>
         <div class="button-container">
-          <button class="arrow-button">
+          <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html">
             &nbsp;私たちについて&nbsp;&nbsp;&nbsp;
             <img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>>
-          </button>
+          </a>
         </div>
       </div>
     </div>
