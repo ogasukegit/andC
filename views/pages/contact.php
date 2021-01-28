@@ -15,7 +15,8 @@
     <div class="inner">
       <div class="left">
         <p>フリーダイヤル</p>
-        <p class="call-link"><a href="tel:0120-999-999">0120-999-999</a></p>
+        <p class="call-link hide-sp">0120-999-999</p>
+        <p class="call-link hide-pc"><a href="tel:0120-999-999">0120-999-999</a></p>
       </div>
       <div class="right">
         <img class="image" src="../../../assets/images/contact/placeholder.jpeg" alt="">
