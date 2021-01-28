@@ -1,16 +1,11 @@
-<?php include('../shared/head.php'); ?>
-
 <?php
-$slides = [
-  [
-    "Image" => "/home/top_image_1.png",
-    "Description" => "「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。"
-  ],
-  [
-    "Image" => "/home/top_image_2.png",
-    "Description" => "「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。"
-  ]
+$metaData = [
+  "title" => "＆C｜ブランドサイト―優れた樹脂コーティングをインテリアに。機能的で美しく。",
+  "description" => "樹脂コーティングのパイオニアとして、金属と樹脂の技術を融合・応用した商品をお客様にお届けいたします。商品の美しさ・美しさをぜひ体感してください。",
+  "keywords" => "",
 ];
+
+$slides = ["/home/top_image_1.png", "/home/top_image_2.png"];
 $lineup_articles = [
   [
     "Image" => "/home/lineup_1.png",
@@ -44,17 +39,26 @@ $news_list = [
 ]
 ?>
 
+<?php include('../shared/head.php'); ?>
 <div class="ns-home">
+  <style type="text/css">
+    /* to make the nav product list submenu look right on the home page */
+    .ns-nav .nav-item__submenu {
+      background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9));
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  </style>
   <div class="slider-container">
     <?php foreach ($slides as $slide) : ?>
-      <div class="slide" style="background-image: url(<?= $imgPath . $slide["Image"] ?>)">
+      <div class="slide" style="background-image: url(<?= $imgPath . $slide ?>)">
         <div class="slide-content layout">
           <p class="slide-title">
             優れたコーティング技術をエクステリアに。<br>
             機能的で、 より美しく。
           </p>
           <p class="slide-description">
-            <?= $slide["Description"] ?>
+            「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。
           </p>
         </div>
       </div>
@@ -105,10 +109,10 @@ $news_list = [
             趣味でガーデニングをされる方や、オーナメントやイルミネーションで飾り付けをされる方におススメのシンプルで秋の来ないデザインです。
           </p>
           <div class="button-container">
-            <button class="arrow-button">
+            <a class="arrow-button" href="">
               エアコン室外機カバー<br>
               商品詳細はこちら
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -135,10 +139,10 @@ $news_list = [
               <?= $article["Description"] ?>
             </div>
             <div class="button-container">
-              <button class="arrow-button">
+              <a class="arrow-button" href="">
                 商品名が入ります<br>
                 商品詳細はこちら
-              </button>
+              </a>
             </div>
           </div>
         <?php endforeach ?>
@@ -211,9 +215,10 @@ $news_list = [
           </div>
         </div>
         <div class="button-container">
-          <button class="arrow-button">
-            私たちについて
-          </button>
+          <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html">
+            &nbsp;私たちについて&nbsp;&nbsp;&nbsp;
+            <img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>>
+          </a>
         </div>
       </div>
     </div>

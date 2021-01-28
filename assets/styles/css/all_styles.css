@@ -13,6 +13,7 @@ div, p {
   margin: 0; }
 
 a:link, a:visited, a:hover, a:active {
+  color: #5d99b6;
   text-decoration: none; }
 
 .layout {
@@ -21,7 +22,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 0 auto; }
   @media (max-width: 767px) {
     .layout {
-      padding: 0 10px; } }
+      padding: 0 1rem; } }
 
 .txt-bold {
   font-weight: bold; }
@@ -37,13 +38,24 @@ a:link, a:visited, a:hover, a:active {
   .hide-pc {
     display: none; } }
 
+.hiragino {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+
 .arrow-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 268px;
   height: 70px;
   margin-left: 24px;
-  padding: 0.5rem;
-  padding-left: 84px;
+  padding: 0.5rem 0.5rem 0.5rem 84px;
+  font-size: 0.9rem;
+  font-family: arial;
   text-align: left;
+  color: #000000;
   background-color: #ffffff;
   border: 1px solid #d7d7d7;
   cursor: pointer;
@@ -60,6 +72,8 @@ a:link, a:visited, a:hover, a:active {
     width: 0px; }
   100% {
     width: 82px; } }
+  .arrow-button:link, .arrow-button:visited, .arrow-button:hover, .arrow-button:active {
+    color: #000000; }
   .arrow-button::before {
     content: '';
     position: absolute;
@@ -79,28 +93,45 @@ a:link, a:visited, a:hover, a:active {
       -webkit-animation: animateButtonArrow 0.5s;
       animation: animateButtonArrow 0.5s; }
 
-.blue-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-item-align: center;
   align-self: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 209px;
+  min-width: 209px;
   max-height: 86px;
-  padding: 1rem 0.5rem;
-  color: #ffffff;
+  margin: 0.5rem;
+  padding: 1rem 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 10px; }
+
+.button--blue {
+  color: #ffffff;
+  border: 1px solid #8db1ce;
   background-color: #8db1ce;
-  border: none;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s; }
-  .blue-button:hover {
+  .button--blue:link, .button--blue:visited, .button--blue:hover, .button--blue:active {
+    color: #ffffff; }
+  .button--blue:hover {
     background-color: #5d99b6; }
+
+.button--black-ghost {
+  color: #333333;
+  border: 1px solid #333333;
+  background-color: #ffffff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s; }
+  .button--black-ghost:link, .button--black-ghost:visited, .button--black-ghost:hover, .button--black-ghost:active {
+    color: #333333; }
+  .button--black-ghost:hover {
+    color: #000000;
+    border-color: #000000; }
 
 .page {
   margin-top: 60px; }
@@ -221,6 +252,7 @@ a:link, a:visited, a:hover, a:active {
     height: 100%;
     padding: 1rem 0.5rem;
     font-size: 16px;
+    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
     color: #333333; }
     @media (min-width: 768px) {
       .ns-nav .nav-item__link:hover + .nav-item__submenu {
@@ -234,7 +266,9 @@ a:link, a:visited, a:hover, a:active {
     left: 0;
     display: none;
     padding-bottom: 1rem;
-    background-color: rgba(255, 255, 255, 0.7); }
+    background-color: white;
+    -webkit-box-shadow: 0 8px 8px lightgrey;
+    box-shadow: 0 8px 8px lightgrey; }
     @media (min-width: 768px) {
       .ns-nav .nav-item__submenu:hover {
         display: block; } }
@@ -306,10 +340,8 @@ a:link, a:visited, a:hover, a:active {
   .ns-footer .footer-menu__link {
     padding: 0.5rem;
     color: #000000;
-    white-space: nowrap; }
-    @media (max-width: 870px) {
-      .ns-footer .footer-menu__link {
-        margin-right: 1rem; } }
+    white-space: nowrap;
+    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
     @media (min-width: 871px) {
       .ns-footer .footer-menu__link {
         margin-left: 1.5%; } }
@@ -363,9 +395,18 @@ a:link, a:visited, a:hover, a:active {
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg); }
 
-.ns-breadcrumb .link::after {
-  content: ' >';
-  padding: 0 0.5rem; }
+.ns-breadcrumb {
+  margin: 0.5rem 0;
+  font-size: 0.8rem; }
+  @media (max-width: 767px) {
+    .ns-breadcrumb {
+      display: none; } }
+  .ns-breadcrumb .link::after {
+    content: ' >';
+    position: relative;
+    top: -1px;
+    padding: 0 1rem;
+    color: #000000; }
 
 .ns-shop-section {
   background-color: #f8fafd;
@@ -384,7 +425,8 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
     .ns-shop-section .main-title .main-title__logo {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -420,7 +462,8 @@ a:link, a:visited, a:hover, a:active {
       padding: .5rem 1rem;
       margin-bottom: 1rem;
       border-left: 3px solid #d3dbd7;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
     .ns-shop-section .lists .list__link {
       display: block;
       color: #466455;
@@ -457,13 +500,16 @@ a:link, a:visited, a:hover, a:active {
     -ms-flex-pack: center;
     justify-content: center;
     color: white; }
-    @media (max-width: 767px) {
-      .ns-home .slider-container .slide .slide-content .slide-title {
-        font-size: 1.5rem; } }
-    @media (min-width: 768px) {
-      .ns-home .slider-container .slide .slide-content .slide-title {
-        font-size: 2.5rem; } }
+    .ns-home .slider-container .slide .slide-content .slide-title {
+      font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+      @media (max-width: 767px) {
+        .ns-home .slider-container .slide .slide-content .slide-title {
+          font-size: 1.5rem; } }
+      @media (min-width: 768px) {
+        .ns-home .slider-container .slide .slide-content .slide-title {
+          font-size: 2.5rem; } }
     .ns-home .slider-container .slide .slide-content .slide-description {
+      font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
       padding-top: 2rem;
       font-size: 1rem; }
 
@@ -481,6 +527,7 @@ a:link, a:visited, a:hover, a:active {
   background-color: #f8fafd; }
 
 .ns-home .main-title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   font-weight: normal;
   font-size: 2rem;
   margin-bottom: 2rem; }
@@ -545,7 +592,8 @@ a:link, a:visited, a:hover, a:active {
       .ns-home .pickup-item .image:first-child {
         margin-top: 1rem; } }
   .ns-home .pickup-item .description-head {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
   .ns-home .pickup-item .green-text {
     padding: 0.5rem 0;
     margin-bottom: 1rem;
@@ -704,7 +752,8 @@ a:link, a:visited, a:hover, a:active {
   line-height: 2rem;
   padding-left: .5rem;
   margin-bottom: 2rem;
-  border-left: 3px solid #d3dbd7; }
+  border-left: 3px solid #d3dbd7;
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
 
 .ns-home .news {
   max-width: 800px;
@@ -798,3 +847,212 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 15rem;
     flex: 0 0 15rem; }
+
+.ns-inquiry {
+  padding-bottom: 5rem; }
+  .ns-inquiry .inquiry-h1 {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #ebebeb; }
+  .ns-inquiry .inquiry-h2 {
+    padding: 2rem 0;
+    text-align: center; }
+  .ns-inquiry .form-status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2rem 0; }
+    .ns-inquiry .form-status .form-status__step {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 0.5rem 0;
+      color: #5d99b6;
+      border: 1px solid #8db1ce; }
+      @media (max-width: 767px) {
+        .ns-inquiry .form-status .form-status__step {
+          font-size: 0.8rem; }
+          .ns-inquiry .form-status .form-status__step:nth-child(2) {
+            margin: 0 0.7rem; } }
+      @media (min-width: 768px) {
+        .ns-inquiry .form-status .form-status__step {
+          font-size: 1rem; }
+          .ns-inquiry .form-status .form-status__step:nth-child(2) {
+            margin: 0 1.5rem; } }
+      .ns-inquiry .form-status .form-status__step.form-status__step--active {
+        font-weight: bold;
+        color: #ffffff;
+        border-color: #8db1ce;
+        background-color: #8db1ce; }
+      .ns-inquiry .form-status .form-status__step .top-text {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto; }
+      .ns-inquiry .form-status .form-status__step .bottom-text {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto; }
+  .ns-inquiry .required:after {
+    content: '*';
+    color: #e01111; }
+  .ns-inquiry .clickable {
+    cursor: pointer; }
+  .ns-inquiry .spacer {
+    padding: 0 0.5rem; }
+  .ns-inquiry .form {
+    max-width: 800px;
+    margin: 0 auto; }
+  .ns-inquiry .form__top-text {
+    margin-bottom: 2rem; }
+  .ns-inquiry .form__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem 0; }
+    @media (max-width: 767px) {
+      .ns-inquiry .form__row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    @media (min-width: 768px) {
+      .ns-inquiry .form__row {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+  @media (max-width: 767px) {
+    .ns-inquiry .form__row-left {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%;
+      text-align: left; } }
+  @media (min-width: 768px) {
+    .ns-inquiry .form__row-left {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+      flex: 0 1 40%;
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .ns-inquiry .form__row-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%;
+      margin: 0.5rem 0; } }
+  @media (min-width: 768px) {
+    .ns-inquiry .form__row-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+      flex: 0 1 60%; } }
+  .ns-inquiry .form__text-input {
+    width: 100%;
+    font-size: 1rem; }
+    @media (max-width: 767px) {
+      .ns-inquiry .form__text-input {
+        padding: 0.7rem 1rem; } }
+    @media (min-width: 768px) {
+      .ns-inquiry .form__text-input {
+        padding: 0.5rem 1rem; } }
+  @media (max-width: 767px) {
+    .ns-inquiry .form__row-output {
+      margin-left: 1rem; } }
+  .ns-inquiry .form__text-input--postal {
+    max-width: 8rem; }
+  .ns-inquiry .button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .ns-inquiry .go-to-first-view__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .ns-inquiry .go-to-first-view__button {
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #8db1ce; }
+    .ns-inquiry .go-to-first-view__button:hover {
+      background-color: #5d99b6;
+      font-weight: bold; }
+  @media (max-width: 767px) {
+    .ns-inquiry .complete-message {
+      margin: 2rem 0; } }
+  @media (min-width: 768px) {
+    .ns-inquiry .complete-message {
+      margin: 2rem; } }
+
+.ns-contact .contact-h2 {
+  padding: 2rem 0;
+  text-align: center; }
+
+.ns-contact .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem; }
+  @media (max-width: 767px) {
+    .ns-contact .inner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  @media (min-width: 768px) {
+    .ns-contact .inner {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+
+@media (max-width: 767px) {
+  .ns-contact .left {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%; } }
+
+@media (min-width: 768px) {
+  .ns-contact .left {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 60%;
+    flex: 0 1 60%; } }
+
+@media (max-width: 767px) {
+  .ns-contact .right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%; } }
+
+@media (min-width: 768px) {
+  .ns-contact .right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 40%;
+    flex: 0 1 40%; } }
+
+.ns-contact .call-link {
+  margin: 1rem; }
+
+.ns-contact .image {
+  width: 100%; }
+
+.ns-contact .button-container {
+  margin-bottom: 5rem;
+  text-align: center; }

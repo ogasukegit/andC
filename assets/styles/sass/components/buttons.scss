@@ -8,12 +8,19 @@
     }
   }
 
+  display: flex;
+  align-items: center;
   width: 268px;
   height: 70px;
   margin-left: 24px;
-  padding: 0.5rem;
-  padding-left: 84px;
+  padding: 0.5rem 0.5rem 0.5rem 84px;
+  font-size: 0.9rem;
+  font-family: arial;
   text-align: left;
+  color: #000000;
+  @include link {
+    color: #000000;
+  }
   background-color: #ffffff;
   border: 1px solid #d7d7d7;
   cursor: pointer;
@@ -39,21 +46,42 @@
   }
 }
 
-.blue-button {
-  display: flex;
+.button {
+  display: inline-flex;
   align-self: center;
   justify-content: center;
-  width: 209px;
+  min-width: 209px;
   max-height: 86px;
-  padding: 1rem 0.5rem;
-  color: #ffffff;
+  margin: 0.5rem;
+  padding: 1rem 1.5rem;
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px;
+}
+
+.button--blue {
+  color: #ffffff;
+  @include link {
+    color: #ffffff;
+  }
+  border: 1px solid $blueAccentLt;
   background-color: $blueAccentLt;
-  border: none;
   transition: background-color 0.2s;
   &:hover {
     background-color: $blueAccentDk;
+  }
+}
+
+.button--black-ghost {
+  color: #333333;
+  @include link {
+    color: #333333;
+  }
+  border: 1px solid #333333;
+  background-color: #ffffff;
+  transition: color 0.2s;
+  &:hover {
+    color: #000000;
+    border-color: #000000;
   }
 }

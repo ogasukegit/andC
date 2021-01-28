@@ -1,0 +1,42 @@
+.ns-contact {
+  .contact-h2 {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .inner {
+    display: flex;
+    @include sp-only {
+      flex-direction: column;
+    }
+    @include pc-only {
+      flex-direction: row;
+    }
+    margin-top: 2rem;
+  }
+  .left {
+    @include sp-only {
+      flex: 0 1 100%;
+    }
+    @include pc-only {
+      flex: 0 1 60%;
+    }
+  }
+  .right {
+    @include sp-only {
+      flex: 0 1 100%;
+    }
+    @include pc-only {
+      flex: 0 1 40%;
+    }
+  }
+  .call-link {
+    margin: 1rem;
+  }
+  .image {
+    width: 100%;
+  }
+  .button-container {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+}

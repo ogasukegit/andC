@@ -7,6 +7,7 @@ $navHeight: 60px;
 
 // colors
 
+$ltGray: #ebebeb;
 $blueAccentLt: #8db1ce;
 $blueAccentDk: #5d99b6;
 
@@ -20,6 +21,14 @@ $blueAccentDk: #5d99b6;
 }
 @mixin pc-only {
   @media (min-width: $breakpoint + 1) {
+    @content;
+  }
+}
+@mixin link {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
     @content;
   }
 }
@@ -40,10 +49,8 @@ div, p {
   margin: 0;
 }
 a {
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
+  @include link {
+    color: $blueAccentDk;
     text-decoration: none;
   }
 }
@@ -56,7 +63,7 @@ a {
   max-width: $layoutWidth;
   margin: 0 auto;
   @include sp-only {
-    padding: 0 10px;
+    padding: 0 1rem;
   }
 }
 
@@ -76,4 +83,11 @@ a {
   @include pc-only {
     display: none;
   }
+}
+
+.hiragino {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+}
+@mixin font-hiragino {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
 }
