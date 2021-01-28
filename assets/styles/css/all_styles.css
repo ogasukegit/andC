@@ -486,7 +486,7 @@ a:link, a:visited, a:hover, a:active {
       height: 120vw; } }
   @media (min-width: 768px) {
     .ns-home .slider-container .slide {
-      height: 40vw; } }
+      height: 50vw; } }
   .ns-home .slider-container .slide .slide-content {
     height: 100%;
     display: -webkit-box;
@@ -519,6 +519,14 @@ a:link, a:visited, a:hover, a:active {
 
 .ns-home .section--no-top-padding {
   padding-top: 0; }
+
+.ns-home .andc-background {
+  margin: 3rem 0;
+  padding: 0.5rem 0;
+  background-image: url("../../images/home/logo-background.png");
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .ns-home .brown-background {
   background-color: #f2f1ee; }
