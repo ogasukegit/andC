@@ -28,10 +28,10 @@
   <div class="layout">
     <h2 class="contact-h2">業務用（法人のお客様）</h2>
     <div class="button-container">
-      <button class="arrow-button" href="/inquiry">
+      <a href="/inquiry" class="button button--blue">
         業務用（法人のお客様）<br>
         ご注文・お問い合わせはこちら
-      </button>
+      </a>
     </div>
   </div>
 </div>

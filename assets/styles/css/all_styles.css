@@ -42,13 +42,20 @@ a:link, a:visited, a:hover, a:active {
   font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
 
 .arrow-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 268px;
   height: 70px;
   margin-left: 24px;
-  padding: 0.5rem;
-  padding-left: 84px;
+  padding: 0.5rem 0.5rem 0.5rem 84px;
   font-size: 0.9rem;
+  font-family: arial;
   text-align: left;
+  color: #000000;
   background-color: #ffffff;
   border: 1px solid #d7d7d7;
   cursor: pointer;
@@ -65,6 +72,8 @@ a:link, a:visited, a:hover, a:active {
     width: 0px; }
   100% {
     width: 82px; } }
+  .arrow-button:link, .arrow-button:visited, .arrow-button:hover, .arrow-button:active {
+    color: #000000; }
   .arrow-button::before {
     content: '';
     position: absolute;
@@ -85,18 +94,18 @@ a:link, a:visited, a:hover, a:active {
       animation: animateButtonArrow 0.5s; }
 
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-item-align: center;
   align-self: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 209px;
+  min-width: 209px;
   max-height: 86px;
   margin: 0.5rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px; }
