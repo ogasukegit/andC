@@ -107,6 +107,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 0.5rem;
   padding: 1rem 1.5rem;
   font-weight: bold;
+  background-color: #ffffff;
   cursor: pointer;
   border-radius: 10px; }
 
@@ -124,7 +125,6 @@ a:link, a:visited, a:hover, a:active {
 .button--black-ghost {
   color: #333333;
   border: 1px solid #333333;
-  background-color: #ffffff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s; }
   .button--black-ghost:link, .button--black-ghost:visited, .button--black-ghost:hover, .button--black-ghost:active {
@@ -132,6 +132,16 @@ a:link, a:visited, a:hover, a:active {
   .button--black-ghost:hover {
     color: #000000;
     border-color: #000000; }
+
+.button--disabled {
+  color: #bbbbbb;
+  border: 1px solid #bbbbbb;
+  cursor: not-allowed; }
+  .button--disabled:link, .button--disabled:visited, .button--disabled:hover, .button--disabled:active {
+    color: #bbbbbb; }
+  .button--disabled:hover {
+    color: #bbbbbb;
+    border-color: #bbbbbb; }
 
 .page {
   margin-top: 60px; }
