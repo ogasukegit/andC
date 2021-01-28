@@ -1,6 +1,5 @@
 <?php
   $displayOnPages = [
-    'home',
     'product',
   ];
 ?>
