@@ -494,9 +494,6 @@ a:link, a:visited, a:hover, a:active {
   font-weight: bold;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px; }
-  @media (max-width: 767px) {
-    .ns-contact-widget {
-      display: none; } }
   .ns-contact-widget .close-button {
     position: absolute;
     top: 6px;
@@ -828,8 +825,8 @@ a:link, a:visited, a:hover, a:active {
   .ns-home .news .news-item__date {
     padding-right: 1.5rem; }
 
-.ns-product .h1 {
-  color: #5d99b6; }
+.ns-product {
+  height: 100vh; }
 
 .ns-inquiry {
   padding-bottom: 5rem; }

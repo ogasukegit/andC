@@ -1,8 +1,4 @@
 .ns-contact-widget {
-  // 140 x 194
-  @include sp-only {
-    display: none;
-  }
   position: fixed;
   top: 50%;
   right: 0;
