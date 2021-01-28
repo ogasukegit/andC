@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Enter Title</title>
-  <meta name="description" content="Enter Meta Description">
-  <meta name="keywords" content="Enter Meta Keywords">
-  <link rel="shortcut icon" sizes="196x196" href="/assets/favicon.png">
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/favicon.png">
+  <!-- meta -->
+  <title><?= $metaData['title'] ?></title>
+  <meta name="description" content="<?= $metaData['description'] ?>">
+  <meta name="keywords" content="<?= $metaData['keywords'] ?>">
+  <!-- assets -->
   <link rel="stylesheet" type="text/css" href="../../assets/styles/css/all_styles.css">
-  <link rel="shortcut icon" sizes="196x196" href="<?= $imgPath ?>/shared/favicon.png">
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?= $imgPath ?>/shared/favicon.png">
+  <link rel="shortcut icon" sizes="196x196" href="../../assets/images/shared/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../assets/images/shared/favicon.png">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
