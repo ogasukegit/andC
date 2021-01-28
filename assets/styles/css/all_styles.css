@@ -85,18 +85,18 @@ a:link, a:visited, a:hover, a:active {
       animation: animateButtonArrow 0.5s; }
 
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-item-align: center;
   align-self: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 209px;
+  min-width: 209px;
   max-height: 86px;
   margin: 0.5rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px; }
