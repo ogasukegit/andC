@@ -38,6 +38,9 @@ a:link, a:visited, a:hover, a:active {
   .hide-pc {
     display: none; } }
 
+.hiragino {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+
 .arrow-button {
   width: 268px;
   height: 70px;
@@ -240,6 +243,7 @@ a:link, a:visited, a:hover, a:active {
     height: 100%;
     padding: 1rem 0.5rem;
     font-size: 16px;
+    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
     color: #333333; }
     @media (min-width: 768px) {
       .ns-nav .nav-item__link:hover + .nav-item__submenu {
@@ -327,7 +331,8 @@ a:link, a:visited, a:hover, a:active {
   .ns-footer .footer-menu__link {
     padding: 0.5rem;
     color: #000000;
-    white-space: nowrap; }
+    white-space: nowrap;
+    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
     @media (min-width: 871px) {
       .ns-footer .footer-menu__link {
         margin-left: 1.5%; } }
@@ -411,7 +416,8 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
     .ns-shop-section .main-title .main-title__logo {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -447,7 +453,8 @@ a:link, a:visited, a:hover, a:active {
       padding: .5rem 1rem;
       margin-bottom: 1rem;
       border-left: 3px solid #d3dbd7;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
     .ns-shop-section .lists .list__link {
       display: block;
       color: #466455;
@@ -484,13 +491,16 @@ a:link, a:visited, a:hover, a:active {
     -ms-flex-pack: center;
     justify-content: center;
     color: white; }
-    @media (max-width: 767px) {
-      .ns-home .slider-container .slide .slide-content .slide-title {
-        font-size: 1.5rem; } }
-    @media (min-width: 768px) {
-      .ns-home .slider-container .slide .slide-content .slide-title {
-        font-size: 2.5rem; } }
+    .ns-home .slider-container .slide .slide-content .slide-title {
+      font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+      @media (max-width: 767px) {
+        .ns-home .slider-container .slide .slide-content .slide-title {
+          font-size: 1.5rem; } }
+      @media (min-width: 768px) {
+        .ns-home .slider-container .slide .slide-content .slide-title {
+          font-size: 2.5rem; } }
     .ns-home .slider-container .slide .slide-content .slide-description {
+      font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
       padding-top: 2rem;
       font-size: 1rem; }
 
@@ -508,6 +518,7 @@ a:link, a:visited, a:hover, a:active {
   background-color: #f8fafd; }
 
 .ns-home .main-title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   font-weight: normal;
   font-size: 2rem;
   margin-bottom: 2rem; }
@@ -572,7 +583,8 @@ a:link, a:visited, a:hover, a:active {
       .ns-home .pickup-item .image:first-child {
         margin-top: 1rem; } }
   .ns-home .pickup-item .description-head {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
   .ns-home .pickup-item .green-text {
     padding: 0.5rem 0;
     margin-bottom: 1rem;
@@ -731,7 +743,8 @@ a:link, a:visited, a:hover, a:active {
   line-height: 2rem;
   padding-left: .5rem;
   margin-bottom: 2rem;
-  border-left: 3px solid #d3dbd7; }
+  border-left: 3px solid #d3dbd7;
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
 
 .ns-home .news {
   max-width: 800px;
