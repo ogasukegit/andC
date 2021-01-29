@@ -41,7 +41,7 @@ $products = [
     "link" => "/products/product6",
   ],
 ];
-$slide_images = [
+$slideImages = [
   "/product/oshare1.png",
   "/product/oshare2.png",
   "/product/oshare3.png",
@@ -168,20 +168,18 @@ $features = [
         場になじむ、 シンプルモダンなデザイン。 細部までこだわり長く使えるエアコン室外機カバーです。
       </p>
       <div class="product-slider">
-        <div class="product-slider__button" onClick="previousSlide()">
+        <div class="product-slider__button product-slider__button--left" onClick="previousSlide()">
           <div class="product-slider__icon product-slider__icon--left"></div>
         </div>
-        <div class="product-slider__image-container">
-          <?php foreach ($slide_images as $image) : ?>
-            <img class="product-slider__image" src=<?= $imgPath . $image ?>>
-          <?php endforeach ?>
+        <div class="product-slider__image-container" onClick="showModal()">
+          <img id="slide-image" class="product-slider__image">
         </div>
-        <div class="product-slider__button" onClick="nextSlide()">
+        <div class="product-slider__button product-slider__button--right" onClick="nextSlide()">
           <div class="product-slider__icon product-slider__icon--right"></div>
         </div>
       </div>
       <div class="sub-slides">
-        <?php foreach ($slide_images as $x => $image) : ?>
+        <?php foreach ($slideImages as $x => $image) : ?>
           <div class="sub-slide" onClick="changeSlide(<?= $x ?>)">
             <img class="sub-slide__img" src=<?= $imgPath . $image ?>>
           </div>
@@ -323,10 +321,19 @@ $features = [
       </div>
     </div>
   </div>
+  <div id="modal" class="modal">
+    <div class="modal__content">
+      <img id="modal-image" class="modal__image">
+    </div>
+  </div>
 </div>
 
 <script>
-  const slides = document.getElementsByClassName("product-slider__image");
+  const slideImages = <?= json_encode($slideImages) ?>;
+  const imgPath = <?= json_encode($imgPath) ?>;
+  const slider = document.getElementById("slide-image");
+  const modal = document.getElementById("modal");
+  const modalImage = document.getElementById("modal-image");
 
   let currentIndex = 0;
 
@@ -334,29 +341,32 @@ $features = [
 
   function changeSlide(x) {
     currentIndex = x;
-    Array.from(slides).forEach((slide, index) => {
-      slide.style.display = index === x ? "block" : "none";
-    })
+    slider.src = imgPath + slideImages[currentIndex];
   }
 
   function nextSlide() {
     currentIndex += 1;
-    if (currentIndex === slides.length) {
+    if (currentIndex === slideImages.length) {
       currentIndex = 0;
     }
-    Array.from(slides).forEach((slide, index) => {
-      slide.style.display = index === currentIndex ? "block" : "none";
-    })
+    changeSlide(currentIndex);
   }
 
   function previousSlide() {
     currentIndex -= 1;
     if (currentIndex === -1) {
-      currentIndex = slides.length - 1;
+      currentIndex = slideImages.length - 1;
     }
-    Array.from(slides).forEach((slide, index) => {
-      slide.style.display = index === currentIndex ? "block" : "none";
-    })
+    changeSlide(currentIndex);
+  }
+
+  function showModal() {
+    modal.style.display = "block";
+    modalImage.src = imgPath + slideImages[currentIndex];
+  }
+
+  modal.onclick = function(event) {
+    modal.style.display = "none";
   }
 </script>
 <?php include('../shared/foot.php'); ?>
