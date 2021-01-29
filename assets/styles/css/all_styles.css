@@ -626,11 +626,11 @@ a:link, a:visited, a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap-reverse;
-  flex-wrap: wrap-reverse; }
+  justify-content: center; }
   .ns-home .pickup-item .flex-child {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -655,8 +655,8 @@ a:link, a:visited, a:hover, a:active {
     .ns-home .pickup-item .image:first-child {
       margin-bottom: 1rem; }
     @media (max-width: 767px) {
-      .ns-home .pickup-item .image:first-child {
-        margin-top: 1rem; } }
+      .ns-home .pickup-item .image {
+        margin-bottom: 2rem; } }
   .ns-home .pickup-item .description-head {
     margin-bottom: 2rem;
     font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
