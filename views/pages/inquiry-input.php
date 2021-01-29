@@ -1,4 +1,6 @@
 <?php
+  $pageName = "inquiry-input";
+
   $metaData = [
     "title" => "商品注文・お問い合わせ｜業務用（法人のお客様）｜＆C－ブランドサイト",
     "description" => "＆Cの商品についてのご注文・お問い合わせはこちら。優れた樹脂コーティングをインテリアに。機能的で美しく。",
@@ -19,7 +21,7 @@
     <h2 class="inquiry-h2">入力内容</h2>
 
     <!-- change post destination to "/inquiry/confirm" -->
-    <form class="form" method="post" action="inquiry-confirm.php">
+    <form class="form" id="form" name="form" method="post" action="inquiry-confirm.php">
       <p class="form__top-text"><span class="required"></span>は必須項目となります。必ずご記入ください。</p>
       <div class="form__row">
         <div class="form__row-left">お問い合わせ項目</div>
@@ -102,13 +104,42 @@
       <div class="form__row">
         <div class="form__row-left">個人情報の取り扱い</div>
         <div class="form__row-right">
-          <label class="clickable"><input type="checkbox" id="personal-info" required>&nbsp;同意します</label>
+          <label class="clickable"><input type="checkbox" name="personal-info" required>&nbsp;同意します</label>
         </div>
       </div>
       <div class="button-wrapper">
-        <input class="button button--blue" type="submit" value="入力内容確認">
+        <input class="button button--disabled" id="submit-button" type="submit" value="入力内容確認">
       </div>
     </form>
 
+    <script type="text/javascript">
+      // display submit button as disabled if required inputs are not checked
+      const form = document.getElementById('form');
+      const submitButton = document.getElementById('submit-button');
+
+      function validateForm() {
+        if (
+          document.forms['form']['name-kanji'].value.length > 0 &&
+          document.forms['form']['name-kana'].value.length > 0 &&
+          document.forms['form']['organization-name'].value.length > 0 &&
+          document.forms['form']['department-name'].value.length > 0 &&
+          document.forms['form']['postal-code-1'].value.length > 0 &&
+          document.forms['form']['postal-code-2'].value.length > 0 &&
+          document.forms['form']['address'].value.length > 0 &&
+          document.forms['form']['phone'].value.length > 0 &&
+          document.forms['form']['email'].value.length > 0 &&
+          document.forms['form']['personal-info'].checked
+        ) {
+          submitButton.classList.remove('button--disabled');
+          submitButton.classList.add('button--blue');
+        } else {
+          submitButton.classList.remove('button--blue');
+          submitButton.classList.add('button--disabled');
+        }
+        return false;
+      }
+
+      form.addEventListener('change', validateForm);
+    </script>
   </div>
 <?php include './_inquiry-foot.php'; ?>

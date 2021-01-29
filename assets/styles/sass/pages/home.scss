@@ -10,7 +10,7 @@
         height: 120vw;
       }
       @include pc-only {
-        height: 40vw;
+        height: 50vw;
       }
 
       .slide-content {
@@ -48,7 +48,12 @@
   }
 
   .andc-background {
-
+    margin: 3rem 0;
+    padding: 0.5rem 0;
+    background-image: url('../../images/home/logo-background.png');
+    background-position: center right;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .brown-background {
