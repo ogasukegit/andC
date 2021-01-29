@@ -66,7 +66,7 @@
       </div>
     <?php endforeach ?>
   </div>
-  <div class="section andc-background">
+  <div class="section andc-background" style="background-image: url(<?= $imgPath ?>/home/logo-background.png)">
     <div class="layout">
       <h2 class="main-title txt-center">
         商品の素材感、美しさを体感してください
@@ -91,8 +91,8 @@
       </h2>
       <div class="pickup-item">
         <div class="flex-child">
-          <img class="image" src="/assets/images/home/pickup_item_1.png" alt="pickup_item_1">
-          <img class="image" src="/assets/images/home/pickup_item_2.png" alt="pickup_item_2">
+          <img class="image" src="<?= $imgPath ?>/home/pickup_item_1.png" alt="pickup_item_1">
+          <img class="image" src="<?= $imgPath ?>/home/pickup_item_2.png" alt="pickup_item_2">
         </div>
         <div class="flex-child">
           <h3 class="description-head">

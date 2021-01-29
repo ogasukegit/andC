@@ -76,12 +76,12 @@ a {
 
 .hide-sp {
   @include sp-only {
-    display: none;
+    display: none !important;
   }
 }
 .hide-pc {
   @include pc-only {
-    display: none;
+    display: none !important;
   }
 }
 

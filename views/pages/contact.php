@@ -21,7 +21,7 @@
         <p class="call-link hide-pc"><a href="tel:0120-999-999">0120-999-999</a></p>
       </div>
       <div class="right">
-        <img class="image" src="../../../assets/images/contact/placeholder.jpeg" alt="">
+        <img class="image" src="<?= $imgPath ?>/contact/mouse.jpeg" alt="">
       </div>
     </div>
     <h2 class="contact-h2">＆Cが買えるショップ</h2>
