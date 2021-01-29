@@ -1,9 +1,7 @@
 .ns-product {
-
   .product-layout {
     display: flex;
   }
-  
 
   .nav {
     flex: 0 0 15rem;
@@ -25,7 +23,6 @@
   }
 
   .product-main {
-    
   }
 
   .product-title {
@@ -147,7 +144,9 @@
     }
   }
 
-  .features {
+  .features-section {
+    margin-bottom: 3rem;
+
     .feature {
       display: flex;
       flex-wrap: wrap-reverse;
@@ -202,6 +201,30 @@
     }
 
     .feature__description {
+    }
+  }
+
+  .table-section {
+    max-width: 50rem;
+    margin: 0 auto 3rem auto;
+
+    .table {
+      border-collapse: collapse;
+      border: 1px solid black;
+    }
+
+    .table__cell {
+      width: 70%;
+      border: 1px solid black;
+      padding: 1rem;
+    }
+
+    .table__cell--header {
+      width: 30%;
+    }
+
+    .link {
+      text-decoration: underline;
     }
   }
 }

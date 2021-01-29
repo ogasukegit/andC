@@ -216,7 +216,7 @@ $features = [
           </div>
         </div>
       </div>
-      <div class="features">
+      <div class="features-section">
         <h2 class="middle__title txt-center">
           頑丈でサビや腐食に強い、室外機カバー
         </h2>
@@ -236,6 +236,90 @@ $features = [
             </div>
           </div>
         <?php endforeach ?>
+      </div>
+      <div class="table-section">
+        <h2 class="middle__title txt-center">
+          商品詳細
+        </h2>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th class="table__cell table__cell--header">商品名</th>
+              <td class="table__cell">エアコン室外機カバー</td>
+            </tr>
+            <tr>
+              <th rowspan="6">商品詳細</th>
+              <td class="table__cell">
+                <p class="txt-bold">サイズ</p>
+                <p>
+                  　(通常サイズ)<br>
+                  外寸　:約 W93×D38.5×H75cm<br>
+                  内寸　:約 W86.5xD35.5×H66cm<br>
+                  　(大型サイズ)<br>
+                  外寸　:約W106.5xD45.5×H94cm<br>
+                  内寸　:約W99.8×D42.5×H85cm
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__cell">
+                <p class="txt-bold">重量</p>
+                <p>
+                  (通常サイズ)　約10kg<br>
+                  (大型サイズ)　約15kg
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__cell">
+                <p class="txt-bold">天面パネル耐荷重</p>
+                <p>約10kg(全サイズ共通)</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__cell">
+                <p class="txt-bold">材質</p>
+                <p>
+                  本体 : スチール(PEコーティング)<br>
+                  ネジ ・ ガイドプレート:ステンレス<br>
+                  アジャスター : ポリアミド・スチール有色クロメート<br>
+                  結束バンド:ナイロン
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__cell">
+                <p class="txt-bold">付属品</p>
+                <p>結束バンド×2本</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__cell">
+                <p class="txt-bold">生産国</p>
+                <p>日本</p>
+              </td>
+            </tr>
+            <tr>
+              <th class="table__cell table__cell--header">備考</th>
+              <td class="table__cell">
+                <p>■組み立て式 : プラスドライバーをご用意ください。</p>
+                <p>【取扱説明書】 はこちら <a class="link" href="">(通常サイズ) (大型サイズ)</a></p>
+                <p>■天面には滑り止めやフチなどは付いておりません。 天面を棚としてご使用にな る場合は、上に載せる物の落下には十分ご注意ください。</p>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="product-buttons">
+        <a class="arrow-button" href="">
+          一般のお客様<br>
+          ご注文 ・ お問い合わせ
+        </a>
+        <a class="arrow-button" href="">
+          業務用(法人のお客様)<br>
+          ご注文 ・ お問い合わせ
+        </a>
       </div>
     </div>
   </div>
