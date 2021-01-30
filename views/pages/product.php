@@ -15,29 +15,53 @@ $breadcrumb = [
     "text" => "入力内容確認",
   ],
 ];
-$products = [
+$asideProducts = [
   [
     "text" => "室外機カバー",
     "link" => "/products/product1",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
     "link" => "/products/product2",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
     "link" => "/products/product3",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
     "link" => "/products/product4",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
     "link" => "/products/product5",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
+    "link" => "/products/product6",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product1",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product2",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product3",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product4",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product5",
+  ],
+  [
+    "text" => "室外機カバー",
     "link" => "/products/product6",
   ],
 ];
@@ -151,14 +175,9 @@ $features = [
       <p class="nav__title">
         PRODUCTS
       </p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
+      <?php foreach ($asideProducts as $product) : ?>
+        <p class="nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
+      <?php endforeach ?>
     </div>
     <div class="layout product-main">
       <?php include '../shared/breadcrumb.php'; ?>
