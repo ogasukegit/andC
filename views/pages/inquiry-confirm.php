@@ -12,7 +12,7 @@
   $breadcrumb = [
     [
       "link" => "/inquiry",
-      "text" => "業務用（法人の方）ご注文・お問い合わせ",
+      "text" => "法人のお客様お問い合わせフォーム",
     ],
     [
       "link" => false,
@@ -40,7 +40,7 @@
 
     <!-- change post destination (handle send and redirect to /inquiry/complete) -->
     <form class="form" method="post" action="inquiry-complete.php">
-      <p class="form__top-text">下記内容でお間違いありませんか？</p>
+      <p class="form__top-text txt-center">下記内容でお間違いありませんか？</p>
       <div class="form__row">
         <div class="form__row-left">お問い合わせ項目</div>
         <div class="form__row-right form__row-output"><?= $inquiryType ?></div>

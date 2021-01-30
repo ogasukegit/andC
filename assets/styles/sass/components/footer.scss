@@ -57,13 +57,13 @@
   }
 
   @mixin scrollToTopButtonSizing($size) {
-    top: -$size;
     width: $size;
     height: $size;
   }
   .scroll-to-top-button {
-    position: absolute;
+    position: fixed;
     right: 0;
+    bottom: 0;
     @include sp-only {
       @include scrollToTopButtonSizing(50px);
     }

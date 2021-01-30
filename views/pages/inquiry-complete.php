@@ -12,7 +12,7 @@
   $breadcrumb = [
     [
       "link" => "/inquiry",
-      "text" => "業務用（法人の方）ご注文・お問い合わせ",
+      "text" => "法人のお客様お問い合わせフォーム",
     ],
     [
       "link" => false,
