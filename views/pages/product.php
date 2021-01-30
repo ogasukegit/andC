@@ -244,7 +244,9 @@ $features = [
               <?php foreach ($feature["image"] as $image) : ?>
                 <div class="feature__image-block">
                   <img class="feature__image" src=<?= $imgPath . $image["src"] ?>>
-                  <p class="feature__description"><?= $image["caption"] ?></p>
+                  <?php if ($image["caption"]) : ?>
+                    <p class="feature__description"><?= $image["caption"] ?></p>
+                  <?php endif ?>
                 </div>
               <?php endforeach ?>
             </div>
