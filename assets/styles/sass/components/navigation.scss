@@ -44,13 +44,14 @@
       top: $navHeight;
       right: 0;
       padding: 0 1rem;
-      background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1));
+      background-color: rgba(255, 255, 255, 1);
       transition: height 0.2s;
       overflow: hidden;
       height: 0;
       &.open {
         height: 230px;
         z-index: 99;
+        box-shadow: -1px 5px 5px rgba(0,0,0,0.2);
       }
     }
     @include pc-only {

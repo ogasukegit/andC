@@ -55,6 +55,8 @@
     }
   }
   .clickable {
+    line-height: 2;
+    white-space: nowrap;
     cursor: pointer;
   }
   .spacer {
@@ -118,6 +120,12 @@
   .button-wrapper {
     display: flex;
     justify-content: center;
+    @include sp-only {
+      padding-top: 1rem;
+    }
+    @include pc-only {
+      padding-top: 2rem;
+    }
   }
   .go-to-first-view__wrapper {
     display: flex;

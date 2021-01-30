@@ -12,20 +12,21 @@
   $breadcrumb = [
     [
       "link" => false,
-      "text" => "業務用（法人の方）ご注文・お問い合わせ",
+      "text" => "法人のお客様お問い合わせフォーム",
     ],
   ];
 ?>
 <?php include './_inquiry-head.php'; ?>
   <div class="layout">
     <h2 class="inquiry-h2">入力内容</h2>
-
     <!-- change post destination to "/inquiry/confirm" -->
     <form class="form" id="form" name="form" method="post" action="inquiry-confirm.php">
-      <p class="form__top-text"><span class="required"></span>は必須項目となります。必ずご記入ください。</p>
+      <p class="form__top-text txt-center"><span class="required"></span>は必須項目となります。必ずご記入ください。</p>
       <div class="form__row">
         <div class="form__row-left">お問い合わせ項目</div>
         <div class="form__row-right">
+          <label class="clickable"><input type="radio" name="inquiry-type" value="お見積のご用命">お見積のご用命</label>
+          <span class="spacer"></span>
           <label class="clickable"><input type="radio" name="inquiry-type" value="お問い合わせ">お問い合わせ</label>
           <span class="spacer"></span>
           <label class="clickable"><input type="radio" name="inquiry-type" value="その他">その他</label>
@@ -100,7 +101,7 @@
         </div>
       </div>
       <h2 class="inquiry-h2">個人情報の取り扱い</h2>
-      <p>個人情報の取り扱いについて、詳しくは弊社の<a href="https://www.imcjpn.co.jp/policy/">プライバシーポリシー</a>をご覧ください。</p>
+      <p class="txt-center">個人情報の取り扱いについて、詳しくは弊社の<a href="https://www.imcjpn.co.jp/policy/" target="_blank">プライバシーポリシー</a>をご覧ください。</p>
       <div class="form__row">
         <div class="form__row-left">個人情報の取り扱い</div>
         <div class="form__row-right">

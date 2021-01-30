@@ -145,6 +145,7 @@ $features = [
 
 <?php include('../shared/head.php'); ?>
 <div class="ns-product page">
+  <?php include('../shared/navigation.php'); ?>
   <div class="product-layout">
     <div class="nav hide-sp">
       <p class="nav__title">

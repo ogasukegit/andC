@@ -47,17 +47,22 @@
 }
 
 .button {
+  -webkit-appearance: none;
+  flex: 0 1 auto;
   display: inline-flex;
+  align-items: center;
   align-self: center;
   justify-content: center;
-  min-width: 209px;
-  max-height: 86px;
+  text-align: center;
   margin: 0.5rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 16px;
   font-weight: bold;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 10px;
+  border: none;
+  transition:  color 0.2s, background-color 0.5s;
 }
 
 .button--blue {
@@ -67,7 +72,6 @@
   }
   border: 1px solid $blueAccentLt;
   background-color: $blueAccentLt;
-  transition: background-color 0.2s;
   &:hover {
     background-color: $blueAccentDk;
   }
@@ -79,10 +83,11 @@
     color: #333333;
   }
   border: 1px solid #333333;
-  transition: color 0.2s;
+  background-color: #ffffff;
   &:hover {
     color: #000000;
     border-color: #000000;
+    background-color: $ltGray;
   }
 }
 
