@@ -11,6 +11,7 @@
 
 <?php include '../shared/head.php'; ?>
 <div class="ns-inquiry page">
+  <?php include('../shared/navigation.php'); ?>
   <h1 class="inquiry-h1">法人のお客様<br/>お問い合わせフォーム</h1>
   <div class="layout">
     <?php include '../shared/breadcrumb.php'; ?>

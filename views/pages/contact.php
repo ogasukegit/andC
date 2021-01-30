@@ -10,6 +10,7 @@
 
 <?php include('../shared/head.php'); ?>
 <div class="ns-contact page">
+  <?php include('../shared/navigation.php'); ?>
   <div class="layout">
     <h2 class="contact-h2">一般のお客様</h2>
     <p>商品のお問い合わせについては、下記フリーダイヤルより、お願いいたします。</p>
