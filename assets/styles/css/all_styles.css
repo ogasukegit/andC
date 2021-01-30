@@ -94,22 +94,30 @@ a:link, a:visited, a:hover, a:active {
       animation: animateButtonArrow 0.5s; }
 
 .button {
+  -webkit-appearance: none;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-item-align: center;
   align-self: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-width: 209px;
-  max-height: 86px;
+  text-align: center;
   margin: 0.5rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 16px;
   font-weight: bold;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 10px;
+  border: none;
   -webkit-transition: color 0.2s, background-color 0.5s;
   transition: color 0.2s, background-color 0.5s; }
 
