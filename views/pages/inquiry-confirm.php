@@ -44,51 +44,51 @@
         <tbody>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">お問い合わせ項目</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $inquiryType ?></td>
+            <td class="confirm-form__cell"><?= $inquiryType ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">商品名</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $productName ?></td>
+            <td class="confirm-form__cell"><?= $productName ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">氏名</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $nameKanji ?></td>
+            <td class="confirm-form__cell"><?= $nameKanji ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">氏名 よみがな</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $nameKana ?></td>
+            <td class="confirm-form__cell"><?= $nameKana ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">会社or団体名</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $organizationName ?></td>
+            <td class="confirm-form__cell"><?= $organizationName ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">部署名</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $departmentName ?></td>
+            <td class="confirm-form__cell"><?= $departmentName ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">郵便番号</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $postalCode1 ?>-<?= $postalCode2 ?></td>
+            <td class="confirm-form__cell"><?= $postalCode1 ?>-<?= $postalCode2 ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">住所</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $address ?></td>
+            <td class="confirm-form__cell"><?= $address ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">お電話番号</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $phone ?></td>
+            <td class="confirm-form__cell"><?= $phone ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">メールアドレス</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $email ?></td>
+            <td class="confirm-form__cell"><?= $email ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">FAX</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $fax ?></td>
+            <td class="confirm-form__cell"><?= $fax ?></td>
           </div>
           <tr class="confirm-form__row">
             <td class="confirm-form__cell confirm-form__cell--left">お問い合わせ内容</td>
-            <td class="confirm-form__cell confirm-form__cell--right"><?= $message ?></td>
+            <td class="confirm-form__cell"><?= $message ?></td>
           </div>
         </tbody>
       </table>
