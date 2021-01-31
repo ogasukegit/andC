@@ -33,5 +33,12 @@
         <a class="list__link" href="">店舗名が入ります</a>
       </div>
     </div>
+    <?php if ($pageName != 'home') : ?>
+      <div class="button-container">
+        <a class="arrow-button" href="/">
+          &C トップへ
+        </a>
+      </div>
+    <?php endif ?>
   </div>
 </div>
