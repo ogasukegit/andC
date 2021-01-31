@@ -5,7 +5,7 @@
 ?>
 
 <?php if (in_array($pageName, $displayOnPages)): ?>
-  <div class="ns-contact-widget hide-sp" id="ns-contact-widget">
+  <div class="ns-contact-widget" id="ns-contact-widget">
     <span class="close-button" id="close-button"></span>
     <p>ご注文・<br/>お問い合わせ</p>
     <a href="/contact" class="link-button">一般のお客様</a>
