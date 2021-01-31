@@ -50,7 +50,7 @@ a:link, a:visited, a:hover, a:active {
   align-items: center;
   width: 268px;
   height: 70px;
-  margin-left: 24px;
+  margin: 0.5rem 0.5rem 0.5rem 32px;
   padding: 0.5rem 0.5rem 0.5rem 84px;
   font-size: 0.9rem;
   font-family: arial;
@@ -985,7 +985,7 @@ a:link, a:visited, a:hover, a:active {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
   @media (max-width: 767px) {
     .ns-product .sub-slides {
       width: 100%; } }
@@ -1010,8 +1010,13 @@ a:link, a:visited, a:hover, a:active {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: 2rem; }
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .ns-product .product-buttons {
+      margin-bottom: 2rem; } }
+  @media (min-width: 768px) {
+    .ns-product .product-buttons {
+      margin-bottom: 3rem; } }
 
 .ns-product .middle__title {
   margin-bottom: 2rem; }
@@ -1058,7 +1063,7 @@ a:link, a:visited, a:hover, a:active {
         padding: 1rem 10%; } }
     @media (max-width: 767px) {
       .ns-product .features-section .feature {
-        padding: 1rem; } }
+        padding: 1rem 0; } }
   .ns-product .features-section .feature__images {
     margin: 0 auto; }
     @media (max-width: 767px) {
@@ -1095,7 +1100,13 @@ a:link, a:visited, a:hover, a:active {
 
 .ns-product .table-section {
   max-width: 50rem;
-  margin: 0 auto 3rem auto; }
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .ns-product .table-section {
+      margin-bottom: 1.5rem; } }
+  @media (min-width: 768px) {
+    .ns-product .table-section {
+      margin-bottom: 3rem; } }
   .ns-product .table-section .table {
     border-collapse: collapse;
     border: 1px solid black; }

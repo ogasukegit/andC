@@ -130,7 +130,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     @include sp-only {
       width: 100%;
@@ -156,7 +156,12 @@
     flex-wrap: wrap;
     max-width: 700px;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    @include sp-only {
+      margin-bottom: 2rem;
+    }
+    @include pc-only {
+      margin-bottom: 3rem;
+    }
   }
 
   .middle__title {
@@ -200,7 +205,7 @@
         padding: 1rem 10%;
       }
       @include sp-only {
-        padding: 1rem;
+        padding: 1rem 0;
       }
     }
 
@@ -251,7 +256,13 @@
 
   .table-section {
     max-width: 50rem;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto;
+    @include sp-only {
+      margin-bottom: 1.5rem;
+    }
+    @include pc-only {
+      margin-bottom: 3rem;
+    }
 
     .table {
       border-collapse: collapse;
