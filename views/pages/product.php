@@ -172,12 +172,14 @@ $features = [
   <?php include('../shared/navigation.php'); ?>
   <div class="product-layout">
     <div class="nav hide-sp">
-      <p class="nav__title">
-        PRODUCTS
-      </p>
-      <?php foreach ($asideProducts as $product) : ?>
-        <p class="nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
-      <?php endforeach ?>
+      <div class="nav__inner">
+        <p class="nav__title">
+          PRODUCTS
+        </p>
+        <?php foreach ($asideProducts as $product) : ?>
+          <p class="nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
+        <?php endforeach ?>
+      </div>
     </div>
     <div class="layout product-main">
       <?php include '../shared/breadcrumb.php'; ?>
