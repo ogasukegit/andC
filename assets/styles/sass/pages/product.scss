@@ -182,6 +182,8 @@
       padding: 1rem;
       @include sp-only {
         flex: 0 1 100%;
+        max-width: 450px;
+        margin: 0 auto;
       }
       @include pc-only {
         flex: 0 1 50%;
