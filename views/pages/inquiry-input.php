@@ -65,9 +65,15 @@
       <div class="form__row">
         <div class="form__row-left required">郵便番号</div>
         <div class="form__row-right">
-          <input type="number" name="postal-code-1" minlength="3" maxlength="3" class="form__text-input form__text-input--postal" required>
+          <input type="text" name="postal-code-1" class="form__text-input form__text-input--postal"
+            minlength="3" maxlength="3" required
+            onKeyUp="AjaxZip3.zip2addr('postal-code-1','postal-code-2','address','address');"
+          >
           <span class="spacer">-</span>
-          <input type="number" name="postal-code-2" minlength="4" maxlength="4" class="form__text-input form__text-input--postal" required>
+          <input type="text" name="postal-code-2" class="form__text-input form__text-input--postal"
+            minlength="4" maxlength="4" required
+            onKeyUp="AjaxZip3.zip2addr('postal-code-1','postal-code-2','address','address');"
+          >
         </div>
       </div>
       <div class="form__row">
@@ -113,34 +119,36 @@
       </div>
     </form>
 
-    <script type="text/javascript">
-      // display submit button as disabled if required inputs are not checked
-      const form = document.getElementById('form');
-      const submitButton = document.getElementById('submit-button');
-
-      function validateForm() {
-        if (
-          document.forms['form']['name-kanji'].value.length > 0 &&
-          document.forms['form']['name-kana'].value.length > 0 &&
-          document.forms['form']['organization-name'].value.length > 0 &&
-          document.forms['form']['department-name'].value.length > 0 &&
-          document.forms['form']['postal-code-1'].value.length > 0 &&
-          document.forms['form']['postal-code-2'].value.length > 0 &&
-          document.forms['form']['address'].value.length > 0 &&
-          document.forms['form']['phone'].value.length > 0 &&
-          document.forms['form']['email'].value.length > 0 &&
-          document.forms['form']['personal-info'].checked
-        ) {
-          submitButton.classList.remove('button--disabled');
-          submitButton.classList.add('button--blue');
-        } else {
-          submitButton.classList.remove('button--blue');
-          submitButton.classList.add('button--disabled');
-        }
-        return false;
-      }
-
-      form.addEventListener('change', validateForm);
-    </script>
   </div>
+  <script type="text/javascript">
+    // display submit button as disabled if required inputs are not checked
+    const form = document.getElementById('form');
+    const submitButton = document.getElementById('submit-button');
+
+    function validateForm() {
+      if (
+        document.forms['form']['name-kanji'].value.length > 0 &&
+        document.forms['form']['name-kana'].value.length > 0 &&
+        document.forms['form']['organization-name'].value.length > 0 &&
+        document.forms['form']['department-name'].value.length > 0 &&
+        document.forms['form']['postal-code-1'].value.length > 0 &&
+        document.forms['form']['postal-code-2'].value.length > 0 &&
+        document.forms['form']['address'].value.length > 0 &&
+        document.forms['form']['phone'].value.length > 0 &&
+        document.forms['form']['email'].value.length > 0 &&
+        document.forms['form']['personal-info'].checked
+      ) {
+        submitButton.classList.remove('button--disabled');
+        submitButton.classList.add('button--blue');
+      } else {
+        submitButton.classList.remove('button--blue');
+        submitButton.classList.add('button--disabled');
+      }
+      return false;
+    }
+
+    form.addEventListener('change', validateForm);
+  </script>
+  <!-- address lookup by zip api -->
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 <?php include './_inquiry-foot.php'; ?>
