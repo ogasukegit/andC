@@ -15,29 +15,53 @@ $breadcrumb = [
     "text" => "入力内容確認",
   ],
 ];
-$products = [
+$asideProducts = [
   [
     "text" => "室外機カバー",
     "link" => "/products/product1",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
     "link" => "/products/product2",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
     "link" => "/products/product3",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
     "link" => "/products/product4",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
     "link" => "/products/product5",
   ],
   [
-    "text" => "商品名を追加",
+    "text" => "室外機カバー",
+    "link" => "/products/product6",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product1",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product2",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product3",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product4",
+  ],
+  [
+    "text" => "室外機カバー",
+    "link" => "/products/product5",
+  ],
+  [
+    "text" => "室外機カバー",
     "link" => "/products/product6",
   ],
 ];
@@ -148,17 +172,14 @@ $features = [
   <?php include('../shared/navigation.php'); ?>
   <div class="product-layout">
     <div class="nav hide-sp">
-      <p class="nav__title">
-        PRODUCTS
-      </p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
-      <p class="nav__item">―室外機カバー</p>
+      <div class="nav__inner">
+        <p class="nav__title">
+          PRODUCTS
+        </p>
+        <?php foreach ($asideProducts as $product) : ?>
+          <p class="nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
+        <?php endforeach ?>
+      </div>
     </div>
     <div class="layout product-main">
       <?php include '../shared/breadcrumb.php'; ?>
@@ -225,7 +246,9 @@ $features = [
               <?php foreach ($feature["image"] as $image) : ?>
                 <div class="feature__image-block">
                   <img class="feature__image" src=<?= $imgPath . $image["src"] ?>>
-                  <p class="feature__description"><?= $image["caption"] ?></p>
+                  <?php if ($image["caption"]) : ?>
+                    <p class="feature__description"><?= $image["caption"] ?></p>
+                  <?php endif ?>
                 </div>
               <?php endforeach ?>
             </div>

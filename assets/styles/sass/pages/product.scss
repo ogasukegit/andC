@@ -2,27 +2,58 @@
   .product-layout {
     display: flex;
   }
+  
+  $asideWidth: 240px;
 
   .nav {
-    flex: 0 0 15rem;
-    height: 100%;
-    padding: 2rem 2rem 2rem 4rem;
-    background-color: #f2f1ee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: $navHeight 2rem 0 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  // hide scrollbar IE and Edge
+    scrollbar-width: none;  // hide scrollbar Firefox
+    &::-webkit-scrollbar {
+      display: none; // hide scrollbar Chrome
+    }
+    @media (max-width: + 2 * $asideWidth $layoutWidth) {
+      width: $asideWidth;
+    }
+    @media (min-width: + 2 * $asideWidth $layoutWidth + 1) {
+      width: calc(50vw - 500px);
+    }
+
+    .nav__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 0 2rem 3rem;
+      background-color: #f2f1ee;
+    }
 
     .nav__title {
-      display: block;
       width: 100%;
+      max-width: $asideWidth - 64px;
       padding: 2rem 0;
       border-bottom: 1px solid black;
       font-size: 1.5rem;
     }
 
     .nav__item {
+      width: 100%;
+      max-width: $asideWidth - 64px;
       padding-top: 2rem;
     }
+
   }
 
   .product-main {
+    @media (max-width: 2 * $asideWidth + $layoutWidth) and (min-width: $breakpoint + 1) {
+      width: calc(50vw + 500px - #{$asideWidth});
+      margin-left: $asideWidth;
+      margin-right: auto;
+    }
   }
 
   .product-title {
@@ -99,7 +130,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     @include sp-only {
       width: 100%;
@@ -125,7 +156,12 @@
     flex-wrap: wrap;
     max-width: 700px;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    @include sp-only {
+      margin-bottom: 2rem;
+    }
+    @include pc-only {
+      margin-bottom: 3rem;
+    }
   }
 
   .middle__title {
@@ -169,7 +205,7 @@
         padding: 1rem 10%;
       }
       @include sp-only {
-        padding: 1rem;
+        padding: 1rem 0;
       }
     }
 
@@ -220,7 +256,13 @@
 
   .table-section {
     max-width: 50rem;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto;
+    @include sp-only {
+      margin-bottom: 1.5rem;
+    }
+    @include pc-only {
+      margin-bottom: 3rem;
+    }
 
     .table {
       border-collapse: collapse;

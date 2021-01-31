@@ -1,5 +1,5 @@
 <?php
-  $products = [
+  $navProducts = [
     [
       "text" => "エアコン室外機カバー",
       "url" => "/products/product1",
@@ -29,7 +29,7 @@
         <div class="nav-item">
           <a class="nav-item__link" href="products">PRODUCTS</a>
           <span class="nav-item__submenu">
-            <?php foreach ($products as $product): ?>
+            <?php foreach ($navProducts as $product): ?>
               <a class="nav-item__submenu-link" href="<?= $product['url'] ?>"><?= $product['text'] ?></a>
             <?php endforeach; ?>
           </span>
