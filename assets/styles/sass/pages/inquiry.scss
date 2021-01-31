@@ -62,43 +62,6 @@
   .spacer {
     padding: 0 0.5rem;
   }
-  .form {
-    max-width: 800px;
-    margin: 0 auto;
-    // font-size: 1.1rem;
-  }
-  .form__top-text {
-    margin-bottom: 2rem;
-  }
-  .form__row {
-    display: flex;
-    @include sp-only {
-      flex-direction: column;
-    }
-    @include pc-only {
-      flex-direction: row;
-    }
-    margin: 1rem 0;
-  }
-  .form__row-left {
-    @include sp-only {
-      flex: 0 1 100%;
-      text-align: left;
-    }
-    @include pc-only {
-      flex: 0 1 40%;
-      text-align: center;
-    }
-  }
-  .form__row-right {
-    @include sp-only {
-      flex: 0 1 100%;
-      margin: 0.5rem 0;
-    }
-    @include pc-only {
-      flex: 0 1 60%;
-    }
-  }
   .form__text-input {
     width: 100%;
     font-size: 1rem;
@@ -109,13 +72,29 @@
       padding: 0.5rem 1rem;
     }
   }
-  .form__row-output {
-    @include sp-only {
-      margin-left: 1rem;
-    }
-  }
   .form__text-input--postal {
     max-width: 8rem;
+  }
+  .form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .confirm-form__table {
+    margin: 2rem auto 0;
+  }
+  .confirm-form__top-text {
+    margin-bottom: 2rem;
+  }
+  .confirm-form__cell {
+    @include sp-only {
+      padding: 4px 1rem 4px 0;
+    }
+    @include pc-only {
+      padding: 4px 1rem;
+    }
+  }
+  .confirm-form__cell--left {
+    white-space: nowrap;
   }
   .button-wrapper {
     display: flex;
