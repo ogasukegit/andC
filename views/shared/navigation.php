@@ -18,10 +18,10 @@
 <div class="ns-nav">
   <div class="layout">
     <div class="nav-wrapper">
-      <div class="nav-left">
-        <a href="/"><img class="nav-left__logo" src="<?= $imgPath ?>/shared/logo.png" alt="andC logo"></a>
+      <h1 class="nav-left">
+        <a href="/"><img class="nav-left__logo" src="<?= $imgPath ?>/shared/logo_lg.png" alt="andC logo"></a>
         <span class="nav-left__text">庭と家との調和</span>
-      </div>
+      </h1>
       <div class="nav-menu" id="nav-menu">
         <div class="nav-item">
           <a class="nav-item__link" href="/">TOP</a>
