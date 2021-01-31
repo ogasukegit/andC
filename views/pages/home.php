@@ -1,13 +1,17 @@
 <?php
+  // required page data
   $pageName = "home";
-
   $metaData = [
     "title" => "＆C｜ブランドサイト―優れた樹脂コーティングをエクステリアに。機能的で美しく。",
     "description" => "樹脂コーティングのパイオニアとして、金属と樹脂の技術を融合・応用した商品をお客様にお届けいたします。商品の素材感・美しさをぜひ体感してください。",
     "keywords" => "",
   ];
 
-  $slides = ["/home/top_image_1.png", "/home/top_image_2.png"];
+  // temporary data
+  $slides = [
+    "/home/top_image_1.png",
+    "/home/top_image_2.png"
+  ];
   $lineup_articles = [
     [
       "Image" => "/home/lineup_1.png",
@@ -38,7 +42,7 @@
       "Date" => "2021.12.1",
       "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
     ]
-  ]
+  ];
 ?>
 
 <?php include('../shared/head.php'); ?>

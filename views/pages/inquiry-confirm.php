@@ -1,4 +1,5 @@
 <?php
+  // required page data
   $pageName = "inquiry-confirm";
 
   $metaData = [
@@ -20,6 +21,7 @@
     ],
   ];
 
+  // retrieve post data
   $inquiryType = $_POST["inquiry-type"];
   $productName = $_POST["product-name"];
   $nameKanji = $_POST["name-kanji"];
@@ -38,7 +40,7 @@
   <div class="layout">
     <h2 class="inquiry-h2">入力内容確認</h2>
     <p class="confirm-form__top-text txt-center">下記内容でお間違いありませんか？</p>
-    <!-- change post destination (handle send and redirect to /inquiry/complete) -->
+    <!-- TODO: change post destination and redirect to /inquiry/complete -->
     <form class="form confirm-form" method="post" action="inquiry-complete.php">
       <table class="confirm-form__table">
         <tbody>

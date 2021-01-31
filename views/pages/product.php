@@ -1,4 +1,5 @@
 <?php
+// required page data
 $pageName = "product";
 $metaData = [
   "title" => "シンプルで長く使える室外機カバー（白・茶）｜業務用・一般用｜＆C－ブランドサイト",
@@ -15,6 +16,8 @@ $breadcrumb = [
     "text" => "入力内容確認",
   ],
 ];
+
+// temporary data
 $asideProducts = [
   [
     "text" => "室外機カバー",
@@ -164,7 +167,7 @@ $features = [
     ]
   ],
 
-]
+];
 ?>
 
 <?php include('../shared/head.php'); ?>

@@ -1,4 +1,5 @@
 <?php
+  // required page data
   $pageName = "contact";
 
   $metaData = [

@@ -1,4 +1,5 @@
 <?php
+  // required page data
   $pageName = "inquiry-input";
 
   $metaData = [
@@ -19,7 +20,7 @@
 <?php include './_inquiry-head.php'; ?>
   <div class="layout">
     <h2 class="inquiry-h2">入力内容</h2>
-    <!-- change post destination to "/inquiry/confirm" -->
+    <!-- TODO: change post destination to "/inquiry/confirm" -->
     <form class="form" id="form" name="form" method="post" action="inquiry-confirm.php">
       <p class="form__top-text txt-center"><span class="required"></span>は必須項目となります。必ずご記入ください。</p>
       <div class="form__row">
