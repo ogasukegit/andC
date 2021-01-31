@@ -1036,26 +1036,28 @@ a:link, a:visited, a:hover, a:active {
 
 .ns-product .fashion {
   background-color: #f8fafd;
-  margin-bottom: 2rem;
-  padding: 2rem; }
+  margin-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .ns-product .fashion {
+      padding: 2rem; } }
   .ns-product .fashion .fashion-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .ns-product .fashion .fashion-block__img-container {
-    padding: 1rem; }
-    @media (max-width: 767px) {
-      .ns-product .fashion .fashion-block__img-container {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-        flex: 0 1 100%; } }
-    @media (min-width: 768px) {
-      .ns-product .fashion .fashion-block__img-container {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-        flex: 0 1 50%; } }
+  @media (max-width: 767px) {
+    .ns-product .fashion .fashion-block__img-container {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%;
+      padding-bottom: 1rem; } }
+  @media (min-width: 768px) {
+    .ns-product .fashion .fashion-block__img-container {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+      flex: 0 1 50%;
+      padding: 1rem; } }
   .ns-product .fashion .fashion-block__img {
     width: 100%;
     height: 100%; }
