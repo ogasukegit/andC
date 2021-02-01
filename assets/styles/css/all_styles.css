@@ -1,9 +1,55 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../../fonts/NotoSerifJP-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../../fonts/NotoSerifJP-Bold.otf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("../../fonts/NotoSansJP-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("../../fonts/NotoSansJP-Bold.otf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../../fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../../fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+
+.font-noto-serif {
+  font-family: "NotoSerif", "Times New Roman", serif; }
+
+.font-noto-sans {
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
+.font-roboto {
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 1.7;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
 
 body {
   margin: 0; }
@@ -39,9 +85,6 @@ a:link, a:visited, a:hover, a:active {
 @media (min-width: 768px) {
   .hide-pc {
     display: none !important; } }
-
-.hiragino {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
 
 .arrow-button {
   display: -webkit-box;
@@ -275,7 +318,7 @@ a:link, a:visited, a:hover, a:active {
     height: 100%;
     padding: 1rem 0.5rem;
     font-size: 16px;
-    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+    font-family: "NotoSerif", "Times New Roman", serif;
     color: #333333; }
     @media (min-width: 768px) {
       .ns-nav .nav-item__link:hover + .nav-item__submenu {
@@ -364,7 +407,7 @@ a:link, a:visited, a:hover, a:active {
     padding: 0.5rem;
     color: #000000;
     white-space: nowrap;
-    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+    font-family: "NotoSerif", "Times New Roman", serif; }
     @media (min-width: 871px) {
       .ns-footer .footer-menu__link {
         margin-left: 1.5%; } }
@@ -448,7 +491,7 @@ a:link, a:visited, a:hover, a:active {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 1.5rem;
-    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+    font-family: "NotoSerif", "Times New Roman", serif; }
     .ns-shop-section .main-title .main-title__logo {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -485,7 +528,7 @@ a:link, a:visited, a:hover, a:active {
       margin-bottom: 1rem;
       border-left: 3px solid #d3dbd7;
       font-size: 1.5rem;
-      font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+      font-family: "NotoSerif", "Times New Roman", serif; }
     .ns-shop-section .lists .list__link {
       display: block;
       color: #466455;
@@ -605,7 +648,7 @@ a:link, a:visited, a:hover, a:active {
       justify-content: center;
       color: white; }
       .ns-home .slider-container .slide .slide-content .slide-title {
-        font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+        font-family: "NotoSerif", "Times New Roman", serif; }
         @media (max-width: 767px) {
           .ns-home .slider-container .slide .slide-content .slide-title {
             font-size: 1.5rem; } }
@@ -613,7 +656,7 @@ a:link, a:visited, a:hover, a:active {
           .ns-home .slider-container .slide .slide-content .slide-title {
             font-size: 2.5rem; } }
       .ns-home .slider-container .slide .slide-content .slide-description {
-        font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+        font-family: "NotoSerif", "Times New Roman", serif;
         padding-top: 2rem;
         font-size: 1rem; }
   .ns-home .slider-container .fade1 {
@@ -738,7 +781,7 @@ a:link, a:visited, a:hover, a:active {
   background-color: #f8fafd; }
 
 .ns-home .main-title {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+  font-family: "NotoSerif", "Times New Roman", serif;
   font-weight: normal;
   font-size: 2rem;
   margin-bottom: 2rem; }
@@ -801,7 +844,7 @@ a:link, a:visited, a:hover, a:active {
         margin-bottom: 2rem; } }
   .ns-home .pickup-item .description-head {
     margin-bottom: 2rem;
-    font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+    font-family: "NotoSerif", "Times New Roman", serif; }
   .ns-home .pickup-item .green-text {
     padding: 0.5rem 0;
     margin-bottom: 1rem;
@@ -977,7 +1020,7 @@ a:link, a:visited, a:hover, a:active {
   padding-left: .5rem;
   margin-bottom: 2rem;
   border-left: 3px solid #d3dbd7;
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif; }
+  font-family: "NotoSerif", "Times New Roman", serif; }
 
 .ns-home .news {
   max-width: 800px;

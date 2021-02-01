@@ -82,7 +82,7 @@ $news_list = [
   <div class="section brown-background">
     <div class="layout">
       <h2>
-        <p class="english-title txt-center">
+        <p class="english-title txt-center font-roboto">
           PICK UP ITEM
         </p>
         <p class="main-title txt-center">
@@ -123,7 +123,7 @@ $news_list = [
   <div class="section grey-background">
     <div class="layout">
       <h2>
-        <p class="english-title txt-center">
+        <p class="english-title txt-center font-roboto">
           LINEUP
         </p>
         <p class="main-title txt-center">
@@ -154,7 +154,7 @@ $news_list = [
   <div class="section">
     <div class="layout">
       <h2>
-        <p class="english-title txt-center">
+        <p class="english-title txt-center font-roboto">
           TECHNOLOGY
         </p>
         <p class="main-title txt-center">
@@ -228,7 +228,7 @@ $news_list = [
   <div class="section section--no-top-padding">
     <div class="layout">
       <h2>
-        <p class="english-title txt-center">
+        <p class="english-title txt-center font-roboto">
           NEWS
         </p>
         <p class="main-title txt-center">

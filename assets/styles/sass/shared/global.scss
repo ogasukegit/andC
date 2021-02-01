@@ -40,6 +40,7 @@ $blueAccentDk: #5d99b6;
   box-sizing: border-box;
   line-height: 1.7;
   letter-spacing: 1px;
+  @include font_NotoSans;
 }
 body {
   margin: 0;
@@ -85,11 +86,4 @@ a {
   @include pc-only {
     display: none !important;
   }
-}
-
-.hiragino {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
-}
-@mixin font-hiragino {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
 }

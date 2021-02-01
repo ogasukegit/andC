@@ -38,7 +38,7 @@
         color: white;
 
         .slide-title {
-          @include font-hiragino;
+          @include font_NotoSerif;
           @include sp-only {
             font-size: 1.5rem;
           }
@@ -47,7 +47,7 @@
           }
         }
         .slide-description {
-          @include font-hiragino;
+          @include font_NotoSerif;
           padding-top: 2rem;
           font-size: 1rem;
         }
@@ -147,7 +147,7 @@
     @include pc-only {
       font-size: 2.5rem;
     }
-    @include font-hiragino;
+    @include font_NotoSerif;
     font-weight: normal;
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -195,7 +195,7 @@
 
     .description-head {
       margin-bottom: 2rem;
-      @include font-hiragino;
+      @include font_NotoSerif;
     }
 
     .green-text {
@@ -361,7 +361,7 @@
       padding-left: .5rem;
       margin-bottom: 2rem;
       border-left: 3px solid #d3dbd7;
-      @include font-hiragino;
+      @include font_NotoSerif;
     }
 
     .point__description {

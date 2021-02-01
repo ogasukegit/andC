@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <p class="copyright">Copyright © Iwatani Materials Corp</p>
+    <p class="copyright font-roboto">Copyright © Iwatani Materials Corp</p>
   </div>
   <div class="scroll-to-top-button" id="scroll-to-top-button"></div>
   <script type="text/javascript">

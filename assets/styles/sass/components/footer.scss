@@ -45,7 +45,7 @@
     padding: 0.5rem;
     color: #000000;
     white-space: nowrap;
-    @include font-hiragino;
+    @include font_NotoSerif;
   }
   .copyright {
     @media(max-width: $footerBreakpoint) {

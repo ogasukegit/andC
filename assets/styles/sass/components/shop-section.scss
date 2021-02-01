@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5rem;
-    @include font-hiragino;
+    @include font_NotoSerif;
 
     .main-title__logo {
       flex: 0 1 auto;
@@ -51,7 +51,7 @@
       margin-bottom: 1rem;
       border-left: 3px solid #d3dbd7;
       font-size: 1.5rem;
-      @include font-hiragino;
+      @include font_NotoSerif;
     }
 
     .list__link {

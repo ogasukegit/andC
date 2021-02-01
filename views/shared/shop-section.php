@@ -1,6 +1,6 @@
 <div class="ns-shop-section">
   <div class="layout">
-    <p class="english-title txt-center">
+    <p class="english-title txt-center font-roboto">
       SHOP
     </p>
     <div class="main-title">
