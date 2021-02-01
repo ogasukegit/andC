@@ -9,7 +9,7 @@ $metaData = [
 $breadcrumb = [
   [
     "link" => "/inquiry",
-    "text" => "業務用（法人の方）ご注文・お問い合わせ",
+    "text" => "法人の方 ご注文・お問い合わせ",
   ],
   [
     "link" => false,
@@ -342,7 +342,7 @@ $features = [
           ご注文 ・ お問い合わせ
         </a>
         <a class="arrow-button" href="">
-          業務用(法人のお客様)<br>
+          法人のお客様<br>
           ご注文 ・ お問い合わせ
         </a>
       </div>
