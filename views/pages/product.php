@@ -175,7 +175,7 @@ $features = [
   <?php include('../shared/navigation.php'); ?>
   <div class="nav hide-sp">
     <div class="nav__inner">
-      <p class="nav__title">
+      <p class="nav__title font-roboto">
         PRODUCTS
       </p>
       <?php foreach ($asideProducts as $product) : ?>
