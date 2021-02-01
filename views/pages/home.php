@@ -47,17 +47,7 @@ $news_list = [
 
 <?php include('../shared/head.php'); ?>
 <div class="ns-home">
-
-
-
-  <style type="text/css">
-    /* to make the nav product list submenu look right on the home page */
-  </style>
-
   <?php include('../shared/navigation.php'); ?>
-
-
-
   <div class="slider-container">
     <?php foreach ($slides as $slide) : ?>
       <div class="slide" style="background-image: url(<?= $imgPath . $slide ?>)">
