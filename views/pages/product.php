@@ -9,7 +9,7 @@ $metaData = [
 $breadcrumb = [
   [
     "link" => "/inquiry",
-    "text" => "業務用（法人の方）ご注文・お問い合わせ",
+    "text" => "法人の方 ご注文・お問い合わせ",
   ],
   [
     "link" => false,
@@ -24,47 +24,47 @@ $asideProducts = [
     "link" => "/products/product1",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product2",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product3",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product4",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product5",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product6",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product1",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product2",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product3",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product4",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product5",
   ],
   [
-    "text" => "室外機カバー",
+    "text" => "商品名を追加",
     "link" => "/products/product6",
   ],
 ];
