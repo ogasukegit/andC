@@ -1,64 +1,53 @@
 <?php
-  // required page data
-  $pageName = "home";
-  $metaData = [
-    "title" => "＆C｜ブランドサイト―優れた樹脂コーティングをエクステリアに。機能的で美しく。",
-    "description" => "樹脂コーティングのパイオニアとして、金属と樹脂の技術を融合・応用した商品をお客様にお届けいたします。商品の素材感・美しさをぜひ体感してください。",
-    "keywords" => "",
-  ];
+// required page data
+$pageName = "home";
+$metaData = [
+  "title" => "＆C｜ブランドサイト―優れた樹脂コーティングをエクステリアに。機能的で美しく。",
+  "description" => "樹脂コーティングのパイオニアとして、金属と樹脂の技術を融合・応用した商品をお客様にお届けいたします。商品の素材感・美しさをぜひ体感してください。",
+  "keywords" => "",
+];
 
-  // temporary data
-  $slides = [
-    "/home/top_image_1.png",
-    "/home/top_image_2.png"
-  ];
-  $lineup_articles = [
-    [
-      "Image" => "/home/lineup_1.png",
-      "Title" => "エアコン室外機カバー<br>（ホワイト・ブラウン）",
-      "Description" => 'サビ・腐食に強く、キレイな状態が長持ちします。お庭に調和しながら、室外機を人目から隠します。'
-    ],
-    [
-      "Image" => "/home/lineup_2.png",
-      "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
-      "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
-    ],
-    [
-      "Image" => "/home/lineup_3.png",
-      "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
-      "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
-    ],
-  ];
-  $news_list = [
-    [
-      "Date" => "2021.2.22",
-      "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
-    ],
-    [
-      "Date" => "2021.1.11",
-      "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
-    ],
-    [
-      "Date" => "2021.12.1",
-      "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
-    ]
-  ];
+// temporary data
+$slides = [
+  "/home/top_image_1.png",
+  "/home/top_image_2.png"
+];
+$lineup_articles = [
+  [
+    "Image" => "/home/lineup_1.png",
+    "Title" => "エアコン室外機カバー<br>（ホワイト・ブラウン）",
+    "Description" => 'サビ・腐食に強く、キレイな状態が長持ちします。お庭に調和しながら、室外機を人目から隠します。'
+  ],
+  [
+    "Image" => "/home/lineup_2.png",
+    "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
+    "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
+  ],
+  [
+    "Image" => "/home/lineup_3.png",
+    "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
+    "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
+  ],
+];
+$news_list = [
+  [
+    "Date" => "2021.2.22",
+    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  ],
+  [
+    "Date" => "2021.1.11",
+    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  ],
+  [
+    "Date" => "2021.12.1",
+    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  ]
+];
 ?>
 
 <?php include('../shared/head.php'); ?>
 <div class="ns-home">
-
-
-
-  <style type="text/css">
-    /* to make the nav product list submenu look right on the home page */
-    
-  </style>
-
   <?php include('../shared/navigation.php'); ?>
-
-
-
   <div class="slider-container">
     <?php foreach ($slides as $slide) : ?>
       <div class="slide" style="background-image: url(<?= $imgPath . $slide ?>)">
@@ -149,7 +138,7 @@
             </div>
             <div class="button-container">
               <a class="arrow-button" href="">
-                商品名が入ります<br>
+                エアコン室外機カバー<br>
                 商品詳細はこちら
               </a>
             </div>

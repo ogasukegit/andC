@@ -180,6 +180,8 @@
     .fashion-block__img-container {
       @include sp-only {
         flex: 0 1 100%;
+        max-width: 450px;
+        margin: 0 auto;
         padding-bottom: 1rem;
       }
       @include pc-only {

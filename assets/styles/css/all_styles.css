@@ -653,9 +653,6 @@ a:link, a:visited, a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -731,19 +728,22 @@ a:link, a:visited, a:hover, a:active {
     @media (max-width: 767px) {
       .ns-home .lineup .article {
         -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-        flex: 0 1 100%;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        max-width: 100%;
         padding: 1rem 0; } }
     @media (min-width: 768px) {
       .ns-home .lineup .article {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.33%;
-        flex: 0 0 33.33%;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        max-width: 33.33%;
         padding: 1rem; } }
   .ns-home .lineup .image {
     margin-bottom: 1rem;
     max-width: 100%; }
   .ns-home .lineup .title {
+    width: 100%;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #9dbdd5;
@@ -802,6 +802,16 @@ a:link, a:visited, a:hover, a:active {
 
 @media (max-width: 767px) {
   .ns-home .technology .point__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%; } }
@@ -819,10 +829,13 @@ a:link, a:visited, a:hover, a:active {
     margin-right: -5%; } }
 
 .ns-home .technology .point__logo {
-  margin-left: 20%;
   margin-bottom: -1rem;
   width: 140px;
-  height: 75px; }
+  height: 75px;
+  z-index: 1; }
+  @media (min-width: 768px) {
+    .ns-home .technology .point__logo {
+      margin-left: 20%; } }
 
 .ns-home .technology .point__blue-bg {
   background-color: #e9f1f7; }
@@ -874,7 +887,7 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 2.5rem 1.5rem;
     border-bottom: 1px solid black; }
     @media (max-width: 767px) {
       .ns-home .news .news-item {
@@ -1054,6 +1067,8 @@ a:link, a:visited, a:hover, a:active {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
       flex: 0 1 100%;
+      max-width: 450px;
+      margin: 0 auto;
       padding-bottom: 1rem; } }
   @media (min-width: 768px) {
     .ns-product .fashion .fashion-block__img-container {
