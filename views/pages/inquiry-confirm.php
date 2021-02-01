@@ -96,7 +96,7 @@
       </table>
       <div class="button-wrapper">
         <input class="button button--blue" type="submit" value="修正する">
-        <a class="button button--black-ghost" href="inquiry-input.php">　送信　</a>
+        <a class="button button--black-ghost" href="inquiry-input.php">&nbsp;送信&nbsp;</a>
       </div>
     </form>
 

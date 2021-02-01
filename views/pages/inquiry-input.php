@@ -109,11 +109,9 @@
       </div>
       <h2 class="inquiry-h2">個人情報の取り扱い</h2>
       <p class="txt-center">個人情報の取り扱いについて、詳しくは弊社の<a href="https://www.imcjpn.co.jp/policy/" target="_blank">プライバシーポリシー</a>をご覧ください。</p>
-      <div class="form__row">
-        <div class="form__row-left">個人情報の取り扱い</div>
-        <div class="form__row-right">
-          <label class="clickable"><input type="checkbox" name="personal-info" required>&nbsp;同意します</label>
-        </div>
+      <div class="personal-info">
+        <span class="personal-info__text">個人情報の取り扱い</span>
+        <label class="clickable"><input type="checkbox" name="personal-info" required>&nbsp;同意します</label>
       </div>
       <div class="button-wrapper">
         <input class="button button--disabled" id="submit-button" type="submit" value="入力内容確認">
