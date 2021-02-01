@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "NotoSerif";
+  src: url('../../fonts/NotoSerifJP-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSerif";
+  src: url('../../fonts/NotoSerifJP-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSansJP";
+  src: url('../../fonts/NotoSansJP-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSansJP";
+  src: url('../../fonts/NotoSansJP-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSerif";
+  src: url('../../fonts/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSerif";
+  src: url('../../fonts/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// mixins
+@mixin font_NotoSerif {
+  font-family: "NotoSerif", "Times New Roman", serif;
+}
+@mixin font_NotoSans {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+@mixin font_Roboto {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+// utility classes
+.font-noto-serif {
+  @include font_NotoSerif;
+}
+.font-noto-sans {
+  @include font_NotoSans;
+}
+.font-roboto {
+  @include font_Roboto;
+}
