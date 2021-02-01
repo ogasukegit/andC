@@ -49,8 +49,8 @@ $news_list = [
 <div class="ns-home">
   <?php include('../shared/navigation.php'); ?>
   <div class="slider-container">
-    <?php foreach ($slides as $slide) : ?>
-      <div class="slide" style="background-image: url(<?= $imgPath . $slide ?>)">
+    <?php foreach ($slides as $x => $slide) : ?>
+      <div class="slide fade<?= $x + 1?>" style="background-image: url(<?= $imgPath . $slide ?>)">
         <div class="slide-content layout">
           <p class="slide-title">
             優れたコーティング技術を<br>エクステリアに。
@@ -61,6 +61,10 @@ $news_list = [
         </div>
       </div>
     <?php endforeach ?>
+    <div class="scroll">
+      <p class="scroll__text">SCROLL</p>
+      <div class="scroll__arrow"></div>
+    </div>
   </div>
   <div class="section andc-background" style="background-image: url(<?= $imgPath ?>/home/logo-background.png)">
     <div class="layout">
@@ -243,19 +247,5 @@ $news_list = [
   </div>
   <?php include('../shared/shop-section.php'); ?>
 </div>
-
-<script type="text/javascript">
-  const slides = document.getElementsByClassName("slide");
-  let showIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    Array.from(slides).forEach((slide, index) => {
-      slide.style.display = index === showIndex ? "block" : "none";
-    })
-    showIndex = showIndex === slides.length - 1 ? 0 : showIndex += 1;
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
-  }
-</script>
 
 <?php include('../shared/foot.php'); ?>
