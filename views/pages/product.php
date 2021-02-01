@@ -173,181 +173,180 @@ $features = [
 <?php include('../shared/head.php'); ?>
 <div class="ns-product page">
   <?php include('../shared/navigation.php'); ?>
-  <div class="product-layout">
-    <div class="nav hide-sp">
-      <div class="nav__inner">
-        <p class="nav__title">
-          PRODUCTS
-        </p>
-        <?php foreach ($asideProducts as $product) : ?>
-          <p class="nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
-        <?php endforeach ?>
-      </div>
-    </div>
-    <div class="layout product-main">
-      <?php include '../shared/breadcrumb.php'; ?>
-      <h2 class="product-title">
-        樹脂コーティング会社が本気で作った、サビ・劣化に強い、シンプルデザインのエアコン室外機カバー【ホワイト・ブラウン】【スチール製】
-      </h2>
-      <p class="product-description">
-        場になじむ、シンプルモダンなデザイン。細部までこだわり長く使えるエアコン室外機カバーです。
+  <div class="nav hide-sp">
+    <div class="nav__inner">
+      <p class="nav__title">
+        PRODUCTS
       </p>
-      <div class="product-slider">
-        <div class="product-slider__button product-slider__button--left" onClick="previousSlide()">
-          <div class="product-slider__icon product-slider__icon--left"></div>
-        </div>
-        <div class="product-slider__image-container" onClick="showModal()">
-          <img id="slide-image" class="product-slider__image">
-        </div>
-        <div class="product-slider__button product-slider__button--right" onClick="nextSlide()">
-          <div class="product-slider__icon product-slider__icon--right"></div>
-        </div>
-      </div>
-      <div class="sub-slides">
-        <?php foreach ($slideImages as $x => $image) : ?>
-          <div class="sub-slide" onClick="changeSlide(<?= $x ?>)">
-            <img class="sub-slide__img" src=<?= $imgPath . $image ?>>
-          </div>
-        <?php endforeach ?>
-      </div>
-      <div class="product-buttons">
-        <a class="arrow-button" href="">
-          一般のお客様<br>
-          お問い合わせ
-        </a>
-        <a class="arrow-button" href="">
-          法人のお客様<br>
-          お問い合わせ
-        </a>
-      </div>
-      <div class="fashion">
-        <h2 class="middle__title txt-center">
-          おしゃれに隠し、長く使う
-        </h2>
-        <div class="fashion-block">
-          <div class="fashion-block__img-container">
-            <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare1.png" ?>>
-          </div>
-          <div class="fashion-block__img-container">
-            <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare2.png" ?>>
-          </div>
-          <div class="fashion-block__img-container">
-            <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare3.png" ?>>
-          </div>
-          <div class="fashion-block__img-container">
-            <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare4.png" ?>>
-          </div>
-        </div>
-      </div>
-      <div class="features-section">
-        <h2 class="middle__title txt-center">
-          頑丈でサビや腐食に強い、室外機カバー
-        </h2>
-        <?php foreach ($features as $feature) : ?>
-          <div class="feature">
-            <div class="feature__images">
-              <?php foreach ($feature["image"] as $image) : ?>
-                <div class="feature__image-block">
-                  <img class="feature__image" src=<?= $imgPath . $image["src"] ?>>
-                  <?php if ($image["caption"]) : ?>
-                    <p class="feature__description"><?= $image["caption"] ?></p>
-                  <?php endif ?>
-                </div>
-              <?php endforeach ?>
-            </div>
-            <div class="feature__text">
-              <h3 class="feature__title"><?= $feature["title"] ?></h3>
-              <p class="feature__description"><?= $feature["description"] ?></p>
-            </div>
-          </div>
-        <?php endforeach ?>
-      </div>
-      <div class="table-section">
-        <h2 class="middle__title txt-center">
-          商品詳細
-        </h2>
-        <table class="table">
-          <tbody>
-            <tr>
-              <th class="table__cell table__cell--header">商品名</th>
-              <td class="table__cell">エアコン室外機カバー</td>
-            </tr>
-            <tr>
-              <th rowspan="6">商品詳細</th>
-              <td class="table__cell">
-                <p class="txt-bold">サイズ</p>
-                <p>
-                  　(通常サイズ)<br>
-                  外寸:約 W93×D38.5×H75cm<br>
-                  内寸:約 W86.5xD35.5×H66cm<br>
-                  　(大型サイズ)<br>
-                  外寸:約W106.5xD45.5×H94cm<br>
-                  内寸:約W99.8×D42.5×H85cm
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table__cell">
-                <p class="txt-bold">重量</p>
-                <p>
-                  (通常サイズ)　約10kg<br>
-                  (大型サイズ)　約15kg
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table__cell">
-                <p class="txt-bold">天面パネル耐荷重</p>
-                <p>約10kg(全サイズ共通)</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table__cell">
-                <p class="txt-bold">材質</p>
-                <p>
-                  本体:スチール(PEコーティング)<br>
-                  ネジ・ガイドプレート:ステンレス<br>
-                  アジャスター:ポリアミド・スチール有色クロメート<br>
-                  結束バンド:ナイロン
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table__cell">
-                <p class="txt-bold">付属品</p>
-                <p>結束バンド×2本</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table__cell">
-                <p class="txt-bold">生産国</p>
-                <p>日本</p>
-              </td>
-            </tr>
-            <tr>
-              <th class="table__cell table__cell--header">備考</th>
-              <td class="table__cell">
-                <p>■組み立て式:プラスドライバーをご用意ください。</p>
-                <p>【取扱説明書】はこちら <a class="link" href="">(通常サイズ) (大型サイズ)</a></p>
-                <p>■天面には滑り止めやフチなどは付いておりません。 天面を棚としてご使用にな る場合は、上に載せる物の落下には十分ご注意ください。</p>
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="product-buttons">
-        <a class="arrow-button" href="">
-          一般のお客様<br>
-          ご注文 ・ お問い合わせ
-        </a>
-        <a class="arrow-button" href="">
-          法人のお客様<br>
-          ご注文 ・ お問い合わせ
-        </a>
-      </div>
+      <?php foreach ($asideProducts as $product) : ?>
+        <p class="nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
+      <?php endforeach ?>
     </div>
   </div>
+  <div class="layout product-main">
+    <?php include '../shared/breadcrumb.php'; ?>
+    <h2 class="product-title">
+      樹脂コーティング会社が本気で作った、サビ・劣化に強い、シンプルデザインのエアコン室外機カバー【ホワイト・ブラウン】【スチール製】
+    </h2>
+    <p class="product-description">
+      場になじむ、シンプルモダンなデザイン。細部までこだわり長く使えるエアコン室外機カバーです。
+    </p>
+    <div class="product-slider">
+      <div class="product-slider__button product-slider__button--left" onClick="previousSlide()">
+        <div class="product-slider__icon product-slider__icon--left"></div>
+      </div>
+      <div class="product-slider__image-container" onClick="showModal()">
+        <img id="slide-image" class="product-slider__image">
+      </div>
+      <div class="product-slider__button product-slider__button--right" onClick="nextSlide()">
+        <div class="product-slider__icon product-slider__icon--right"></div>
+      </div>
+    </div>
+    <div class="sub-slides">
+      <?php foreach ($slideImages as $x => $image) : ?>
+        <div class="sub-slide" onClick="changeSlide(<?= $x ?>)">
+          <img class="sub-slide__img" src=<?= $imgPath . $image ?>>
+        </div>
+      <?php endforeach ?>
+    </div>
+    <div class="product-buttons">
+      <a class="arrow-button" href="">
+        一般のお客様<br>
+        お問い合わせ
+      </a>
+      <a class="arrow-button" href="">
+        法人のお客様<br>
+        お問い合わせ
+      </a>
+    </div>
+    <div class="fashion">
+      <h2 class="middle__title txt-center">
+        おしゃれに隠し、長く使う
+      </h2>
+      <div class="fashion-block">
+        <div class="fashion-block__img-container">
+          <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare1.png" ?>>
+        </div>
+        <div class="fashion-block__img-container">
+          <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare2.png" ?>>
+        </div>
+        <div class="fashion-block__img-container">
+          <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare3.png" ?>>
+        </div>
+        <div class="fashion-block__img-container">
+          <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare4.png" ?>>
+        </div>
+      </div>
+    </div>
+    <div class="features-section">
+      <h2 class="middle__title txt-center">
+        頑丈でサビや腐食に強い、室外機カバー
+      </h2>
+      <?php foreach ($features as $feature) : ?>
+        <div class="feature">
+          <div class="feature__images">
+            <?php foreach ($feature["image"] as $image) : ?>
+              <div class="feature__image-block">
+                <img class="feature__image" src=<?= $imgPath . $image["src"] ?>>
+                <?php if ($image["caption"]) : ?>
+                  <p class="feature__description"><?= $image["caption"] ?></p>
+                <?php endif ?>
+              </div>
+            <?php endforeach ?>
+          </div>
+          <div class="feature__text">
+            <h3 class="feature__title"><?= $feature["title"] ?></h3>
+            <p class="feature__description"><?= $feature["description"] ?></p>
+          </div>
+        </div>
+      <?php endforeach ?>
+    </div>
+    <div class="table-section">
+      <h2 class="middle__title txt-center">
+        商品詳細
+      </h2>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th class="table__cell table__cell--header">商品名</th>
+            <td class="table__cell">エアコン室外機カバー</td>
+          </tr>
+          <tr>
+            <th rowspan="6">商品詳細</th>
+            <td class="table__cell">
+              <p class="txt-bold">サイズ</p>
+              <p>
+                　(通常サイズ)<br>
+                外寸:約 W93×D38.5×H75cm<br>
+                内寸:約 W86.5xD35.5×H66cm<br>
+                　(大型サイズ)<br>
+                外寸:約W106.5xD45.5×H94cm<br>
+                内寸:約W99.8×D42.5×H85cm
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell">
+              <p class="txt-bold">重量</p>
+              <p>
+                (通常サイズ)　約10kg<br>
+                (大型サイズ)　約15kg
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell">
+              <p class="txt-bold">天面パネル耐荷重</p>
+              <p>約10kg(全サイズ共通)</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell">
+              <p class="txt-bold">材質</p>
+              <p>
+                本体:スチール(PEコーティング)<br>
+                ネジ・ガイドプレート:ステンレス<br>
+                アジャスター:ポリアミド・スチール有色クロメート<br>
+                結束バンド:ナイロン
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell">
+              <p class="txt-bold">付属品</p>
+              <p>結束バンド×2本</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell">
+              <p class="txt-bold">生産国</p>
+              <p>日本</p>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__cell table__cell--header">備考</th>
+            <td class="table__cell">
+              <p>■組み立て式:プラスドライバーをご用意ください。</p>
+              <p>【取扱説明書】はこちら <a class="link" href="">(通常サイズ) (大型サイズ)</a></p>
+              <p>■天面には滑り止めやフチなどは付いておりません。 天面を棚としてご使用にな る場合は、上に載せる物の落下には十分ご注意ください。</p>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="product-buttons">
+      <a class="arrow-button" href="">
+        一般のお客様<br>
+        ご注文 ・ お問い合わせ
+      </a>
+      <a class="arrow-button" href="">
+        業務用(法人のお客様)<br>
+        ご注文 ・ お問い合わせ
+      </a>
+    </div>
+  </div>
+  <?php include('../shared/shop-section.php'); ?>
   <div id="modal" class="modal">
     <div class="modal__content">
       <img id="modal-image" class="modal__image">
