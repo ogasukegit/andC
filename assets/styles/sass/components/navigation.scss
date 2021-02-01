@@ -27,6 +27,9 @@
     justify-content: space-between;
     height: $navHeight;
   }
+  .nav-left__logo {
+    height: 60px;
+  }
   .nav-left {
     display: flex;
     align-items: stretch;

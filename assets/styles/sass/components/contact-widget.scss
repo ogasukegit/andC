@@ -1,4 +1,7 @@
 .ns-contact-widget {
+  @include sp-only {
+    display: none;
+  }
   position: fixed;
   top: 50%;
   right: 0;
@@ -9,12 +12,7 @@
   font-weight: bold;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  @include sp-only {
-    padding: 2rem 0 1rem 0.5rem;
-  }
-  @include pc-only {
-    padding: 2rem 1rem 1rem 1rem;
-  }
+  padding: 2rem 1rem 1rem 1rem;
 
   .close-button {
     position: absolute;
@@ -49,14 +47,7 @@
     font-size: 0.9rem;
     color: #000000;
     background-color: #ffffff;
-    @include sp-only {
-      padding: 0.5rem 0.4rem 0.5rem 0.8rem;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-    }
-    @include pc-only {
-      padding: 0.5rem 0.8rem;
-      border-radius: 5px;
-    }
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
   }
 }
