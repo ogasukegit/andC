@@ -175,12 +175,17 @@ $features = [
   <?php include('../shared/navigation.php'); ?>
   <div class="nav hide-sp">
     <div class="nav__inner">
-      <p class="nav__title font-roboto">
-        PRODUCTS
-      </p>
-      <?php foreach ($asideProducts as $product) : ?>
-        <p class="nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
-      <?php endforeach ?>
+      <div class="nav__inner-top">
+        <p class="nav__title font-roboto">
+          PRODUCTS
+        </p>
+        <?php foreach ($asideProducts as $product) : ?>
+          <p class="nav__item"><a href="<?= $product["link"] ?>">ー<?= $product["text"] ?></a></p>
+        <?php endforeach ?>
+      </div>
+      <div class="nav__inner-bottom">
+        <a class="button button--blue" href="/contact">商品注文•お問い合わせ</a>
+      </div>
     </div>
   </div>
   <div class="layout product-main">

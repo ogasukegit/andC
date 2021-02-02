@@ -1,38 +1,49 @@
 .ns-product {
   
-  $asideWidth: 240px;
+  $asideWidth: 300px;
 
   .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
-    padding: $navHeight 2rem 0 0;
+    padding: 0 2rem 0 0;
     overflow-y: scroll;
     -ms-overflow-style: none;  // hide scrollbar IE and Edge
     scrollbar-width: none;  // hide scrollbar Firefox
     &::-webkit-scrollbar {
       display: none; // hide scrollbar Chrome
     }
-    @media (max-width: + 2 * $asideWidth $layoutWidth) {
+    @media (max-width: + 2 * $asideWidth + $layoutWidth) {
       width: $asideWidth;
     }
-    @media (min-width: + 2 * $asideWidth $layoutWidth + 1) {
+    @media (min-width: + 2 * $asideWidth + $layoutWidth + 1) {
       width: calc(50vw - 500px);
     }
 
     .nav__inner {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      padding: 0 2rem 3rem;
+      align-items: center;
+      padding: $navHeight 0 3rem;
       background-color: #f2f1ee;
+    }
+
+    .nav__inner-top {
+      padding: 2rem 0 0 1rem;
+    }
+
+    .nav__inner-bottom {
+      padding-top: 2rem;
+      .button {
+        padding: 1.5rem 1rem;
+      }
     }
 
     .nav__title {
       width: 100%;
       max-width: $asideWidth - 64px;
-      padding: 2rem 0;
+      padding: 0 2rem 1rem 0;
       border-bottom: 1px solid black;
       font-size: 1.5rem;
     }
