@@ -32,15 +32,15 @@ $lineup_articles = [
 $news_list = [
   [
     "Date" => "2021.2.22",
-    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。"
   ],
   [
     "Date" => "2021.1.11",
-    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。"
   ],
   [
     "Date" => "2021.12.1",
-    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+    "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
   ]
 ];
 ?>
@@ -135,7 +135,7 @@ $news_list = [
           <div class="article">
             <img class="image" src=<?= $imgPath . $article["Image"] ?>>
             <div class="title">
-              <p><?= $article["Title"] ?></p>
+              <?= $article["Title"] ?>
             </div>
             <div class="description">
               <?= $article["Description"] ?>

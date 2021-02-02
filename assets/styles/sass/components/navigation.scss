@@ -1,6 +1,6 @@
 // applied to all pages except the home page to apply the nav menu shadow
 .page {
-  margin-top: $navHeight;
+  padding-top: $navHeight;
   &:before {
     content: '';
     position: absolute;

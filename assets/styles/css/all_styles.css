@@ -211,7 +211,7 @@ a:link, a:visited, a:hover, a:active {
     border-color: #bbbbbb; }
 
 .page {
-  margin-top: 60px; }
+  padding-top: 60px; }
   .page:before {
     content: '';
     position: absolute;
@@ -907,23 +907,15 @@ a:link, a:visited, a:hover, a:active {
         padding: 1rem; } }
   .ns-home .lineup .image {
     margin-bottom: 1rem;
-    max-width: 100%; }
+    width: 100%; }
   .ns-home .lineup .title {
     width: 100%;
     margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     border-bottom: 2px solid #9dbdd5;
     color: #9dbdd5;
     font-weight: bold;
     text-align: center; }
-    @media (max-width: 767px) {
-      .ns-home .lineup .title {
-        min-height: 3rem;
-        height: 3rem; } }
-    @media (min-width: 768px) {
-      .ns-home .lineup .title {
-        min-height: 3.5rem;
-        height: 3.5rem; } }
   .ns-home .lineup .description {
     margin-bottom: 1rem; }
 
@@ -1047,19 +1039,16 @@ a:link, a:visited, a:hover, a:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 2.5rem 1.5rem;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 2rem 1rem;
     border-bottom: 1px solid black; }
     @media (max-width: 767px) {
       .ns-home .news .news-item {
         padding: 2rem 0; } }
   .ns-home .news .news-item__date {
-    padding-right: 1.5rem; }
+    padding-right: 2rem; }
 
 .ns-product .nav {
   position: fixed;
