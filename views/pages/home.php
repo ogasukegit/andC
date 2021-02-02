@@ -152,8 +152,8 @@ $news_list = [
     </div>
   </div>
   <div class="section">
-    <div class="layout">
-      <h2>
+    <div>
+      <h2 class="layout">
         <p class="english-title txt-center font-roboto">
           TECHNOLOGY
         </p>
@@ -162,7 +162,7 @@ $news_list = [
         </p>
       </h2>
       <div class="technology">
-        <p class="description txt-center">
+        <p class="description txt-center layout">
           ＆C（アンド・シー）を手掛ける岩谷マテリアル株式会社のコーティング部は、
           樹脂コーティングのパイオニアとして、建築資材・家電製品・電設資材などの多くの分野で、
           金属と樹脂を融合・応用したモノづくりを行っています。<br>
@@ -187,7 +187,7 @@ $news_list = [
         </div>
         <div class="point point--opposite">
           <div class="point__content point__content--opposite">
-            <img class="point__logo" src=<?= $imgPath . "/home/point2.png" ?>>
+            <img class="point__logo point__logo--opposite" src=<?= $imgPath . "/home/point2.png" ?>>
             <div class="point__blue-bg point__blue-bg--opposite">
               <div class="point__square point__square--opposite hide-sp"></div>
               <h3 class="point__title">
@@ -201,12 +201,12 @@ $news_list = [
           </div>
           <img class="point__image" src=<?= $imgPath . "/home/technology2.png" ?>>
         </div>
+        <div class="square-alone hide-sp"></div>
         <div class="point">
           <img class="point__image" src=<?= $imgPath . "/home/technology3.png" ?>>
           <div class="point__content">
             <img class="point__logo" src=<?= $imgPath . "/home/point3.png" ?>>
             <div class="point__blue-bg">
-              <div class="point__square hide-sp"></div>
               <h3 class="point__title">
                 皆さんの身近にあるものにもつかわれている技術です。
               </h3>
@@ -216,7 +216,7 @@ $news_list = [
             </div>
           </div>
         </div>
-        <div class="button-container">
+        <div class="button-container layout">
           <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html">
             &nbsp;私たちについて&nbsp;&nbsp;&nbsp;
             <img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>>

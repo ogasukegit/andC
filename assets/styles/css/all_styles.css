@@ -920,7 +920,30 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 1rem; }
 
 .ns-home .technology .description {
-  margin-bottom: 3rem; }
+  margin-bottom: 5rem; }
+
+.ns-home .technology .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.ns-home .technology .square-alone {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1500px; }
+
+.ns-home .technology .square-alone::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  top: -100px;
+  right: 0;
+  background-color: #f8fbfd; }
 
 .ns-home .technology .point {
   display: -webkit-box;
@@ -931,7 +954,13 @@ a:link, a:visited, a:hover, a:active {
   align-items: flex-end;
   -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse;
-  margin-bottom: 3rem; }
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 5rem;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .ns-home .technology .point {
+      padding: 0 1rem; } }
 
 .ns-home .technology .point--opposite {
   -webkit-box-align: start;
@@ -980,20 +1009,30 @@ a:link, a:visited, a:hover, a:active {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     margin-top: 40px;
-    margin-left: -5%; } }
+    margin-left: -10%; } }
 
 @media (min-width: 768px) {
   .ns-home .technology .point__content--opposite {
     margin-right: -5%; } }
 
 .ns-home .technology .point__logo {
-  margin-bottom: -1rem;
-  width: 140px;
-  height: 75px;
   z-index: 1; }
   @media (min-width: 768px) {
     .ns-home .technology .point__logo {
-      margin-left: 20%; } }
+      margin-left: 30%;
+      width: 160px;
+      height: 90px;
+      margin-bottom: -2rem; } }
+  @media (max-width: 767px) {
+    .ns-home .technology .point__logo {
+      margin: 0 auto;
+      width: 140px;
+      height: 75px;
+      margin-bottom: -1rem; } }
+
+@media (min-width: 768px) {
+  .ns-home .technology .point__logo--opposite {
+    margin-left: 15%; } }
 
 .ns-home .technology .point__blue-bg {
   background-color: #e9f1f7; }
@@ -1004,25 +1043,25 @@ a:link, a:visited, a:hover, a:active {
     .ns-home .technology .point__blue-bg {
       z-index: -1;
       position: relative;
-      height: 20rem;
-      padding: 2rem 2rem 2rem 6rem; } }
+      height: 30rem;
+      padding: 4rem 4rem 2rem 30%; } }
 
 @media (min-width: 768px) {
   .ns-home .technology .point__blue-bg--opposite {
-    padding: 2rem 4rem 2rem 2rem; } }
+    padding: 4rem 6rem 2rem 4rem; } }
 
 .ns-home .technology .point__square {
   position: absolute;
-  top: -92px;
-  right: -40px;
+  top: -100px;
+  right: -100px;
   background-color: #f8fbfd;
   width: 40%;
-  height: 40%;
+  height: 30%;
   mix-blend-mode: multiply; }
 
 .ns-home .technology .point__square--opposite {
-  top: -92px;
-  left: -50px; }
+  top: -100px;
+  left: -100px; }
 
 .ns-home .technology .point__title {
   font-size: 1.2rem;
