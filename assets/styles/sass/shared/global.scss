@@ -87,3 +87,12 @@ a {
     display: none !important;
   }
 }
+
+.blue-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96px;
+  font-size: 1.2rem;
+  background-color: #e8f1f7;
+}
