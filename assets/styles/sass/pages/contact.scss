@@ -7,18 +7,24 @@
     display: flex;
     @include sp-only {
       flex-direction: column;
+      margin: 2rem 0 1rem;
     }
     @include pc-only {
       flex-direction: row;
+      margin: 3rem 0 2rem;
     }
-    margin-top: 2rem;
   }
   .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
     @include sp-only {
       flex: 0 1 100%;
     }
     @include pc-only {
-      flex: 0 1 60%;
+      flex: 0 1 55%;
     }
   }
   .right {
@@ -26,11 +32,21 @@
       flex: 0 1 100%;
     }
     @include pc-only {
-      flex: 0 1 40%;
+      flex: 0 1 45%;
     }
   }
-  .call-link {
-    margin: 1rem;
+  .phone-number {
+    font-size: 2rem;
+  }
+  .call-button {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    svg {
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+      fill: #ffffff;
+    }
   }
   .image {
     width: 100%;

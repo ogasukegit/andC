@@ -38,7 +38,7 @@
 ?>
 <?php include './_inquiry-head.php'; ?>
   <div class="layout">
-    <h2 class="inquiry-h2">入力内容確認</h2>
+    <h2 class="inquiry-header">入力内容確認</h2>
     <p class="confirm-form__top-text txt-center">下記内容でお間違いありませんか？</p>
     <!-- TODO: change post destination and redirect to /inquiry/complete -->
     <form class="form confirm-form" method="post" action="inquiry-complete.php">

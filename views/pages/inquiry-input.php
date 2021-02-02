@@ -19,7 +19,7 @@
 ?>
 <?php include './_inquiry-head.php'; ?>
   <div class="layout">
-    <h2 class="inquiry-h2">入力内容</h2>
+    <h2 class="inquiry-header">入力内容</h2>
     <!-- TODO: change post destination to "/inquiry/confirm" -->
     <form class="form" id="form" name="form" method="post" action="inquiry-confirm.php">
       <p class="form__top-text txt-center"><span class="required"></span>は必須項目となります。必ずご記入ください。</p>
@@ -107,7 +107,7 @@
           <textarea name="message" cols="30" rows="10" class="form__text-input"></textarea>
         </div>
       </div>
-      <h2 class="inquiry-h2">個人情報の取り扱い</h2>
+      <h2 class="inquiry-header">個人情報の取り扱い</h2>
       <p class="txt-center">個人情報の取り扱いについて、詳しくは弊社の<a href="https://www.imcjpn.co.jp/policy/" target="_blank">プライバシーポリシー</a>をご覧ください。</p>
       <div class="personal-info">
         <span class="personal-info__text">個人情報の取り扱い</span>
