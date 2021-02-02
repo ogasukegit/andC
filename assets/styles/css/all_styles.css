@@ -843,6 +843,9 @@ a:link, a:visited, a:hover, a:active {
       .ns-home .pickup-item .image {
         margin-bottom: 2rem; } }
   .ns-home .pickup-item .description-head {
+    padding: 0.3rem 0 0.3rem 1rem;
+    border-left: 4px solid #d3dbd7;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     font-family: "NotoSerif", "Times New Roman", serif; }
   .ns-home .pickup-item .green-text {
