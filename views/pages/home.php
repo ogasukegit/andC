@@ -101,8 +101,10 @@ $news_list = [
           <p class="green-text">
             エアコン室外機カバー（ホワイト・ブラウン）
           </p>
-          <img class="image hide-pc" src="<?= $imgPath ?>/home/pickup_item_1.png" alt="pickup_item_1">
-          <img class="image hide-pc" src="<?= $imgPath ?>/home/pickup_item_2.png" alt="pickup_item_2">
+          <div class="txt-center hide-pc">
+            <img class="image" src="<?= $imgPath ?>/home/pickup_item_1.png" alt="pickup_item_1">
+            <img class="image" src="<?= $imgPath ?>/home/pickup_item_2.png" alt="pickup_item_2">
+          </div>
           <p class="text">
             一般的な室外機カバーは数年で劣化し、また買いなおすことになりがちですが、この室外機カバーは、材質は強度に優れたスチール製。
           </p>
