@@ -137,12 +137,14 @@ $news_list = [
       <div class="lineup">
         <?php foreach ($lineup_articles as $article) : ?>
           <div class="article">
-            <img class="image" src=<?= $imgPath . $article["Image"] ?>>
-            <div class="title">
-              <?= $article["Title"] ?>
-            </div>
-            <div class="description">
-              <?= $article["Description"] ?>
+            <div class="above-button">
+              <img class="image" src=<?= $imgPath . $article["Image"] ?>>
+              <div class="title">
+                <?= $article["Title"] ?>
+              </div>
+              <div class="description">
+                <?= $article["Description"] ?>
+              </div>
             </div>
             <div class="lineup__button button-container">
               <a class="arrow-button" href="">
