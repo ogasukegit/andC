@@ -90,7 +90,7 @@ $news_list = [
         </p>
       </h2>
       <div class="pickup-item">
-        <div class="flex-child hide-sp">
+        <div class="flex-child txt-center hide-sp">
           <img class="image" src="<?= $imgPath ?>/home/pickup_item_1.png" alt="pickup_item_1">
           <img class="image" src="<?= $imgPath ?>/home/pickup_item_2.png" alt="pickup_item_2">
         </div>
