@@ -98,7 +98,7 @@ $news_list = [
           <h3 class="description-head">
             室外機をオシャレに隠す、<br>お庭のコーディネイトの新提案。
           </h3>
-          <p class="green-text txt-center">
+          <p class="green-text">
             エアコン室外機カバー（ホワイト・ブラウン）
           </p>
           <p class="text">
@@ -140,7 +140,7 @@ $news_list = [
             <div class="description">
               <?= $article["Description"] ?>
             </div>
-            <div class="button-container">
+            <div class="lineup__button button-container">
               <a class="arrow-button" href="">
                 エアコン室外機カバー<br>
                 商品詳細はこちら

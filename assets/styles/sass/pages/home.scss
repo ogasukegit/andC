@@ -198,12 +198,13 @@
       border-left: 4px solid #d3dbd7;
       margin-top: 1rem;
       margin-bottom: 2rem;
+      font-size: 1.4rem;
       @include font_NotoSerif;
     }
 
     .green-text {
-      padding: 0.5rem 0;
-      margin-bottom: 1rem;
+      padding: 0.5rem 1.5rem;
+      margin-bottom: 2rem;
       background-color: #d3dbd7;
       color: #476556;
     }
@@ -252,6 +253,10 @@
 
     .description {
       margin-bottom: 1rem;
+    }
+
+    .lineup__button {
+      margin-top: 1.5rem;
     }
 
   }

@@ -862,10 +862,11 @@ a:link, a:visited, a:hover, a:active {
     border-left: 4px solid #d3dbd7;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    font-size: 1.4rem;
     font-family: "NotoSerif", "Times New Roman", serif; }
   .ns-home .pickup-item .green-text {
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 2rem;
     background-color: #d3dbd7;
     color: #476556; }
   .ns-home .pickup-item .text {
@@ -918,6 +919,8 @@ a:link, a:visited, a:hover, a:active {
     text-align: center; }
   .ns-home .lineup .description {
     margin-bottom: 1rem; }
+  .ns-home .lineup .lineup__button {
+    margin-top: 1.5rem; }
 
 .ns-home .technology .description {
   margin-bottom: 5rem; }
