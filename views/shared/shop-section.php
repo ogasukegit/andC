@@ -17,10 +17,8 @@
           エアコン室外機カバー
         </p>
         <a class="list__link" href="">雑貨ショップドットコム様</a>
-        <a class="list__link" href="">雑貨ショップドットコム様</a>
-        <a class="list__link list__link--indent" href="">エアコン室外機カバー</a>
-        <a class="list__link list__link--indent" href="">エアコン室外機カバー(大型)</a>
-        <a class="list__link" href="">やさしさＯＮ-ＬＩＮＥ様</a>
+        <a class="list__link list__link--indent" href="https://item.rakuten.co.jp/zakkashop/31300/">エアコン室外機カバー</a>
+        <a class="list__link list__link--indent" href="https://item.rakuten.co.jp/zakkashop/32419/">エアコン室外機カバー(大型)</a>
       </div>
       <div class="list">
         <p class="list__title">
