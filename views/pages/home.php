@@ -90,7 +90,7 @@ $news_list = [
         </p>
       </h2>
       <div class="pickup-item">
-        <div class="flex-child">
+        <div class="flex-child hide-sp">
           <img class="image" src="<?= $imgPath ?>/home/pickup_item_1.png" alt="pickup_item_1">
           <img class="image" src="<?= $imgPath ?>/home/pickup_item_2.png" alt="pickup_item_2">
         </div>
@@ -98,9 +98,11 @@ $news_list = [
           <h3 class="description-head">
             室外機をオシャレに隠す、<br>お庭のコーディネイトの新提案。
           </h3>
-          <p class="green-text txt-center">
+          <p class="green-text">
             エアコン室外機カバー（ホワイト・ブラウン）
           </p>
+          <img class="image hide-pc" src="<?= $imgPath ?>/home/pickup_item_1.png" alt="pickup_item_1">
+          <img class="image hide-pc" src="<?= $imgPath ?>/home/pickup_item_2.png" alt="pickup_item_2">
           <p class="text">
             一般的な室外機カバーは数年で劣化し、また買いなおすことになりがちですが、この室外機カバーは、材質は強度に優れたスチール製。
           </p>
@@ -140,7 +142,7 @@ $news_list = [
             <div class="description">
               <?= $article["Description"] ?>
             </div>
-            <div class="button-container">
+            <div class="lineup__button button-container">
               <a class="arrow-button" href="">
                 エアコン室外機カバー<br>
                 商品詳細はこちら

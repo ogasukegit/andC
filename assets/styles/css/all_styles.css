@@ -507,8 +507,7 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 1.5rem;
-    font-family: "NotoSerif", "Times New Roman", serif; }
+    margin-bottom: 1.5rem; }
     .ns-shop-section .main-title .main-title__logo {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -519,7 +518,7 @@ a:link, a:visited, a:hover, a:active {
       -ms-flex: 0 1 auto;
       flex: 0 1 auto;
       font-weight: normal;
-      font-size: 2rem; }
+      font-family: "NotoSerif", "Times New Roman", serif; }
       @media (max-width: 767px) {
         .ns-shop-section .main-title .main-title__text {
           font-size: 1.5rem; } }
@@ -828,8 +827,6 @@ a:link, a:visited, a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
@@ -864,10 +861,11 @@ a:link, a:visited, a:hover, a:active {
     border-left: 4px solid #d3dbd7;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    font-size: 1.4rem;
     font-family: "NotoSerif", "Times New Roman", serif; }
   .ns-home .pickup-item .green-text {
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 2rem;
     background-color: #d3dbd7;
     color: #476556; }
   .ns-home .pickup-item .text {
@@ -920,6 +918,8 @@ a:link, a:visited, a:hover, a:active {
     text-align: center; }
   .ns-home .lineup .description {
     margin-bottom: 1rem; }
+  .ns-home .lineup .lineup__button {
+    margin-top: 1.5rem; }
 
 .ns-home .technology .description {
   margin-bottom: 5rem; }
