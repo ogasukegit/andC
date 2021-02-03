@@ -505,8 +505,7 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 1.5rem;
-    font-family: "NotoSerif", "Times New Roman", serif; }
+    margin-bottom: 1.5rem; }
     .ns-shop-section .main-title .main-title__logo {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -517,7 +516,7 @@ a:link, a:visited, a:hover, a:active {
       -ms-flex: 0 1 auto;
       flex: 0 1 auto;
       font-weight: normal;
-      font-size: 2rem; }
+      font-family: "NotoSerif", "Times New Roman", serif; }
       @media (max-width: 767px) {
         .ns-shop-section .main-title .main-title__text {
           font-size: 1.5rem; } }
