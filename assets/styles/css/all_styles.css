@@ -12,25 +12,25 @@
   font-style: normal; }
 
 @font-face {
-  font-family: "NotoSansJP";
+  font-family: "NotoSans";
   src: url("../../fonts/NotoSansJP-Regular.otf");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: "NotoSansJP";
+  font-family: "NotoSans";
   src: url("../../fonts/NotoSansJP-Bold.otf");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: "NotoSerif";
+  font-family: "Roboto";
   src: url("../../fonts/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: "NotoSerif";
+  font-family: "Roboto";
   src: url("../../fonts/Roboto-Bold.ttf");
   font-weight: bold;
   font-style: normal; }
@@ -39,7 +39,7 @@
   font-family: "NotoSerif", "Times New Roman", serif; }
 
 .font-noto-sans {
-  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+  font-family: "NotoSans", Arial, Helvetica, sans-serif; }
 
 .font-roboto {
   font-family: "Roboto", Arial, Helvetica, sans-serif; }
@@ -47,9 +47,9 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  line-height: 1.7;
-  letter-spacing: 1px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+  line-height: 2;
+  letter-spacing: 2px;
+  font-family: "NotoSans", Arial, Helvetica, sans-serif; }
 
 body {
   margin: 0; }
@@ -96,6 +96,7 @@ a:link, a:visited, a:hover, a:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
   height: 96px;
   font-size: 1.2rem;
   background-color: #e8f1f7; }
@@ -238,9 +239,7 @@ a:link, a:visited, a:hover, a:active {
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 60px; }
-  .ns-nav .nav-left__logo {
-    height: 60px; }
-  .ns-nav .nav-left {
+  .ns-nav .nav-h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -248,11 +247,14 @@ a:link, a:visited, a:hover, a:active {
     -ms-flex-align: stretch;
     align-items: stretch;
     height: 100%; }
-    .ns-nav .nav-left .nav-left__text {
+    .ns-nav .nav-h1 .nav-h1__logo {
+      height: 60px; }
+    .ns-nav .nav-h1 .nav-h1__text {
       padding: 24px 0 0 10px;
+      font-family: "NotoSans", Arial, Helvetica, sans-serif;
       font-size: 16px;
-      color: #333333;
-      font-weight: bold; }
+      font-weight: bold;
+      color: #333333; }
   @media (max-width: 767px) {
     .ns-nav .nav-menu {
       position: absolute;
@@ -332,7 +334,7 @@ a:link, a:visited, a:hover, a:active {
     height: 100%;
     padding: 1rem 0.5rem;
     font-size: 16px;
-    font-family: "NotoSerif", "Times New Roman", serif;
+    font-family: "NotoSans", Arial, Helvetica, sans-serif;
     color: #333333; }
     @media (min-width: 768px) {
       .ns-nav .nav-item__link:hover + .nav-item__submenu {
