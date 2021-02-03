@@ -100,6 +100,26 @@ a:link, a:visited, a:hover, a:active {
   font-size: 1.2rem;
   background-color: #e8f1f7; }
 
+.image {
+  visibility: hidden; }
+
+.fadeIn {
+  -webkit-animation: fadeIn 0.8s;
+  animation: fadeIn 0.8s;
+  visibility: visible !important; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .arrow-button {
   display: -webkit-box;
   display: -ms-flexbox;
