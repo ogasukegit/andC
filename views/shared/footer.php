@@ -35,8 +35,13 @@
     scrollToTopButton.addEventListener('click', scrollToTop);
 
 
+    document.addEventListener('DOMContentLoaded', () => {
+      showImages();
+    })
+
     document.addEventListener('scroll', () => {
       checkOffset();
+      showImages();
     })
 
     function checkOffset() {
@@ -50,6 +55,18 @@
         scrollToTopButton.style.position = 'fixed';
         scrollToTopButton.style.top = 'auto';
       }
+    }
+
+    function showImages() {
+      const windowHeight = window.innerHeight;
+      const images = document.getElementsByClassName('image');
+      Array.from(images).forEach((image) => {
+        const imagePos = image.getBoundingClientRect().top;
+        const topOfWindow = document.body.scrollTop;
+        if (topOfWindow + windowHeight - 200 > imagePos) {
+          image.classList.add('fadeIn');
+        }
+      })
     }
   </script>
 </div>
