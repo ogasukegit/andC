@@ -1,4 +1,4 @@
-<div class="ns-footer">
+<div class="ns-footer" id="footer">
   <div class="layout">
     <div class="footer-wrapper">
       <div class="footer-left">
@@ -23,10 +23,33 @@
     const scrollToTopButton = document.getElementById('scroll-to-top-button');
     const scrollToTopAnchor = document.getElementById('scroll-to-top-anchor');
 
+    const footer = document.getElementById('footer');
+
     function scrollToTop() {
-      scrollToTopAnchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      scrollToTopAnchor.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
 
     scrollToTopButton.addEventListener('click', scrollToTop);
+
+
+    document.addEventListener('scroll', () => {
+      checkOffset();
+    })
+
+    function checkOffset() {
+      const buttonRect = scrollToTopButton.getBoundingClientRect();
+      const footerRect = footer.getBoundingClientRect();
+      if (buttonRect.top + buttonRect.height >= footerRect.top) {
+        scrollToTopButton.style.position = 'absolute';
+        scrollToTopButton.style.top = `${0 - buttonRect.height}px`;
+      }
+      if (document.body.scrollTop + window.innerHeight < footerRect.top) {
+        scrollToTopButton.style.position = 'fixed';
+        scrollToTopButton.style.top = 'auto';
+      }
+    }
   </script>
 </div>
