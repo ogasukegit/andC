@@ -215,7 +215,6 @@
 
   .lineup {
     display: flex;
-    justify-content: center;
     @include sp-only {
       align-items: center;
       flex-direction: column;
@@ -223,51 +222,43 @@
     @include pc-only {
       flex-direction: row;
     }
-
-    .article {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 0 1 auto;
-      max-width: 400px;
+    .article-wrapper {
+      flex: 0 1 33.33333%;
       @include sp-only {
         &:not(:first-of-type):not(:last-of-type) {
           margin: 4rem 0;
         }
       }
+    }
+    .article {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
       @include pc-only {
-        max-width: 33.33%;
         padding: 1rem;
       }
     }
-
     .above-button {
       flex: 0 1 auto;
       text-align: center;
+      .image {
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+      .title {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #9dbdd5;
+        color: #9dbdd5;
+        font-weight: bold;
+        text-align: center;
+      }
+      .description {
+        margin-bottom: 1rem;
+      }
     }
-
-    .image {
-      margin-bottom: 1rem;
-      width: 100%;
-    }
-
-    .title {
-      width: 100%;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid #9dbdd5;
-      color: #9dbdd5;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .description {
-      margin-bottom: 1rem;
-    }
-
     .lineup__button {
       flex: 0 1 auto;
-      width: 100%;
       margin-top: auto;
     }
 

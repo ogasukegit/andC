@@ -136,21 +136,23 @@ $news_list = [
       </h2>
       <div class="lineup">
         <?php foreach ($lineup_articles as $article) : ?>
-          <div class="article">
-            <div class="above-button">
-              <img class="image" src=<?= $imgPath . $article["Image"] ?>>
-              <div class="title">
-                <?= $article["Title"] ?>
+          <div class="article-wrapper">
+            <div class="article">
+              <div class="above-button">
+                <img class="image" src=<?= $imgPath . $article["Image"] ?>>
+                <div class="title">
+                  <?= $article["Title"] ?>
+                </div>
+                <div class="description">
+                  <?= $article["Description"] ?>
+                </div>
               </div>
-              <div class="description">
-                <?= $article["Description"] ?>
+              <div class="lineup__button button-container">
+                <a class="arrow-button" href="">
+                  エアコン室外機カバー<br>
+                  商品詳細はこちら
+                </a>
               </div>
-            </div>
-            <div class="lineup__button button-container">
-              <a class="arrow-button" href="">
-                エアコン室外機カバー<br>
-                商品詳細はこちら
-              </a>
             </div>
           </div>
         <?php endforeach ?>

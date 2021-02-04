@@ -884,10 +884,7 @@ a:link, a:visited, a:hover, a:active {
 .ns-home .lineup {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  display: flex; }
   @media (max-width: 767px) {
     .ns-home .lineup {
       -webkit-box-align: center;
@@ -903,6 +900,13 @@ a:link, a:visited, a:hover, a:active {
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row; } }
+  .ns-home .lineup .article-wrapper {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 33.33333%;
+    flex: 0 1 33.33333%; }
+    @media (max-width: 767px) {
+      .ns-home .lineup .article-wrapper:not(:first-of-type):not(:last-of-type) {
+        margin: 4rem 0; } }
   .ns-home .lineup .article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -911,43 +915,31 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    max-width: 400px; }
-    @media (max-width: 767px) {
-      .ns-home .lineup .article:not(:first-of-type):not(:last-of-type) {
-        margin: 4rem 0; } }
+    height: 100%; }
     @media (min-width: 768px) {
       .ns-home .lineup .article {
-        max-width: 33.33%;
         padding: 1rem; } }
   .ns-home .lineup .above-button {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     text-align: center; }
-  .ns-home .lineup .image {
-    margin-bottom: 1rem;
-    width: 100%; }
-  .ns-home .lineup .title {
-    width: 100%;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #9dbdd5;
-    color: #9dbdd5;
-    font-weight: bold;
-    text-align: center; }
-  .ns-home .lineup .description {
-    margin-bottom: 1rem; }
+    .ns-home .lineup .above-button .image {
+      margin-bottom: 1rem;
+      width: 100%; }
+    .ns-home .lineup .above-button .title {
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #9dbdd5;
+      color: #9dbdd5;
+      font-weight: bold;
+      text-align: center; }
+    .ns-home .lineup .above-button .description {
+      margin-bottom: 1rem; }
   .ns-home .lineup .lineup__button {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    width: 100%;
     margin-top: auto; }
 
 .ns-home .technology .description {
