@@ -460,47 +460,6 @@ a:link, a:visited, a:hover, a:active {
     @media (max-width: 870px) {
       .ns-footer .copyright {
         margin-top: 3rem; } }
-  .ns-footer .scroll-to-top-button {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    background-color: #8db1ce;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    cursor: pointer; }
-    @media (max-width: 767px) {
-      .ns-footer .scroll-to-top-button {
-        width: 50px;
-        height: 50px; } }
-    @media (min-width: 768px) {
-      .ns-footer .scroll-to-top-button {
-        width: 66px;
-        height: 66px; } }
-    .ns-footer .scroll-to-top-button::before {
-      content: '';
-      width: 42%;
-      height: 2px;
-      margin: 15% 0;
-      background-color: #ffffff; }
-    .ns-footer .scroll-to-top-button::after {
-      content: '';
-      width: 20%;
-      height: 20%;
-      border-top: 2px solid #ffffff;
-      border-left: 2px solid #ffffff;
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg); }
 
 .ns-breadcrumb {
   margin: 0 0 1rem 0;

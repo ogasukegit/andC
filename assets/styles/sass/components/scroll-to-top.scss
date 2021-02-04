@@ -1,0 +1,38 @@
+@mixin scrollToTopButtonSizing($size) {
+  width: $size;
+  height: $size;
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  @include sp-only {
+    @include scrollToTopButtonSizing(50px);
+  }
+  @include pc-only {
+    @include scrollToTopButtonSizing(66px);
+  }
+  background-color: $blueAccentLt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &::before {
+    content: ''; 
+    width: 42%;
+    height: 2px;
+    margin: 15% 0;
+    background-color: #ffffff;
+  }
+  &::after {
+    content: '';
+    width: 20%;
+    height: 20%;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    transform: rotate(45deg);
+  }
+}
