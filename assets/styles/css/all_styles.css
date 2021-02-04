@@ -595,7 +595,7 @@ a:link, a:visited, a:hover, a:active {
 
 .ns-contact-widget {
   position: fixed;
-  top: 50%;
+  top: 30%;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
