@@ -58,7 +58,7 @@
 
   .product-main {
     @media (max-width: 2 * $asideWidth + $layoutWidth) and (min-width: $breakpoint + 1) {
-      width: calc(50vw + 500px - #{$asideWidth});
+      width: calc(100vw - #{$asideWidth} - 2rem);
       margin-left: $asideWidth;
       margin-right: auto;
     }
@@ -165,16 +165,19 @@
   }
 
   .product-buttons {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
     @include sp-only {
       margin-bottom: 2rem;
     }
     @include pc-only {
       margin-bottom: 3rem;
+    }
+    .arrow-button {
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -329,6 +332,14 @@
     }
 
     .modal__image {
+    }
+  }
+
+  .ns-shop-section {
+    @media (max-width: 2 * $asideWidth + $layoutWidth) and (min-width: $breakpoint + 1) {
+      width: calc(100vw - #{$asideWidth} + 2rem);
+      margin-left: calc(#{$asideWidth} - 2rem);
+      margin-right: auto;
     }
   }
 }

@@ -2,6 +2,7 @@
   background-color: #f8fafd;
   padding-top: 3rem;
   padding-bottom: 5rem;
+  position: relative;
 
   .english-title {
     font-size: 1.5rem;
@@ -61,8 +62,9 @@
       text-decoration: underline;
     }
 
-    .list__link::before {
+    .list__bullet::before {
       content: '●';
+      padding-right: 4px;
     }
 
     .list__link--indent {

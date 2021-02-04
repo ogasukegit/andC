@@ -228,7 +228,7 @@ $news_list = [
         <div class="square-alone square-alone--variant hide-sp"></div>
         <div class="button-container layout">
           <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html">
-            &nbsp;私たちについて&nbsp;&nbsp;&nbsp;
+            私たちについて
             <img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>>
           </a>
         </div>
