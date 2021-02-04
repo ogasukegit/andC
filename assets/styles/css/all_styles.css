@@ -1606,8 +1606,7 @@ a:link, a:visited, a:hover, a:active {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.5rem; }
+  align-items: center; }
   @media (max-width: 767px) {
     .ns-contact .left {
       -webkit-box-flex: 0;
@@ -1632,7 +1631,7 @@ a:link, a:visited, a:hover, a:active {
     flex: 0 1 45%; } }
 
 .ns-contact .phone-number {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 .ns-contact .call-button {
   margin-bottom: 2rem;

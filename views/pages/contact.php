@@ -28,8 +28,8 @@
     <div class="inner">
       <div class="left">
         <p>お問い合わせ先</p>
-        <p class="phone-number hide-sp">0120-999-999</p>
-        <a class="call-button button button--blue hide-pc" href="tel:0120-999-999">
+        <p class="phone-number hide-sp">03-3555-3214</p>
+        <a class="call-button button button--blue hide-pc" href="tel:03-3555-3214">
           <?= file_get_contents($imgPath . "/contact/call-icon.svg") ?>
           03-3555-3214
         </a>
