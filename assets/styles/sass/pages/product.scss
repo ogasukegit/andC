@@ -165,16 +165,19 @@
   }
 
   .product-buttons {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
     @include sp-only {
       margin-bottom: 2rem;
     }
     @include pc-only {
       margin-bottom: 3rem;
+    }
+    .arrow-button {
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
   }
 
