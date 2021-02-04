@@ -16,7 +16,7 @@
         <p class="list__title">
           エアコン室外機カバー
         </p>
-        <a class="list__link" href="">雑貨ショップドットコム様</a>
+        <span class="list__bullet">雑貨ショップドットコム様</span>
         <a class="list__link list__link--indent" href="https://item.rakuten.co.jp/zakkashop/31300/">エアコン室外機カバー</a>
         <a class="list__link list__link--indent" href="https://item.rakuten.co.jp/zakkashop/32419/">エアコン室外機カバー(大型)</a>
       </div>
@@ -24,11 +24,11 @@
         <p class="list__title">
           エアコン室外機カバー
         </p>
-        <a class="list__link" href="">店舗名が入ります</a>
-        <a class="list__link" href="">店舗名が入ります</a>
-        <a class="list__link" href="">店舗名が入ります</a>
-        <a class="list__link" href="">店舗名が入ります</a>
-        <a class="list__link" href="">店舗名が入ります</a>
+        <a class="list__bullet list__link" href="">店舗名が入ります</a>
+        <a class="list__bullet list__link" href="">店舗名が入ります</a>
+        <a class="list__bullet list__link" href="">店舗名が入ります</a>
+        <a class="list__bullet list__link" href="">店舗名が入ります</a>
+        <a class="list__bullet list__link" href="">店舗名が入ります</a>
       </div>
     </div>
     <?php if ($pageName != 'home') : ?>

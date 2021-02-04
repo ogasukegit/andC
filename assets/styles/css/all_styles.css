@@ -478,7 +478,9 @@ a:link, a:visited, a:hover, a:active {
 .ns-shop-section {
   background-color: #f8fafd;
   padding-top: 3rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  z-index: 998;
+  position: relative; }
   .ns-shop-section .english-title {
     font-size: 1.5rem;
     font-weight: bold; }
@@ -536,8 +538,9 @@ a:link, a:visited, a:hover, a:active {
       padding-left: 1.5rem;
       margin-bottom: .8rem;
       text-decoration: underline; }
-    .ns-shop-section .lists .list__link::before {
-      content: '●'; }
+    .ns-shop-section .lists .list__bullet::before {
+      content: '●';
+      padding-right: 4px; }
     .ns-shop-section .lists .list__link--indent {
       padding-left: 4rem; }
     .ns-shop-section .lists .list__link--indent::before {
@@ -572,7 +575,8 @@ a:link, a:visited, a:hover, a:active {
   font-weight: bold;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding: 2rem 1rem 1rem 1rem; }
+  padding: 2rem 1rem 1rem 1rem;
+  z-index: 999; }
   @media (max-width: 767px) {
     .ns-contact-widget {
       display: none; } }
