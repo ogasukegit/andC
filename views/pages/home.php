@@ -255,4 +255,13 @@ $news_list = [
   <?php include('../shared/shop-section.php'); ?>
 </div>
 
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    console.log('jquery loaded');
+    // code...
+
+  });
+</script>
+
 <?php include('../shared/foot.php'); ?>
