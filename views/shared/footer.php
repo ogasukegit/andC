@@ -35,38 +35,38 @@
     scrollToTopButton.addEventListener('click', scrollToTop);
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-      showImages();
-    })
+    // document.addEventListener('DOMContentLoaded', () => {
+    //   showImages();
+    // })
 
-    document.addEventListener('scroll', () => {
-      checkOffset();
-      showImages();
-    })
+    // document.addEventListener('scroll', () => {
+    //   checkOffset();
+    //   showImages();
+    // })
 
-    function checkOffset() {
-      const buttonRect = scrollToTopButton.getBoundingClientRect();
-      const footerRect = footer.getBoundingClientRect();
-      if (buttonRect.top + buttonRect.height >= footerRect.top) {
-        scrollToTopButton.style.position = 'absolute';
-        scrollToTopButton.style.top = `${0 - buttonRect.height}px`;
-      }
-      if (document.body.scrollTop + window.innerHeight < footerRect.top) {
-        scrollToTopButton.style.position = 'fixed';
-        scrollToTopButton.style.top = 'auto';
-      }
-    }
+    // function checkOffset() {
+    //   const buttonRect = scrollToTopButton.getBoundingClientRect();
+    //   const footerRect = footer.getBoundingClientRect();
+    //   if (buttonRect.top + buttonRect.height >= footerRect.top) {
+    //     scrollToTopButton.style.position = 'absolute';
+    //     scrollToTopButton.style.top = `${0 - buttonRect.height}px`;
+    //   }
+    //   if (document.body.scrollTop + window.innerHeight < footerRect.top) {
+    //     scrollToTopButton.style.position = 'fixed';
+    //     scrollToTopButton.style.top = 'auto';
+    //   }
+    // }
 
-    function showImages() {
-      const windowHeight = window.innerHeight;
-      const images = document.getElementsByClassName('image');
-      Array.from(images).forEach((image) => {
-        const imagePos = image.getBoundingClientRect().top;
-        const topOfWindow = document.body.scrollTop;
-        if (topOfWindow + windowHeight - 200 > imagePos) {
-          image.classList.add('fadeIn');
-        }
-      })
-    }
+    // function showImages() {
+    //   const windowHeight = window.innerHeight;
+    //   const images = document.getElementsByClassName('image');
+    //   Array.from(images).forEach((image) => {
+    //     const imagePos = image.getBoundingClientRect().top;
+    //     const topOfWindow = document.body.scrollTop;
+    //     if (topOfWindow + windowHeight - 200 > imagePos) {
+    //       image.classList.add('fadeIn');
+    //     }
+    //   })
+    // }
   </script>
 </div>
