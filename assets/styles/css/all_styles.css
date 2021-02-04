@@ -967,7 +967,26 @@ a:link, a:visited, a:hover, a:active {
   height: 150px;
   top: -100px;
   right: 0;
-  background-color: #f8fbfd; }
+  background-color: #f8fbfd;
+  mix-blend-mode: multiply; }
+
+.ns-home .technology .square-alone--variant::before {
+  width: 100px;
+  height: 100px;
+  top: -120px;
+  left: 330px;
+  right: auto; }
+
+.ns-home .technology .square-alone--variant::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  top: -200px;
+  right: auto;
+  left: 80px;
+  background-color: #f8fbfd;
+  mix-blend-mode: multiply; }
 
 .ns-home .technology .point {
   display: -webkit-box;

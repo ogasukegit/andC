@@ -223,6 +223,7 @@ $news_list = [
             </div>
           </div>
         </div>
+        <div class="square-alone square-alone--variant hide-sp"></div>
         <div class="button-container layout">
           <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html">
             &nbsp;私たちについて&nbsp;&nbsp;&nbsp;
