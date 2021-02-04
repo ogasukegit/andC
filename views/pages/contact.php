@@ -23,22 +23,21 @@
   <div class="layout">
     <?php include '../shared/breadcrumb.php'; ?>
     <h2 class="contact-h2">一般のお客様</h2>
-    <p>商品のお問い合わせについては、下記フリーダイヤルより、お願いいたします。</p>
+    <p>商品のお問い合わせについては、下記電話番号より、お願いいたします。</p>
     <p>商品名・内容をお控えの上、ご連絡ください。</p>
     <div class="inner">
       <div class="left">
-        <p>フリーダイヤル</p>
+        <p>お問い合わせ先</p>
         <p class="phone-number hide-sp">0120-999-999</p>
         <a class="call-button button button--blue hide-pc" href="tel:0120-999-999">
           <?= file_get_contents($imgPath . "/contact/call-icon.svg") ?>
-          0120-999-999
+          03-3555-3214
         </a>
       </div>
       <div class="right">
         <img class="image" src="<?= $imgPath ?>/contact/callcenter.jpg" alt="">
       </div>
     </div>
-    <h2 class="contact-h2">＆Cが買えるショップ</h2>
   </div>
   <?php include('../shared/shop-section.php'); ?>
   <div class="layout">
