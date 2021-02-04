@@ -703,60 +703,6 @@ a:link, a:visited, a:hover, a:active {
         font-family: "NotoSerif", "Times New Roman", serif;
         padding-top: 2rem;
         font-size: 1rem; }
-  .ns-home .slider-container .fade1 {
-    -webkit-animation: fade1 20s infinite;
-    animation: fade1 20s infinite; }
-  .ns-home .slider-container .fade2 {
-    -webkit-animation: fade2 20s infinite;
-    animation: fade2 20s infinite; }
-
-@-webkit-keyframes fade1 {
-  0% {
-    opacity: 1; }
-  25% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  75% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fade1 {
-  0% {
-    opacity: 1; }
-  25% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  75% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes fade2 {
-  0% {
-    opacity: 0; }
-  25% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  75% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fade2 {
-  0% {
-    opacity: 0; }
-  25% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  75% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
   .ns-home .slider-container .scroll {
     position: absolute;
     left: 50%;

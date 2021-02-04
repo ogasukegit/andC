@@ -49,18 +49,20 @@ $news_list = [
 <div class="ns-home">
   <?php include('../shared/navigation.php'); ?>
   <div class="slider-container">
-    <?php foreach ($slides as $x => $slide) : ?>
-      <div class="slide fade<?= $x + 1?>" style="background-image: url(<?= $imgPath . $slide ?>)">
-        <div class="slide-content layout">
-          <p class="slide-title">
-            優れたコーティング技術を<br>エクステリアに。
-          </p>
-          <p class="slide-description">
-            「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。
-          </p>
+    <div id="slideshow">
+      <?php foreach ($slides as $x => $slide) : ?>
+        <div class="slide" style="background-image: url(<?= $imgPath . $slide ?>)">
+          <div class="slide-content layout">
+            <p class="slide-title">
+              優れたコーティング技術を<br>エクステリアに。
+            </p>
+            <p class="slide-description">
+              「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。
+            </p>
+          </div>
         </div>
-      </div>
-    <?php endforeach ?>
+      <?php endforeach ?>
+    </div>
     <div class="scroll">
       <p class="scroll__text">SCROLL</p>
       <div class="scroll__arrow"></div>
@@ -258,8 +260,16 @@ $news_list = [
 <script type="text/javascript">
   $(document).ready(function() {
 
-    console.log('jquery loaded');
-    // code...
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+      $('#slideshow > div:first')
+        .fadeOut(2000)
+        .next()
+        .fadeIn(2000)
+        .end()
+        .appendTo('#slideshow');
+    }, 10000);
 
   });
 </script>
