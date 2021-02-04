@@ -19,6 +19,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-TS2LD28');</script>
   <!-- End Google Tag Manager -->
+  <script type="text/javascript" src="../../assets/js/jquery-3.5.1.min.js"></script>
 </head>
 <body id="scroll-to-top-anchor">
   <!-- Google Tag Manager (noscript) -->
