@@ -223,6 +223,7 @@ $news_list = [
             </div>
           </div>
         </div>
+        <div class="square-alone square-alone--variant hide-sp"></div>
         <div class="button-container layout">
           <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html">
             &nbsp;私たちについて&nbsp;&nbsp;&nbsp;
@@ -254,5 +255,14 @@ $news_list = [
   </div>
   <?php include('../shared/shop-section.php'); ?>
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    console.log('jquery loaded');
+    // code...
+
+  });
+</script>
 
 <?php include('../shared/foot.php'); ?>
