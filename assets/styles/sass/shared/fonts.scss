@@ -11,25 +11,25 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "NotoSansJP";
+  font-family: "NotoSans";
   src: url('../../fonts/NotoSansJP-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "NotoSansJP";
+  font-family: "NotoSans";
   src: url('../../fonts/NotoSansJP-Bold.otf');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "NotoSerif";
+  font-family: "Roboto";
   src: url('../../fonts/Roboto-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "NotoSerif";
+  font-family: "Roboto";
   src: url('../../fonts/Roboto-Bold.ttf');
   font-weight: bold;
   font-style: normal;
@@ -40,7 +40,7 @@
   font-family: "NotoSerif", "Times New Roman", serif;
 }
 @mixin font_NotoSans {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "NotoSans", Arial, Helvetica, sans-serif;
 }
 @mixin font_Roboto {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
