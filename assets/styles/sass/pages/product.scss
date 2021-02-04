@@ -58,7 +58,7 @@
 
   .product-main {
     @media (max-width: 2 * $asideWidth + $layoutWidth) and (min-width: $breakpoint + 1) {
-      width: calc(50vw + 500px - #{$asideWidth});
+      width: calc(100vw - #{$asideWidth} - 2rem);
       margin-left: $asideWidth;
       margin-right: auto;
     }
@@ -329,6 +329,14 @@
     }
 
     .modal__image {
+    }
+  }
+
+  .ns-shop-section {
+    @media (max-width: 2 * $asideWidth + $layoutWidth) and (min-width: $breakpoint + 1) {
+      width: calc(100vw - #{$asideWidth} + 2rem);
+      margin-left: calc(#{$asideWidth} - 2rem);
+      margin-right: auto;
     }
   }
 }
