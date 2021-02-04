@@ -3,6 +3,7 @@
   .inquiry-header {
     padding: 2rem 0;
     text-align: center;
+    @include font_NotoSerif;
   }
   .form-status {
     display: flex;
