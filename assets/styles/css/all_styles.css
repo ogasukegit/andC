@@ -246,7 +246,7 @@ a:link, a:visited, a:hover, a:active {
     height: 60px;
     -webkit-box-shadow: 0 0 12px #888888;
     box-shadow: 0 0 12px #888888;
-    z-index: 1; }
+    z-index: 10; }
 
 .ns-nav {
   position: absolute;
@@ -254,7 +254,7 @@ a:link, a:visited, a:hover, a:active {
   left: 0;
   width: 100%;
   background-color: white;
-  z-index: 2; }
+  z-index: 11; }
   .ns-nav .nav-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -502,6 +502,7 @@ a:link, a:visited, a:hover, a:active {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
       flex: 0 1 auto;
+      white-space: nowrap;
       font-weight: normal;
       font-family: "NotoSerif", "Times New Roman", serif; }
       @media (max-width: 767px) {
@@ -1089,6 +1090,7 @@ a:link, a:visited, a:hover, a:active {
   left: 0;
   height: 100vh;
   padding: 0 2rem 0 0;
+  z-index: 9;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none; }
@@ -1111,6 +1113,7 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    height: 100%;
     padding: 60px 0 3rem;
     background-color: #f2f1ee; }
   .ns-product .nav .nav__inner-top {
@@ -1452,13 +1455,9 @@ a:link, a:visited, a:hover, a:active {
     padding: 0 0.5rem; }
   .ns-inquiry .form__text-input {
     width: 100%;
-    font-size: 1rem; }
-    @media (max-width: 767px) {
-      .ns-inquiry .form__text-input {
-        padding: 0.7rem 1rem; } }
-    @media (min-width: 768px) {
-      .ns-inquiry .form__text-input {
-        padding: 0.5rem 1rem; } }
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.7rem 1rem; }
   .ns-inquiry .form__text-input--postal {
     max-width: 8rem; }
   .ns-inquiry .form {
