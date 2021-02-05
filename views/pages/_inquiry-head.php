@@ -12,7 +12,7 @@
 <?php include '../shared/head.php'; ?>
 <div class="ns-inquiry page">
   <?php include('../shared/navigation.php'); ?>
-  <h2 class="blue-header">法人のお客様<br/>お問い合わせフォーム</h2>
+  <h1 class="blue-header">法人のお客様<br/>お問い合わせフォーム</h1>
   <div class="layout">
     <?php include '../shared/breadcrumb.php'; ?>
     <div class="form-status">
