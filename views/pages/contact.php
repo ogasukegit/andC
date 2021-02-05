@@ -19,7 +19,7 @@
 <?php include('../shared/head.php'); ?>
 <div class="ns-contact page">
   <?php include('../shared/navigation.php'); ?>
-  <h2 class="blue-header">ご注文•お問い合わせ</h2>
+  <h1 class="blue-header">ご注文•お問い合わせ</h1>
   <div class="layout">
     <?php include '../shared/breadcrumb.php'; ?>
     <h2 class="contact-h2">一般のお客様</h2>
