@@ -119,34 +119,36 @@
     </form>
 
   </div>
+
   <script type="text/javascript">
-    // display submit button as disabled if required inputs are not checked
-    const form = document.getElementById('form');
-    const submitButton = document.getElementById('submit-button');
-
-    function validateForm() {
-      if (
-        document.forms['form']['name-kanji'].value.length > 0 &&
-        document.forms['form']['name-kana'].value.length > 0 &&
-        document.forms['form']['organization-name'].value.length > 0 &&
-        document.forms['form']['department-name'].value.length > 0 &&
-        document.forms['form']['postal-code-1'].value.length > 0 &&
-        document.forms['form']['postal-code-2'].value.length > 0 &&
-        document.forms['form']['address'].value.length > 0 &&
-        document.forms['form']['phone'].value.length > 0 &&
-        document.forms['form']['email'].value.length > 0 &&
-        document.forms['form']['personal-info'].checked
-      ) {
-        submitButton.classList.remove('button--disabled');
-        submitButton.classList.add('button--blue');
-      } else {
-        submitButton.classList.remove('button--blue');
-        submitButton.classList.add('button--disabled');
+    $(document).ready(function() {
+      // display submit button as disabled if required inputs are not checked
+      const $submitButton = $('#submit-button');
+  
+      function validateForm() {
+        if (
+          $('[name=name-kanji]').val().length > 0 &&
+          $('[name=name-kana]').val().length > 0 &&
+          $('[name=organization-name]').val().length > 0 &&
+          $('[name=department-name]').val().length > 0 &&
+          $('[name=postal-code-1]').val().length > 0 &&
+          $('[name=postal-code-2]').val().length > 0 &&
+          $('[name=address]').val().length > 0 &&
+          $('[name=phone]').val().length > 0 &&
+          $('[name=email]').val().length > 0 &&
+          $('[name=personal-info]').prop('checked')
+        ) {
+          $submitButton.removeClass('button--disabled');
+          $submitButton.addClass('button--blue');
+        } else {
+          $submitButton.removeClass('button--blue');
+          $submitButton.addClass('button--disabled');
+        }
+        return false;
       }
-      return false;
-    }
-
-    form.addEventListener('change', validateForm);
+  
+      $('#form').on('change', validateForm);
+    });
   </script>
   <!-- address lookup by zip api -->
   <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
