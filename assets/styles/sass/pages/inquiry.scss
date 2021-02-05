@@ -60,12 +60,8 @@
   .form__text-input {
     width: 100%;
     font-size: 1rem;
-    @include sp-only {
-      padding: 0.7rem 1rem;
-    }
-    @include pc-only {
-      padding: 0.5rem 1rem;
-    }
+    line-height: 1;
+    padding: 0.7rem 1rem;
   }
   .form__text-input--postal {
     max-width: 8rem;
