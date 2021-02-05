@@ -1224,11 +1224,11 @@ a:link, a:visited, a:hover, a:active {
   .ns-product .sub-slides .sub-slide {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 33.33%;
-    flex: 0 1 33.33%;
-    padding: 1rem; }
+    flex: 0 1 33.33%; }
   .ns-product .sub-slides .sub-slide__img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    padding: 1rem; }
 
 .ns-product .product-buttons {
   max-width: 700px;
