@@ -49,6 +49,11 @@
         ご注文・お問い合わせはこちら
       </a>
     </div>
+    <div class="button-container">
+      <a class="arrow-button" href="/">
+        &C トップへ
+      </a>
+    </div>
   </div>
 </div>
 <?php include('../shared/foot.php'); ?>
