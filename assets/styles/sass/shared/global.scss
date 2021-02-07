@@ -65,7 +65,7 @@ a {
   width: 100%;
   max-width: $layoutWidth;
   margin: 0 auto;
-  @include sp-only {
+  @media (max-width: #{$layoutWidth + 32px}) {
     padding: 0 1rem;
   }
 }
