@@ -65,7 +65,7 @@ a {
   width: 100%;
   max-width: $layoutWidth;
   margin: 0 auto;
-  @include sp-only {
+  @media (max-width: #{$layoutWidth + 32px}) {
     padding: 0 1rem;
   }
 }
@@ -98,10 +98,6 @@ a {
   background-color: #e8f1f7;
   @include font_NotoSerif;
 }
-
-// .image {
-//   visibility: hidden;
-// }
 
 .fadeIn {
   -webkit-animation: fadeIn 0.8s;

@@ -126,7 +126,7 @@ $news_list = [
       </div>
     </div>
   </div>
-  <div class="section grey-background">
+  <div class="section lineup-wrapper grey-background">
     <div class="layout">
       <h2>
         <p class="english-title txt-center font-roboto">
@@ -162,80 +162,63 @@ $news_list = [
     </div>
   </div>
   <div class="section">
-    <div>
-      <h2 class="layout">
-        <p class="english-title txt-center font-roboto">
-          TECHNOLOGY
-        </p>
-        <p class="main-title txt-center">
-          技術へのこだわり
-        </p>
-      </h2>
-      <div class="technology">
-        <p class="description txt-center layout">
-          ＆C（アンド・シー）を手掛ける岩谷マテリアル株式会社のコーティング部は、
-          樹脂コーティングのパイオニアとして、建築資材・家電製品・電設資材などの多くの分野で、金属と樹脂を融合・応用したモノづくりを行っています。<br>
-          コーティング後の素材感や美しさを保ち、耐候性や絶縁性など製品に応じた機能を付加して
-          新たな魅力を引き出すことをテーマに、商品を開発してまいります。
-        </p>
-        <div class="point">
-          <img class="point__image" src=<?= $imgPath . "/home/technology1.png" ?>>
-          <div class="point__content">
+    <h2 class="layout">
+      <p class="english-title txt-center font-roboto">
+        TECHNOLOGY
+      </p>
+      <p class="main-title txt-center">
+        技術へのこだわり
+      </p>
+    </h2>
+    <div class="technology">
+      <p class="description txt-center layout">
+        ＆C（アンド・シー）を手掛ける岩谷マテリアル株式会社のコーティング部は、
+        樹脂コーティングのパイオニアとして、建築資材・家電製品・電設資材などの多くの分野で、金属と樹脂を融合・応用したモノづくりを行っています。<br>
+        コーティング後の素材感や美しさを保ち、耐候性や絶縁性など製品に応じた機能を付加して
+        新たな魅力を引き出すことをテーマに、商品を開発してまいります。
+      </p>
+
+      <div class="points">
+        <div class="point point1">
+          <div class="point__blue-bg">
             <img class="point__logo" src=<?= $imgPath . "/home/point1.png" ?>>
-            <div class="point__blue-bg">
-              <div class="point__square hide-sp"></div>
-              <h3 class="point__title">
-                厚い塗装膜が特徴の『耐候密着コーティング』を得意としています。
-              </h3>
-              <p class="point__description">
-                私たちは流動浸漬塗装技法を用いて、耐候密着コーティングを行っています。<br>
-                この塗装方法は、昭和29年から半世紀以上の実績があり、環境負荷が少ない、サビに強く、滑らかで美しい塗膜が形成されます。
-              </p>
-            </div>
+            <h3 class="point__title">厚い塗装膜が特徴の『耐候密着コーティング』を得意としています。</h3>
+            <p>私たちは流動浸漬塗装技法を用いて、耐候密着コーティングを行っています。<br>この塗装方法は、昭和29年から半世紀以上の実績があり、環境負荷が少ない、サビに強く、滑らかで美しい塗膜が形成されます。</p>
           </div>
+          <img class="point__image" src=<?= $imgPath . "/home/technology1.png" ?>>
+          <div class="point__square"></div>
         </div>
-        <div class="point point--opposite">
-          <div class="point__content point__content--opposite">
-            <img class="point__logo point__logo--opposite" src=<?= $imgPath . "/home/point2.png" ?>>
-            <div class="point__blue-bg point__blue-bg--opposite">
-              <div class="point__square point__square--opposite hide-sp"></div>
-              <h3 class="point__title">
-                国内にある自社工場で製造しています。
-              </h3>
-              <p class="point__description">
-                岩谷マテリアル株式会社のコーティング部は、国内３拠点、
-                海外２拠点の製造部門を有し、＆C（アンド・シー）の商品群は国内工場にて製造しております。
-              </p>
-            </div>
+        <div class="point point2">
+          <div class="point__blue-bg">
+            <img class="point__logo" src=<?= $imgPath . "/home/point2.png" ?>>
+            <h3 class="point__title">国内にある自社工場で製造しています。</h3>
+            <p>岩谷マテリアル株式会社のコーティング部は、国内３拠点、海外２拠点の製造部門を有し、＆C（アンド・シー）の商品群は国内工場にて製造しております。</p>
           </div>
-          <img class="point__image" src=<?= $imgPath . "/home/technology2.png" ?>>
+          <img class="point__image" src=<?= $imgPath . "/home/technology1.png" ?>>
+          <div class="point__square"></div>
         </div>
-        <div class="square-alone hide-sp"></div>
-        <div class="point">
-          <img class="point__image" src=<?= $imgPath . "/home/technology3.png" ?>>
-          <div class="point__content">
+        <div class="point point3">
+          <div class="point__blue-bg">
             <img class="point__logo" src=<?= $imgPath . "/home/point3.png" ?>>
-            <div class="point__blue-bg">
-              <h3 class="point__title">
-                皆さんの身近にあるものにもつかわれている技術です。
-              </h3>
-              <p class="point__description">
-                私たちの製品は、高速道路のフェンスをはじめ、エアコンの室外機部品や、コンビニの冷蔵ショーケースなどに使われています。
-              </p>
-            </div>
+            <h3 class="point__title">皆さんの身近にあるものにもつかわれている技術です。</h3>
+            <p>私たちの製品は、高速道路のフェンスをはじめ、エアコンの室外機部品や、コンビニの冷蔵ショーケースなどに使われています。</p>
           </div>
+          <img class="point__image" src=<?= $imgPath . "/home/technology1.png" ?>>
+          <div class="point__square point__square-1"></div>
+          <div class="point__square point__square-2"></div>
+          <div class="point__square point__square-3"></div>
         </div>
-        <div class="square-alone square-alone--variant hide-sp"></div>
-        <div class="button-container layout">
-          <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html">
-            私たちについて
-            <img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>>
-          </a>
         </div>
       </div>
+
+      <div class="square-alone square-alone--variant hide-sp"></div>
+      <div class="button-container layout">
+        <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html">
+          私たちについて
+          <img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="section section--no-top-padding">
     <div class="layout">
       <h2>
         <p class="english-title txt-center font-roboto">
