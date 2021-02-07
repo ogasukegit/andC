@@ -21,7 +21,6 @@
 
   <script type="text/javascript">
     $(document).ready(function() {
-      // scroll to top
       function scrollToTop() {
         $('html, body').animate({
           scrollTop: $('#scroll-to-top-anchor').offset().top
@@ -47,9 +46,7 @@
         })
       }
 
-      $(document).ready(function() {
-        showImages();
-      });
+      showImages();
 
       $(document).scroll(function() {
         checkOffset();
