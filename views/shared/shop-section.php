@@ -31,7 +31,7 @@
         <a class="list__bullet list__link" href="">店舗名が入ります</a>
       </div>
     </div>
-    <?php if ($pageName != 'home') : ?>
+    <?php if ($pageName != 'home' && $pageName != 'contact') : ?>
       <div class="button-container">
         <a class="arrow-button" href="/">
           &C トップへ

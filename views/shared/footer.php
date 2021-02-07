@@ -18,6 +18,7 @@
     <p class="copyright font-roboto">Copyright © Iwatani Materials Corp</p>
   </div>
   <div class="scroll-to-top-button" id="scroll-to-top-button"></div>
+
   <script type="text/javascript">
     $(document).ready(function() {
       // scroll to top

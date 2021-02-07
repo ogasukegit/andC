@@ -13,14 +13,13 @@
   </div>
 
   <script type="text/javascript">
-    // close widget
-    const contactWidget = document.getElementById('ns-contact-widget');
-    const closeButton = document.getElementById('close-button');
-
-    function closeContactWidget() {
-      contactWidget.remove();
-    }
-
-    closeButton.addEventListener('click', closeContactWidget);
+    $(document).ready(function() {
+      // close widget
+      function closeContactWidget() {
+        $('#ns-contact-widget').remove();
+      }
+  
+      $('#close-button').on('click', closeContactWidget);
+    });
   </script>
 <?php endif ?>

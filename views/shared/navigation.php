@@ -49,23 +49,26 @@
       </div>
     </div>
   </div>
+
   <script type="text/javascript">
-    // open/close mobile navigation
-    const navMenu = document.getElementById('nav-menu');
-    const navHam = document.getElementById('nav-ham');
-    const overlay = document.getElementById('overlay');
-
-    function toggleMenu() {
-      if (navMenu.classList.contains('open')) {
-        navMenu.classList.remove('open');
-        overlay.classList.remove('open');
-      } else {
-        navMenu.classList.add('open');
-        overlay.classList.add('open');
+    $(document).ready(function() {
+      // open/close mobile navigation
+      const $navMenu = $('#nav-menu');
+      const $navHam = $('#nav-ham');
+      const $overlay = $('#overlay');
+  
+      function toggleMenu() {
+        if ($navMenu.hasClass('open')) {
+          $navMenu.removeClass('open');
+          $overlay.removeClass('open');
+        } else {
+          $navMenu.addClass('open');
+          $overlay.addClass('open');
+        }
       }
-    }
-
-    navHam.addEventListener('click', toggleMenu);
-    overlay.addEventListener('click', toggleMenu);
+  
+      $navHam.on('click', toggleMenu);
+      $overlay.on('click', toggleMenu);
+    });
   </script>
 </div>

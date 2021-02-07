@@ -19,7 +19,7 @@
 <?php include('../shared/head.php'); ?>
 <div class="ns-contact page">
   <?php include('../shared/navigation.php'); ?>
-  <h2 class="blue-header">ご注文•お問い合わせ</h2>
+  <h1 class="blue-header">ご注文•お問い合わせ</h1>
   <div class="layout">
     <?php include '../shared/breadcrumb.php'; ?>
     <h2 class="contact-h2">一般のお客様</h2>
@@ -47,6 +47,11 @@
       <a href="/inquiry" class="button button--blue">
         法人のお客様<br>
         ご注文・お問い合わせはこちら
+      </a>
+    </div>
+    <div class="button-container">
+      <a class="arrow-button" href="/">
+        &C トップへ
       </a>
     </div>
   </div>
