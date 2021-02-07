@@ -20,7 +20,7 @@ $breadcrumb = [
 // temporary data
 $asideProducts = [
   [
-    "text" => "室外機カバー",
+    "text" => "エアコン室外機カバー",
     "link" => "/products/product1",
   ],
   [
@@ -159,7 +159,7 @@ $features = [
   ],
   [
     "title" => "結束バンドで本体と固定",
-    "description" => "付属の結束バンドで室外機本体や周辺の配管等とカバーをつなぎ固定すれば、台風などの災害時にも安心です。　必要に応じてお使いください。",
+    "description" => "付属の結束バンドで室外機本体や周辺の配管等とカバーをつなぎ固定すれば、台風などの災害時にも安心です。必要に応じてお使いください。",
     "image" => [
       [
         "src" => "/product/list10.png",
