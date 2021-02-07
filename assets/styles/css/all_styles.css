@@ -981,6 +981,10 @@ a:link, a:visited, a:hover, a:active {
   @media (max-width: 767px) {
     .ns-home .technology .point__square {
       display: none; } }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .ns-home .technology .point__square {
+      /* IE fix */
+      z-index: -1; } }
 
 @media (min-width: 768px) {
   .ns-home .technology .point1 {
