@@ -99,12 +99,11 @@ a {
   @include font_NotoSerif;
 }
 
-// .image {
-//   visibility: hidden;
-// }
+.image {
+  visibility: hidden;
+}
 
 .fadeIn {
-  -webkit-animation: fadeIn 0.8s;
   animation: fadeIn 0.8s;
   visibility: visible !important;
 }

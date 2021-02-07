@@ -41,11 +41,15 @@
 
       function showImages() {
         $('.image').each(function() {
-          if ($(window).scrollTop() + $(window).height() - 200 > $('.image').offset().top) {
-            $('.image').addClass('fadeIn');
+          if ($(window).scrollTop() + $(window).height() - 50 > $(this).offset().top) {
+            $(this).addClass('fadeIn');
           }
         })
       }
+
+      $(document).ready(function() {
+        showImages();
+      });
 
       $(document).scroll(function() {
         checkOffset();

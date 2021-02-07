@@ -102,6 +102,9 @@ a:link, a:visited, a:hover, a:active {
   background-color: #e8f1f7;
   font-family: "NotoSerif", "Times New Roman", serif; }
 
+.image {
+  visibility: hidden; }
+
 .fadeIn {
   -webkit-animation: fadeIn 0.8s;
   animation: fadeIn 0.8s;
