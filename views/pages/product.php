@@ -190,9 +190,9 @@ $features = [
   </div>
   <div class="layout product-main">
     <?php include '../shared/breadcrumb.php'; ?>
-    <h2 class="product-title">
+    <h1 class="product-title">
       樹脂コーティング会社が本気で作った、サビ・劣化に強い、シンプルデザインのエアコン室外機カバー【ホワイト・ブラウン】【スチール製】
-    </h2>
+    </h1>
     <p class="product-description">
       場になじむ、シンプルモダンなデザイン。細部までこだわり長く使えるエアコン室外機カバーです。
     </p>
