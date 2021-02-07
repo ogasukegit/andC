@@ -19,54 +19,39 @@
   </div>
   <div class="scroll-to-top-button" id="scroll-to-top-button"></div>
   <script type="text/javascript">
-    // scroll to top
-    const scrollToTopButton = document.getElementById('scroll-to-top-button');
-    const scrollToTopAnchor = document.getElementById('scroll-to-top-anchor');
-
-    const footer = document.getElementById('footer');
-
-    function scrollToTop() {
-      scrollToTopAnchor.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-
-    scrollToTopButton.addEventListener('click', scrollToTop);
-
-
-    document.addEventListener('DOMContentLoaded', () => {
-      showImages();
-    })
-
-    document.addEventListener('scroll', () => {
-      checkOffset();
-      showImages();
-    })
-
-    function checkOffset() {
-      const buttonRect = scrollToTopButton.getBoundingClientRect();
-      const footerRect = footer.getBoundingClientRect();
-      if (buttonRect.top + buttonRect.height >= footerRect.top) {
-        scrollToTopButton.style.position = 'absolute';
-        scrollToTopButton.style.top = `${0 - buttonRect.height}px`;
+    $(document).ready(function() {
+      // scroll to top
+      function scrollToTop() {
+        $('html, body').animate({
+          scrollTop: $('#scroll-to-top-anchor').offset().top
+        }, 500);
       }
-      if (document.body.scrollTop + window.innerHeight < footerRect.top) {
-        scrollToTopButton.style.position = 'fixed';
-        scrollToTopButton.style.top = 'auto';
-      }
-    }
 
-    function showImages() {
-      const windowHeight = window.innerHeight;
-      const images = document.getElementsByClassName('image');
-      Array.from(images).forEach((image) => {
-        const imagePos = image.getBoundingClientRect().top;
-        const topOfWindow = document.body.scrollTop;
-        if (topOfWindow + windowHeight - 200 > imagePos) {
-          image.classList.add('fadeIn');
+      function checkOffset() {
+        if ($('#scroll-to-top-button').offset().top + $('#scroll-to-top-button').height() >= $('#footer').offset().top) {
+          $('#scroll-to-top-button').css('position', 'absolute');
+          $('#scroll-to-top-button').css('top', `${0 - $('#scroll-to-top-button').height()}px`);
         }
-      })
-    }
+        if ($(document).scrollTop() + window.innerHeight < $('#footer').offset().top) {
+          $('#scroll-to-top-button').css('position', 'fixed');
+          $('#scroll-to-top-button').css('top', 'auto');
+        }
+      }
+
+      function showImages() {
+        $('.image').each(function() {
+          if ($(window).scrollTop() + $(window).height() - 200 > $('.image').offset().top) {
+            $('.image').addClass('fadeIn');
+          }
+        })
+      }
+
+      $(document).scroll(function() {
+        checkOffset();
+        showImages();
+      });
+
+      $('#scroll-to-top-button').on('click', scrollToTop);
+    });
   </script>
 </div>
