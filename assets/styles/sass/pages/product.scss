@@ -1,6 +1,6 @@
 .ns-product {
   
-  $sideNavMargin: 4rem;
+  $sideNavMargin: 3rem;
   $sideNavWidth: 332px;
 
   .side-nav {
@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     height: 100vh;
-    padding: 0 $sideNavMargin 0 0;
+    margin-right: $sideNavMargin;
     z-index: 9;
     overflow-y: scroll;
     -ms-overflow-style: none; // hide scrollbar on IE and Edge
@@ -17,10 +17,10 @@
       display: none; // hide scrollbar on Chrome
     }
     @media (max-width: + 2 * $sideNavWidth + $layoutWidth) {
-      width: $sideNavWidth;
+      width: calc(#{$sideNavWidth} - #{$sideNavMargin});
     }
     @media (min-width: + 2 * $sideNavWidth + $layoutWidth + 1) {
-      width: calc(50vw - 500px);
+      width: calc(50vw - 500px - #{$sideNavMargin});
     }
 
     .side-nav__inner {

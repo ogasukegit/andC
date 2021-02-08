@@ -1112,7 +1112,7 @@ a:link, a:visited, a:hover, a:active {
   top: 0;
   left: 0;
   height: 100vh;
-  padding: 0 4rem 0 0;
+  margin-right: 3rem;
   z-index: 9;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -1121,10 +1121,10 @@ a:link, a:visited, a:hover, a:active {
     display: none; }
   @media (max-width: 1664px) {
     .ns-product .side-nav {
-      width: 332px; } }
+      width: calc(332px - 3rem); } }
   @media (min-width: 1665px) {
     .ns-product .side-nav {
-      width: calc(50vw - 500px); } }
+      width: calc(50vw - 500px - 3rem); } }
   .ns-product .side-nav .side-nav__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1477,8 +1477,8 @@ a:link, a:visited, a:hover, a:active {
 
 @media (max-width: 1664px) and (min-width: 768px) {
   .ns-product .ns-shop-section {
-    width: calc(100vw - 332px + 4rem);
-    margin-left: calc(332px - 4rem);
+    width: calc(100vw - 332px + 3rem);
+    margin-left: calc(332px - 3rem);
     margin-right: auto; } }
 
 .ns-inquiry {
