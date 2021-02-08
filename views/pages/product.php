@@ -236,7 +236,7 @@
             <?php endforeach ?>
           </div>
           <div class="feature__text">
-            <h3 class="feature__title"><?= $feature["title"] ?></h3>
+            <h3 class="feature__title font-noto-serif"><?= $feature["title"] ?></h3>
             <p class="feature__description"><?= $feature["description"] ?></p>
           </div>
         </div>
