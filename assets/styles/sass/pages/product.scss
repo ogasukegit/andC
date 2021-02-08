@@ -406,8 +406,8 @@
 
   .ns-shop-section {
     @media (max-width: 2 * $sideNavWidth + $layoutWidth) and (min-width: $breakpoint + 1) {
-      width: calc(100vw - #{$sideNavWidth} + 2rem);
-      margin-left: calc(#{$sideNavWidth} - 2rem);
+      width: calc(100vw - #{$sideNavWidth} + #{$sideNavMargin});
+      margin-left: calc(#{$sideNavWidth} - #{$sideNavMargin});
       margin-right: auto;
     }
   }

@@ -1477,8 +1477,8 @@ a:link, a:visited, a:hover, a:active {
 
 @media (max-width: 1664px) and (min-width: 768px) {
   .ns-product .ns-shop-section {
-    width: calc(100vw - 332px + 2rem);
-    margin-left: calc(332px - 2rem);
+    width: calc(100vw - 332px + 4rem);
+    margin-left: calc(332px - 4rem);
     margin-right: auto; } }
 
 .ns-inquiry {
