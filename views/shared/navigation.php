@@ -18,10 +18,17 @@
 <div class="ns-nav">
   <div class="layout">
     <div class="nav-wrapper">
-      <h1 class="nav-h1">
-        <a href="/"><img class="nav-h1__logo" src="<?= $imgPath ?>/shared/logo_lg.png" alt="andC logo"></a>
-        <span class="nav-h1__text">庭と家との調和</span>
-      </h1>
+      <?php if ($pageName == 'home'){ ?>
+        <h1 class="nav-h1">
+          <a href="/"><img class="nav-h1__logo" src="<?= $imgPath ?>/shared/logo_lg.png" alt="andC logo"></a>
+          <span class="nav-h1__text">庭と家との調和</span>
+        </h1>
+      <?php } else { ?>
+        <div class="nav-h1">
+          <a href="/"><img class="nav-h1__logo" src="<?= $imgPath ?>/shared/logo_lg.png" alt="andC logo"></a>
+          <span class="nav-h1__text">庭と家との調和</span>
+        </div>
+      <?php } ?>
       <div class="nav-menu" id="nav-menu">
         <div class="nav-item">
           <a class="nav-item__link" href="/">TOP</a>
