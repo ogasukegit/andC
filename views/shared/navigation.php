@@ -18,7 +18,7 @@
 <div class="ns-nav">
   <div class="layout">
     <div class="nav-wrapper">
-      <?php if ($pageName != 'home'){ ?>
+      <?php if ($pageName == 'home'){ ?>
         <h1 class="nav-h1">
           <a href="/"><img class="nav-h1__logo" src="<?= $imgPath ?>/shared/logo_lg.png" alt="andC logo"></a>
           <span class="nav-h1__text">庭と家との調和</span>
