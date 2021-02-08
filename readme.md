@@ -25,3 +25,5 @@ This is the front-end code for the AndC company website. This was developed on P
 1. Build Sass:
     - ```gulp build``` to build the assets once
     - ```gulp watch``` to watch for changes as you develop
+    - input dir: ```assets/styles/sass```
+    - output dir: ```assets/styles/css/all_styles.css```
