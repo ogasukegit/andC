@@ -350,12 +350,20 @@
   }
 
   function showModal() {
-    modal.style.display = "block";
-    modalImage.src = imgPath + slideImages[currentIndex];
+    if (<?= $productModal ?>) {
+      modal.style.display = "block";
+      modalImage.src = imgPath + slideImages[currentIndex];
+    } else {
+      console.log('product page modal disabled');
+    }
   }
 
-  modal.onclick = function(event) {
-    modal.style.display = "none";
+  if (<?= $productModal ?>) {
+    modal.onclick = function(event) {
+      modal.style.display = "none";
+    }
+  } else {
+    console.log('product page modal disabled');
   }
 </script>
 <?php include('../shared/foot.php'); ?>
