@@ -3,5 +3,5 @@
   $imgPath = "../../assets/images";
 
   /* product page modal switch */
-  $productModal = 'false';
+  $showProductModal = 'true';
 ?>

@@ -350,7 +350,7 @@
   }
 
   function showModal() {
-    if (<?= $productModal ?>) {
+    if (<?= $showProductModal ?>) {
       modal.style.display = "block";
       modalImage.src = imgPath + slideImages[currentIndex];
     } else {
@@ -358,7 +358,7 @@
     }
   }
 
-  if (<?= $productModal ?>) {
+  if (<?= $showProductModal ?>) {
     modal.onclick = function(event) {
       modal.style.display = "none";
     }
