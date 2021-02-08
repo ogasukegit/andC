@@ -1198,7 +1198,8 @@ a:link, a:visited, a:hover, a:active {
     padding-bottom: 71.94%;
     background-color: #f2f1ee;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .ns-product .product-slider .product-slider__image {
     position: absolute;
     top: 0;
