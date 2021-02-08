@@ -1,4 +1,4 @@
-# AndC Website front-end
+# AndC website front-end
 
 This is the front-end code for the AndC company website. This was developed on PHP to make use of templating and component includes, but there is no other back-end code. This is intended to be connected to a backend code-base such as a CMS.
 
