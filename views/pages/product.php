@@ -7,13 +7,13 @@ $metaData = [
   "keywords" => "",
 ];
 $breadcrumb = [
-  [
-    "link" => "/inquiry",
-    "text" => "法人の方 ご注文・お問い合わせ",
-  ],
+  // [
+  //   "link" => "/products",
+  //   "text" => "PRODUCTS",
+  // ],
   [
     "link" => false,
-    "text" => "入力内容確認",
+    "text" => "エアコン室外機カバー",
   ],
 ];
 
