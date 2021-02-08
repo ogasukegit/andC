@@ -7,11 +7,11 @@ This is the front-end code for the AndC company website. This was developed on P
 - Please set the path to the assets directory in settings.php.
 
 ### Stack and tools used
-- **npm** - for installing necessary packages
 - **PHP (vanilla)** - for templating and component sharing
-- **gulp** - build tool used to compile Sass
-- **Sass** - CSS preprocessor used to add vendor prefixes, concatenate stylesheets, and allow for better CSS to be used
-- **jQuery** (v3.5.1) - for some interactive components
+- **npm** - (https://www.npmjs.com/) for installing necessary packages
+- **gulp** - (https://gulpjs.com/) build tool used to compile Sass
+- **Sass** - (https://sass-lang.com/) CSS preprocessor used to add vendor prefixes, concatenate stylesheets, and allow for better CSS to be used
+- **jQuery** (v3.5.1) - (https://jquery.com/) for some interactive components
 
 ### Development
 1. Run a server that supports PHP (e.g. MAMP)
