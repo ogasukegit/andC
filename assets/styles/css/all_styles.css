@@ -1300,7 +1300,7 @@ a:link, a:visited, a:hover, a:active {
     .ns-product .fashion {
       margin-left: -1rem;
       margin-right: -1rem;
-      padding: 1rem; } }
+      padding: 2rem 1rem 1rem; } }
   @media (min-width: 768px) {
     .ns-product .fashion {
       padding: 2rem; } }
@@ -1310,6 +1310,9 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+    @media (max-width: 767px) {
+      .ns-product .fashion .fashion-block {
+        padding: 0.5rem 2rem 0; } }
     @media (min-width: 768px) {
       .ns-product .fashion .fashion-block {
         max-width: 560px;
@@ -1331,7 +1334,7 @@ a:link, a:visited, a:hover, a:active {
     height: 100%; }
     @media (max-width: 767px) {
       .ns-product .fashion .fashion-block__img {
-        padding-bottom: 2rem; } }
+        padding-bottom: 2.5rem; } }
     @media (min-width: 768px) {
       .ns-product .fashion .fashion-block__img {
         padding: 1.5rem; } }
