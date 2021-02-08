@@ -173,15 +173,15 @@
 <?php include('../shared/head.php'); ?>
 <div class="ns-product page">
   <?php include('../shared/navigation.php'); ?>
-  <div class="nav hide-sp">
-    <div class="nav__inner">
-      <div class="nav__inner-top">
-        <p class="nav__title font-roboto">PRODUCTS</p>
+  <div class="side-nav hide-sp">
+    <div class="side-nav__inner">
+      <div class="side-nav__inner-top">
+        <p class="side-nav__title font-roboto">PRODUCTS</p>
         <?php foreach ($asideProducts as $product) : ?>
-          <p class="nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
+          <p class="side-nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
         <?php endforeach ?>
       </div>
-      <div class="nav__inner-bottom">
+      <div class="side-nav__inner-bottom">
         <a class="button button--blue" href="/contact">商品注文•お問い合わせ</a>
       </div>
     </div>
