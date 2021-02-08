@@ -199,7 +199,9 @@
     </div>
     <div class="sub-slides">
       <?php foreach ($slideImages as $x => $image) : ?>
-        <div class="sub-slide" onClick="changeSlide(<?= $x ?>)" style="background-image:url(<?= $imgPath . $image ?>)"></div>
+        <div class="sub-slide">
+          <div class="sub-slide__image" onClick="changeSlide(<?= $x ?>)" style="background-image:url(<?= $imgPath . $image ?>)"></div>
+        </div>
       <?php endforeach ?>
     </div>
     <div class="product-buttons">

@@ -163,13 +163,21 @@
     }
 
     .sub-slide {
-      flex: 0 1 calc(33.33% - 2rem);
-      padding-bottom: calc(33.33% - 2rem);
-      margin: 1rem;
-      margin: 3%;
+      flex: 0 1 33.33%;
+      padding-bottom: 33.33%;
+      position: relative;
+    }
+    
+    .sub-slide__image {
+      position: absolute;
+      top: 7%;
+      left: 7%;
+      width: 86%;
+      height: 86%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      cursor: pointer;
     }
   }
 

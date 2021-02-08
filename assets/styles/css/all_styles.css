@@ -1138,8 +1138,7 @@ a:link, a:visited, a:hover, a:active {
     align-items: center;
     padding: 60px 0 230px;
     background-color: #f2f1ee; }
-  .ns-product .side-nav #d5d5d5
-.side-nav__inner-top {
+  .ns-product .side-nav .side-nav__inner-top {
     padding: 2rem 0 0 1rem; }
   .ns-product .side-nav .side-nav__inner-bottom {
     padding-top: 2rem; }
@@ -1260,14 +1259,20 @@ a:link, a:visited, a:hover, a:active {
       width: 50%; } }
   .ns-product .sub-slides .sub-slide {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 calc(33.33% - 2rem);
-    flex: 0 1 calc(33.33% - 2rem);
-    padding-bottom: calc(33.33% - 2rem);
-    margin: 1rem;
-    margin: 3%;
+    -ms-flex: 0 1 33.33%;
+    flex: 0 1 33.33%;
+    padding-bottom: 33.33%;
+    position: relative; }
+  .ns-product .sub-slides .sub-slide__image {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    width: 86%;
+    height: 86%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    cursor: pointer; }
 
 .ns-product .product-buttons {
   max-width: 700px;
