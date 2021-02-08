@@ -180,7 +180,7 @@ $features = [
           PRODUCTS
         </p>
         <?php foreach ($asideProducts as $product) : ?>
-          <p class="nav__item"><a href="<?= $product["link"] ?>">ー<?= $product["text"] ?></a></p>
+          <p class="nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
         <?php endforeach ?>
       </div>
       <div class="nav__inner-bottom">

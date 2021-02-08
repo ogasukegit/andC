@@ -1154,6 +1154,9 @@ a:link, a:visited, a:hover, a:active {
     width: 100%;
     max-width: 236px;
     padding-top: 2rem; }
+    .ns-product .nav .nav__item::before {
+      content: 'ー';
+      color: #5d99b6; }
 
 @media (max-width: 1600px) and (min-width: 768px) {
   .ns-product .product-main {

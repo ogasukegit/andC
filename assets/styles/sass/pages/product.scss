@@ -54,6 +54,10 @@
       width: 100%;
       max-width: $asideWidth - 64px;
       padding-top: 2rem;
+      &::before {
+        content: 'ー';
+        color: $blueAccentDk;
+      }
     }
 
   }
