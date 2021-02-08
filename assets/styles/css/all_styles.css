@@ -1285,12 +1285,22 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 0.5rem; }
 
 .ns-product .middle__title {
-  margin-bottom: 2rem;
   font-family: "NotoSerif", "Times New Roman", serif; }
+  @media (max-width: 767px) {
+    .ns-product .middle__title {
+      margin-bottom: 1rem; } }
+  @media (min-width: 768px) {
+    .ns-product .middle__title {
+      margin-bottom: 2rem; } }
 
 .ns-product .fashion {
   background-color: #f8fafd;
   margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .ns-product .fashion {
+      margin-left: -1rem;
+      margin-right: -1rem;
+      padding: 1rem; } }
   @media (min-width: 768px) {
     .ns-product .fashion {
       padding: 2rem; } }
@@ -1300,6 +1310,10 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+    @media (min-width: 768px) {
+      .ns-product .fashion .fashion-block {
+        max-width: 560px;
+        margin: -2rem auto 0; } }
   @media (max-width: 767px) {
     .ns-product .fashion .fashion-block__img-container {
       -webkit-box-flex: 0;
@@ -1317,10 +1331,10 @@ a:link, a:visited, a:hover, a:active {
     height: 100%; }
     @media (max-width: 767px) {
       .ns-product .fashion .fashion-block__img {
-        padding-bottom: 1rem; } }
+        padding-bottom: 2rem; } }
     @media (min-width: 768px) {
       .ns-product .fashion .fashion-block__img {
-        padding: 1rem; } }
+        padding: 1.5rem; } }
 
 .ns-product .features-section {
   margin-bottom: 3rem; }
@@ -1378,6 +1392,8 @@ a:link, a:visited, a:hover, a:active {
     padding-left: 1.5rem;
     font-size: 1.5rem;
     border-left: 3px solid #d3dbd7; }
+  .ns-product .features-section .blue-highlight {
+    background-color: #e1f4f5; }
 
 .ns-product .table-section {
   max-width: 50rem;
