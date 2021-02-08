@@ -1285,7 +1285,8 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 0.5rem; }
 
 .ns-product .middle__title {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-family: "NotoSerif", "Times New Roman", serif; }
 
 .ns-product .fashion {
   background-color: #f8fafd;
@@ -1374,8 +1375,9 @@ a:link, a:visited, a:hover, a:active {
       flex: 0 1 60%; } }
   .ns-product .features-section .feature__title {
     margin-bottom: 1.5rem;
-    padding: 0.5rem 0 0.5rem 1rem;
-    border-left: 4px solid #d3dbd7; }
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    border-left: 3px solid #d3dbd7; }
 
 .ns-product .table-section {
   max-width: 50rem;
