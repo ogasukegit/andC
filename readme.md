@@ -14,7 +14,7 @@ This is the front-end code for the AndC company website. This was developed on P
 - **npm** - (https://www.npmjs.com/) for installing necessary packages
 - **PHP (vanilla)** - for templating and component sharing
 - **gulp** - (https://gulpjs.com/) build tool used to compile Sass
-- **Sass** - (https://sass-lang.com/) CSS preprocessor used to add vendor prefixes, concatenate stylesheets, and better CSS
+- **Sass** - (https://sass-lang.com/) CSS preprocessor used to add vendor prefixes, concatenate stylesheets, and overall better CSS
 - **jQuery** (v3.5.1) - (https://jquery.com/) for some interactive components
 
 ---
