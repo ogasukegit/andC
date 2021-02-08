@@ -399,7 +399,8 @@ a:link, a:visited, a:hover, a:active {
 
 .ns-footer {
   background-color: #eeeae6;
-  position: relative; }
+  position: relative;
+  z-index: 11; }
   .ns-footer .external-link {
     margin-left: 2px; }
   .ns-footer .footer-wrapper {
