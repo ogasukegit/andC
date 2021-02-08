@@ -20,7 +20,7 @@ This is the front-end code for the AndC company website. This was developed on P
 ---
 
 ### Development
-1. Run a server that supports PHP (e.g. MAMP)
+1. Run a server that supports PHP (e.g. MAMP (https://www.mamp.info/))
 1. Install all necessary packages: ```npm install```
 1. Build Sass:
     - ```gulp build``` to build the assets once
