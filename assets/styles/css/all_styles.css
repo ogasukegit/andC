@@ -1200,9 +1200,6 @@ a:link, a:visited, a:hover, a:active {
     margin: 0 auto;
     position: relative; }
   .ns-product .product-slider .product-slider__image {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
     position: absolute;
     top: 0;
     left: 50%;
