@@ -69,12 +69,12 @@
     ],
   ];
   $slideImages = [
+    "/product/top.png",
     "/product/oshare1.png",
     "/product/oshare2.png",
     "/product/oshare3.png",
     "/product/oshare4.png",
-    "/product/oshare1.png",
-    "/product/oshare2.png",
+    "/product/blank.png",
   ];
   $features = [
     [
@@ -191,20 +191,16 @@
     <h1 class="product-title">樹脂コーティング会社が本気で作った、サビ・劣化に強い、シンプルデザインのエアコン室外機カバー【ホワイト・ブラウン】【スチール製】</h1>
     <p class="product-description">場になじむ、シンプルモダンなデザイン。細部までこだわり長く使えるエアコン室外機カバーです。</p>
     <div class="product-slider">
-      <div class="product-slider__button product-slider__button--left" onClick="previousSlide()">
-        <div class="product-slider__icon product-slider__icon--left"></div>
+      <div class="product-slider__button product-slider__button--left" onClick="previousSlide()"></div>
+      <div class="product-slider__image-wrapper">
+        <img class="product-slider__image" id="slide-image" onClick="showModal()">
       </div>
-      <div class="product-slider__image-container" onClick="showModal()">
-        <img id="slide-image" class="product-slider__image">
-      </div>
-      <div class="product-slider__button product-slider__button--right" onClick="nextSlide()">
-        <div class="product-slider__icon product-slider__icon--right"></div>
-      </div>
+      <div class="product-slider__button product-slider__button--right" onClick="nextSlide()"></div>
     </div>
     <div class="sub-slides">
       <?php foreach ($slideImages as $x => $image) : ?>
-        <div class="sub-slide" onClick="changeSlide(<?= $x ?>)">
-          <img class="sub-slide__img" src=<?= $imgPath . $image ?>>
+        <div class="sub-slide">
+          <div class="sub-slide__image" onClick="changeSlide(<?= $x ?>)" style="background-image:url(<?= $imgPath . $image ?>)"></div>
         </div>
       <?php endforeach ?>
     </div>
