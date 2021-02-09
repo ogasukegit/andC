@@ -69,11 +69,11 @@
     ],
   ];
   $slideImages = [
-    "/product/top.png",
-    "/product/oshare1.png",
-    "/product/oshare2.png",
-    "/product/oshare3.png",
-    "/product/oshare4.png",
+    "/product/slider1.jpg",
+    "/product/slider2.jpg",
+    "/product/slider3.jpg",
+    "/product/slider4.jpg",
+    "/product/slider5.jpg",
     "/product/blank.png",
   ];
   $features = [
