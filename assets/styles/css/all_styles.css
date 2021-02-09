@@ -1386,7 +1386,7 @@ a:link, a:visited, a:hover, a:active {
     height: 100%; }
     @media (max-width: 767px) {
       .ns-product .features-section .feature__image {
-        padding: 1rem 2rem; } }
+        padding: 1rem 2rem 0; } }
   @media (max-width: 767px) {
     .ns-product .features-section .feature__text {
       -webkit-box-flex: 0;
@@ -1403,6 +1403,9 @@ a:link, a:visited, a:hover, a:active {
     padding-left: 1.5rem;
     font-size: 1.5rem;
     border-left: 3px solid #d3dbd7; }
+  .ns-product .features-section .feature__description {
+    padding: 0 2rem;
+    text-align: center; }
   .ns-product .features-section .blue-highlight {
     background-color: #e1f4f5; }
 
