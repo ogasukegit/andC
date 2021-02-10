@@ -4,14 +4,6 @@
       "text" => "エアコン室外機カバー",
       "url" => "/products/product1",
     ],
-    [
-      "text" => "商品名を追加",
-      "url" => "/products/product2",
-    ],
-    [
-      "text" => "商品名を追加",
-      "url" => "/products/product3",
-    ],
   ];
 ?>
 
