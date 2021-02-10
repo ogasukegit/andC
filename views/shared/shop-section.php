@@ -14,12 +14,7 @@
         <a class="list__link list__link--indent" href="https://item.rakuten.co.jp/zakkashop/32419/">エアコン室外機カバー(大型)</a>
       </div>
       <div class="list">
-        <p class="list__title">エアコン室外機カバー</p>
-        <a class="list__bullet list__link" href="">店舗名が入ります</a>
-        <a class="list__bullet list__link" href="">店舗名が入ります</a>
-        <a class="list__bullet list__link" href="">店舗名が入ります</a>
-        <a class="list__bullet list__link" href="">店舗名が入ります</a>
-        <a class="list__bullet list__link" href="">店舗名が入ります</a>
+
       </div>
     </div>
     <?php if ($pageName != 'home' && $pageName != 'contact') : ?>
