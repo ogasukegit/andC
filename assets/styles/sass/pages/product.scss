@@ -301,6 +301,10 @@
     }
 
     .feature__caption {
+      @include sp-only {
+        padding: 0 2rem;
+        text-align: center;
+      }
     }
 
     .feature__text {
@@ -321,11 +325,8 @@
     }
 
     .feature__description {
-      @include sp-only {
-        padding: 0 2rem;
-        text-align: center;
-      }
     }
+    
     .blue-highlight {
       background-color: #e1f4f5;
     }

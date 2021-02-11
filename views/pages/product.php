@@ -226,7 +226,7 @@
               <div class="feature__image-block">
                 <img class="feature__image image" src=<?= $imgPath . $image["src"] ?>>
                 <?php if ($image["caption"]) : ?>
-                  <p class="feature__description"><?= $image["caption"] ?></p>
+                  <p class="feature__caption"><?= $image["caption"] ?></p>
                 <?php endif ?>
               </div>
             <?php endforeach ?>
@@ -296,7 +296,8 @@
             <th class="table__cell table__cell--header">備考</th>
             <td class="table__cell">
               <p>■組み立て式:プラスドライバーをご用意ください。</p>
-              <p>【取扱説明書】はこちら <a class="link" href="../../assets/pdf/instruction.pdf" target="_blank">(通常サイズ)</a> <a class="link" href="../../assets/pdf/instruction-Lg.pdf" target="_blank">(大型サイズ)</a></p>
+              <p>【取扱説明書】はこちら <a class="link" href="../../assets/pdf/instruction.pdf" target="blank">(通常サイズ)</a> <a class="link" href="../../assets/pdf/instruction-Lg.pdf" download="取り扱い説明書_
+                大型.pdf">(大型サイズ)</a></p>
               <p>■天面には滑り止めやフチなどは付いておりません。 天面を棚としてご使用にな る場合は、上に載せる物の落下には十分ご注意ください。</p>
               </p>
             </td>
