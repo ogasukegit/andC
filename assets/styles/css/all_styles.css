@@ -51,6 +51,10 @@
   letter-spacing: 2px;
   font-family: "NotoSans", Arial, Helvetica, sans-serif; }
 
+html,
+body {
+  overflow: hidden; }
+
 body {
   margin: 0; }
 
