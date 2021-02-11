@@ -18,16 +18,6 @@
       "Title" => "エアコン室外機カバー<br>（ホワイト・ブラウン）",
       "Description" => 'サビ・腐食に強く、キレイな状態が長持ちします。お庭に調和しながら、室外機を人目から隠します。'
     ],
-    [
-      "Image" => "/home/lineup_2.png",
-      "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
-      "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
-    ],
-    [
-      "Image" => "/home/lineup_3.png",
-      "Title" => "こちらには商品名がはいりますこちらには商品名がはいります",
-      "Description" => 'この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。'
-    ],
   ];
   $news_list = [
     [
@@ -164,7 +154,7 @@
       </div>
       <div class="square-alone square-alone--variant hide-sp"></div>
       <div class="button-container layout">
-        <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html">私たちについて<img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>></a>
+        <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html" target="_blank">私たちについて<img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>></a>
       </div>
     </div>
     <div class="layout">
