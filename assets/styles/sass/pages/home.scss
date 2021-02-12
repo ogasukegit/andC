@@ -192,26 +192,26 @@
   .lineup-wrapper {
     @include sp-only {
       margin-top: 2rem;
+      padding-bottom: 3rem;
     }
     @include pc-only {
       margin-top: 3rem;
+      padding-bottom: 3rem;
     }
   }
   .lineup {
     display: flex;
-    @include sp-only {
-      align-items: center;
-      flex-direction: column;
-    }
-    @include pc-only {
-      flex-direction: row;
-    }
+    justify-content: center;
+    flex-wrap: wrap;
     .article-wrapper {
-      flex: 0 1 33.33333%;
+      max-width: 400px;
       @include sp-only {
-        &:not(:first-of-type):not(:last-of-type) {
-          margin: 4rem 0;
-        }
+        flex: 0 1 100%;
+        margin-bottom: 2rem;
+      }
+      @include pc-only {
+        flex: 0 1 33.33333%;
+        margin-bottom: 2rem;
       }
     }
     .article {
