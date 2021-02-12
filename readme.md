@@ -7,6 +7,7 @@ This is the front-end code for the AndC company website. This was developed on P
 ### IMPORTANT NOTES
 - Please remove the temporary data that is hard-coded in some of the views.
 - Please set the path to the assets directory in settings.php.
+- Other website settings can be found in settings.php, such as enabling/disabling the product page modal.
 
 ---
 
