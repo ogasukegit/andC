@@ -2,6 +2,6 @@
   /* set path to images folder */
   $imgPath = "../../assets/images";
 
-  /* product page modal switch */
+  /* enable/disable the product page modal */
   $showProductModal = 'true';
 ?>
