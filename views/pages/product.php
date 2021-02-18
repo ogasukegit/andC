@@ -23,50 +23,6 @@
       "text" => "エアコン室外機カバー",
       "link" => "/products/product1",
     ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product2",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product3",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product4",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product5",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product6",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product1",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product2",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product3",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product4",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product5",
-    ],
-    [
-      "text" => "商品名を追加",
-      "link" => "/products/product6",
-    ],
   ];
   $slideImages = [
     "/product/slider1.jpg",
@@ -74,7 +30,7 @@
     "/product/slider3.jpg",
     "/product/slider4.jpg",
     "/product/slider5.jpg",
-    "/product/blank.png",
+    "",
   ];
   $features = [
     [
@@ -159,7 +115,7 @@
     ],
     [
       "title" => "結束バンドで本体と固定",
-      "description" => "付属の結束バンドで<span class=\"blue-highlight\">室外機本体や周辺の配管等</span>とカバーをつなぎ固定すれば、台風などの災害時にも安心です。<span class=\"blue-highlight\">必要に応じてお使いください。</span>",
+      "description" => "付属の結束バンドで<span>室外機本体や周辺の配管等</span>とカバーをつなぎ固定すれば、台風などの災害時にも安心です。<span>必要に応じてお使いください。</span>",
       "image" => [
         [
           "src" => "/product/list10.png",
@@ -213,8 +169,6 @@
       <div class="fashion-block">
         <div class="fashion-block__img-container"><img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare1.png" ?>></div>
         <div class="fashion-block__img-container"><img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare2.png" ?>></div>
-        <div class="fashion-block__img-container"><img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare3.png" ?>></div>
-        <div class="fashion-block__img-container"><img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare4.png" ?>></div>
       </div>
     </div>
     <div class="features-section">
