@@ -30,10 +30,9 @@
         <br>
         <p>お問い合わせ先</p>
         <p class="phone-number hide-sp">03-3555-3214</p>
-        <a class="call-button button button--blue hide-pc" href="tel:03-3555-3214">
-          <?= file_get_contents($imgPath . "/contact/call-icon.svg") ?>
-          03-3555-3214
-        </a>
+        <div class="hide-pc txt-center">
+          <a class="call-button button button--blue" href="tel:03-3555-3214"><?= file_get_contents($imgPath . "/contact/call-icon.svg") ?>03-3555-3214</a>
+        </div>
       </div>
       <div class="inner-half">
         <img class="image" src="<?= $imgPath ?>/contact/callcenter.jpg" alt="">
@@ -44,15 +43,10 @@
   <div class="layout">
     <h2 class="contact-h2">法人のお客様</h2>
     <div class="button-container">
-      <a href="/inquiry" class="button button--blue">
-        法人のお客様<br>
-        ご注文・お問い合わせはこちら
-      </a>
+      <a href="/inquiry" class="button button--blue">法人のお客様<br>ご注文・お問い合わせはこちら</a>
     </div>
     <div class="button-container">
-      <a class="arrow-button" href="/">
-        &C トップへ
-      </a>
+      <a class="arrow-button" href="/">&C トップへ　　</a>
     </div>
   </div>
 </div>

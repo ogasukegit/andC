@@ -180,7 +180,7 @@
         .fadeIn(2000)
         .end()
         .appendTo('#slideshow');
-    }, 10000);
+    }, 5000);
 
   });
 </script>

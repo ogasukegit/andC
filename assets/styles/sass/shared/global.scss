@@ -101,6 +101,7 @@ a {
   font-size: 1.2rem;
   background-color: #e8f1f7;
   @include font_NotoSerif;
+  white-space: nowrap;
 }
 
 .image {
