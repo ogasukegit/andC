@@ -5,7 +5,7 @@
       <img class="main-title__logo" src=<?= $imgPath . "/shared/logo.png" ?>>
       <p class="main-title__text">が買えるショップ</p>
     </h2>
-    <p class="description txt-center">下記テキストをクリックすると、外部リンクに遷移いたします。<br>購入に関するお問い合わせは、各店舗様にお願いいたします。</p>
+    <p class="description txt-center">下記テキストをクリックすると、外部リンクに遷移いたします。<br>ご購入に関するお問い合わせは、各店舗様にお願いいたします。</p>
     <div class="lists">
       <div class="list">
         <p class="list__title">エアコン室外機カバー</p>
