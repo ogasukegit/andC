@@ -57,8 +57,7 @@
   <div class="section andc-background" style="background-image: url(<?= $imgPath ?>/home/logo-background.png)">
     <div class="layout">
       <h2 class="main-title txt-center">商品の素材感、美しさを体感してください</h2>
-      <p class="txt-center">＆C（アンド ・ シー）は、視界を程よく遮るスチールメッシュの『ブラインドメタル』と、屋外でも長期間キレイな外観を保つ『耐候密着コーティング技術』を生かしたエクステリア製品ブランドとして、2019年秋に誕生しました。</p>
-      <p class="txt-center">私たちが得意とする樹脂コーティング（Coating）技術を用いて、お客様 (Customer)の心に寄り添い、心地よい(Comfortable) 空間を演出する商品をご提案してまいります。</p>
+      <p>＆C（アンド ・ シー）は、視界を程よく遮るスチールメッシュの『ブラインドメタル』と、屋外でも長期間キレイな外観を保つ『耐候密着コーティング技術』を生かしたエクステリア製品ブランドとして、2019年秋に誕生しました。私たちが得意とする樹脂コーティング（Coating）技術を用いて、お客様 (Customer)の心に寄り添い、心地よい(Comfortable) 空間を演出する商品をご提案してまいります。</p>
     </div>
   </div>
   <div class="section brown-background">
@@ -119,7 +118,7 @@
       <p class="main-title txt-center">技術へのこだわり</p>
     </h2>
     <div class="technology">
-      <p class="description txt-center layout">＆C（アンド・シー）を手掛ける岩谷マテリアル株式会社のコーティング部は、樹脂コーティングのパイオニアとして、建築資材・家電製品・電設資材などの多くの分野で、金属と樹脂を融合・応用したモノづくりを行っています。<br>コーティング後の素材感や美しさを保ち、耐候性や絶縁性など製品に応じた機能を付加して新たな魅力を引き出すことをテーマに、商品を開発してまいります。</p>
+      <p class="description layout">＆C（アンド・シー）を手掛ける岩谷マテリアル株式会社のコーティング部は、樹脂コーティングのパイオニアとして、建築資材・家電製品・電設資材などの多くの分野で、金属と樹脂を融合・応用したモノづくりを行っています。コーティング後の素材感や美しさを保ち、耐候性や絶縁性など製品に応じた機能を付加して新たな魅力を引き出すことをテーマに、商品を開発してまいります。</p>
       <div class="points">
         <div class="point point1">
           <div class="point__blue-bg">
