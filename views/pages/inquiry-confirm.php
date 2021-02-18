@@ -41,7 +41,7 @@
     <h2 class="inquiry-header">入力内容確認</h2>
     <p class="confirm-form__top-text txt-center">下記内容でお間違いありませんか？</p>
     <!-- TODO: change post destination and redirect to /inquiry/complete -->
-    <form class="form confirm-form" method="post" action="inquiry-complete.php">
+    <form class="form confirm-form" method="post" action="/inquiry/complete">
       <table class="confirm-form__table">
         <tbody>
           <tr class="confirm-form__row">

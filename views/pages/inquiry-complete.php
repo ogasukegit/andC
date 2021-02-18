@@ -36,7 +36,7 @@
       <p class="hide-pc"><a href="tel:06-6261-1946">TEL：06-6261-1946</a></p>
     </div>
     <div class="button-wrapper">
-      <a class="button button--black-ghost" href="home.php">＆Cトップへ</a>
+      <a class="button button--black-ghost" href="/">＆Cトップへ</a>
     </div>
   </div>
 <?php include './_inquiry-foot.php'; ?>

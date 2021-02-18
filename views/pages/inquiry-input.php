@@ -21,7 +21,7 @@
   <div class="layout">
     <h2 class="inquiry-header">入力内容</h2>
     <!-- TODO: change post destination to "/inquiry/confirm" -->
-    <form class="form" id="form" name="form" method="post" action="inquiry-confirm.php">
+    <form class="form" id="form" name="form" method="post" action="/inquiry/confirm">
       <p class="form__top-text txt-center"><span class="required"></span>は必須項目となります。必ずご記入ください。</p>
       <div class="form__row">
         <div class="form__row-left">お問い合わせ項目</div>
