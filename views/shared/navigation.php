@@ -26,7 +26,8 @@
           <a class="nav-item__link" href="/">TOP</a>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="products">PRODUCTS</a>
+          <span class="nav-item__link">PRODUCTS</span>
+          <!-- <a class="nav-item__link" href="/products">PRODUCTS</a> -->
           <span class="nav-item__submenu">
             <?php foreach ($navProducts as $product): ?>
               <a class="nav-item__submenu-link" href="<?= $product['url'] ?>"><?= $product['text'] ?></a>
