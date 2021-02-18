@@ -30,7 +30,6 @@
     "/product/slider3.jpg",
     "/product/slider4.jpg",
     "/product/slider5.jpg",
-    "",
   ];
   $features = [
     [
