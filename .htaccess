@@ -1,0 +1,11 @@
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^contact$ ./views/pages/contact.php
+RewriteRule ^inquiry/complete$ ./views/pages/inquiry-complete.php
+RewriteRule ^inquiry/confirm$ ./views/pages/inquiry-confirm.php
+RewriteRule ^inquiry$ ./views/pages/inquiry-input.php
+RewriteRule ^products/.*$ ./views/pages/product.php
+RewriteRule ^$ ./views/pages/home.php

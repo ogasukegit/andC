@@ -21,17 +21,9 @@
   ];
   $news_list = [
     [
-      "Date" => "2021.2.22",
-      "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。"
+      "Date" => "2021.3.26",
+      "Content" => "&Cオフィシャルサイトを開設しました。"
     ],
-    [
-      "Date" => "2021.1.11",
-      "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。"
-    ],
-    [
-      "Date" => "2021.12.1",
-      "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。"
-    ]
   ];
 ?>
 
@@ -133,7 +125,7 @@
           <div class="point__blue-bg">
             <img class="point__logo" src=<?= $imgPath . "/home/point2.png" ?>>
             <h3 class="point__title">国内にある自社工場で製造しています。</h3>
-            <p>岩谷マテリアル株式会社のコーティング部は、国内３拠点、海外２拠点の製造部門を有し、＆C（アンド・シー）の商品群は国内工場にて製造しております。</p>
+            <p>岩谷マテリアル株式会社のコーティング事業は、国内３拠点、海外２拠点の製造部門を有し、＆C（アンド・シー）の商品群は国内工場にて製造しております。</p>
           </div>
           <img class="point__image image" src=<?= $imgPath . "/home/technology2.png" ?>>
           <div class="point__square"></div>
@@ -141,7 +133,7 @@
         <div class="point point3">
           <div class="point__blue-bg">
             <img class="point__logo" src=<?= $imgPath . "/home/point3.png" ?>>
-            <h3 class="point__title">皆さんの身近にあるものにもつかわれている技術です。</h3>
+            <h3 class="point__title">皆さんの身近にあるものにも使われている技術です。</h3>
             <p>私たちの製品は、高速道路のフェンスをはじめ、エアコンの室外機部品や、コンビニの冷蔵ショーケースなどに使われています。</p>
           </div>
           <img class="point__image image" src=<?= $imgPath . "/home/technology3.png" ?>>
