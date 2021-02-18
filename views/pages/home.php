@@ -21,17 +21,9 @@
   ];
   $news_list = [
     [
-      "Date" => "2021.2.22",
-      "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。"
+      "Date" => "2021.3.26",
+      "Content" => "&Cオフィシャルサイトを開設しました。"
     ],
-    [
-      "Date" => "2021.1.11",
-      "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。"
-    ],
-    [
-      "Date" => "2021.12.1",
-      "Content" => "テキストが入ります。テキストが入ります。テキストが入ります。"
-    ]
   ];
 ?>
 
@@ -57,7 +49,7 @@
   <div class="section andc-background" style="background-image: url(<?= $imgPath ?>/home/logo-background.png)">
     <div class="layout">
       <h2 class="main-title txt-center">商品の素材感、美しさを体感してください</h2>
-      <p class="txt-center">＆C（アンド ・ シー）は、視界を程よく遮るスチールメッシュの『ブラインドメタル』と、屋外でも長期間キレイな外観を保つ『耐候密着コーティング技術』を生かしたエクステリア製品ブランドとして、2019年秋に誕生しました。</p>
+      <p class="txt-center">＆C（アンド ・ シー）は、視界を程よく遮るスチールメッシュの『ブラインドメタル』と、屋外でも長期間キレイな外観を保つ『耐候性密着コーティング技術』を生かしたエクステリア製品ブランドとして、2019年秋に誕生しました。</p>
       <p class="txt-center">私たちが得意とする樹脂コーティング（Coating）技術を用いて、お客様 (Customer)の心に寄り添い、心地よい(Comfortable) 空間を演出する商品をご提案してまいります。</p>
     </div>
   </div>
@@ -119,7 +111,7 @@
       <p class="main-title txt-center">技術へのこだわり</p>
     </h2>
     <div class="technology">
-      <p class="description txt-center layout">＆C（アンド・シー）を手掛ける岩谷マテリアル株式会社のコーティング部は、樹脂コーティングのパイオニアとして、建築資材・家電製品・電設資材などの多くの分野で、金属と樹脂を融合・応用したモノづくりを行っています。<br>コーティング後の素材感や美しさを保ち、耐候性や絶縁性など製品に応じた機能を付加して新たな魅力を引き出すことをテーマに、商品を開発してまいります。</p>
+      <p class="description txt-center layout">＆C（アンド・シー）を手掛ける岩谷マテリアル株式会社のコーティング事業は、樹脂コーティングのパイオニアとして、建築資材・家電製品・電設資材などの多くの分野で、金属と樹脂を融合・応用したモノづくりを行っています。<br>コーティング後の素材感や美しさを保ち、耐候性や絶縁性など製品に応じた機能を付加して新たな魅力を引き出すことをテーマに、商品を開発してまいります。</p>
       <div class="points">
         <div class="point point1">
           <div class="point__blue-bg">
@@ -134,7 +126,7 @@
           <div class="point__blue-bg">
             <img class="point__logo" src=<?= $imgPath . "/home/point2.png" ?>>
             <h3 class="point__title">国内にある自社工場で製造しています。</h3>
-            <p>岩谷マテリアル株式会社のコーティング部は、国内３拠点、海外２拠点の製造部門を有し、＆C（アンド・シー）の商品群は国内工場にて製造しております。</p>
+            <p>岩谷マテリアル株式会社のコーティング事業は、国内３拠点、海外２拠点の製造部門を有し、＆C（アンド・シー）の商品群は国内工場にて製造しております。</p>
           </div>
           <img class="point__image image" src=<?= $imgPath . "/home/technology2.png" ?>>
           <div class="point__square"></div>
@@ -142,7 +134,7 @@
         <div class="point point3">
           <div class="point__blue-bg">
             <img class="point__logo" src=<?= $imgPath . "/home/point3.png" ?>>
-            <h3 class="point__title">皆さんの身近にあるものにもつかわれている技術です。</h3>
+            <h3 class="point__title">皆さんの身近にあるものにも使われている技術です。</h3>
             <p>私たちの製品は、高速道路のフェンスをはじめ、エアコンの室外機部品や、コンビニの冷蔵ショーケースなどに使われています。</p>
           </div>
           <img class="point__image image" src=<?= $imgPath . "/home/technology3.png" ?>>
