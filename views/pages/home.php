@@ -9,7 +9,7 @@
 
   // temporary data
   $slides = [
-    "/home/top_image_1.png",
+    "/home/top_image_1.jpg",
     "/home/top_image_2.png"
   ];
   $lineup_articles = [
