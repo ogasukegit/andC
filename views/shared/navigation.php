@@ -12,12 +12,12 @@
     <div class="nav-wrapper">
       <?php if ($pageName == 'home'){ ?>
         <h1 class="nav-h1">
-          <a href="/"><img class="nav-h1__logo" src="<?= $imgPath ?>/shared/logo_lg.png" alt="andC logo"></a>
+          <a href="/"><img class="nav-h1__logo" src="<?= $IMAGESPATH ?>/shared/logo_lg.png" alt="andC logo"></a>
           <span class="nav-h1__text">庭と家との調和</span>
         </h1>
       <?php } else { ?>
         <div class="nav-h1">
-          <a href="/"><img class="nav-h1__logo" src="<?= $imgPath ?>/shared/logo_lg.png" alt="andC logo"></a>
+          <a href="/"><img class="nav-h1__logo" src="<?= $IMAGESPATH ?>/shared/logo_lg.png" alt="andC logo"></a>
           <span class="nav-h1__text">庭と家との調和</span>
         </div>
       <?php } ?>
@@ -34,7 +34,7 @@
           </span>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="https://www.imcjpn.co.jp/about/profile.html" target="_blank">私たちについて<img class="external-link" src="<?= $imgPath ?>/shared/new-window.png"></a>
+          <a class="nav-item__link" href="https://www.imcjpn.co.jp/about/profile.html" target="_blank">私たちについて<img class="external-link" src="<?= $IMAGESPATH ?>/shared/new-window.png"></a>
         </div>
         <div class="nav-item">
           <a class="nav-item__link" href="/inquiry">商品注文・お問い合わせ</a>

@@ -31,11 +31,11 @@
         <p>お問い合わせ先</p>
         <p class="phone-number hide-sp">03-3555-3214</p>
         <div class="hide-pc txt-center">
-          <a class="call-button button button--blue" href="tel:03-3555-3214"><?= file_get_contents($imgPath . "/contact/call-icon.svg") ?>03-3555-3214</a>
+          <a class="call-button button button--blue" href="tel:03-3555-3214"><?= file_get_contents($IMAGESPATH . "/contact/call-icon.svg") ?>03-3555-3214</a>
         </div>
       </div>
       <div class="inner-half">
-        <img class="image" src="<?= $imgPath ?>/contact/callcenter.jpg" alt="">
+        <img class="image" src="<?= $IMAGESPATH ?>/contact/callcenter.jpg" alt="">
       </div>
     </div>
   </div>

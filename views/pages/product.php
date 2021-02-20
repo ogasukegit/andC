@@ -155,7 +155,7 @@
     <div class="sub-slides">
       <?php foreach ($slideImages as $x => $image) : ?>
         <div class="sub-slide">
-          <div class="sub-slide__image" onClick="changeSlide(<?= $x ?>)" style="background-image:url(<?= $imgPath . $image ?>)"></div>
+          <div class="sub-slide__image" onClick="changeSlide(<?= $x ?>)" style="background-image:url(<?= $IMAGESPATH . $image ?>)"></div>
         </div>
       <?php endforeach ?>
     </div>
@@ -166,8 +166,8 @@
     <div class="fashion">
       <h2 class="middle__title txt-center">おしゃれに隠し、長く使う</h2>
       <div class="fashion-block">
-        <div class="fashion-block__img-container"><img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare1.png" ?>></div>
-        <div class="fashion-block__img-container"><img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare2.png" ?>></div>
+        <div class="fashion-block__img-container"><img class="fashion-block__img image" src=<?= $IMAGESPATH . "/product/oshare1.png" ?>></div>
+        <div class="fashion-block__img-container"><img class="fashion-block__img image" src=<?= $IMAGESPATH . "/product/oshare2.png" ?>></div>
       </div>
     </div>
     <div class="features-section">
@@ -177,7 +177,7 @@
           <div class="feature__images">
             <?php foreach ($feature["image"] as $image) : ?>
               <div class="feature__image-block">
-                <img class="feature__image image" src=<?= $imgPath . $image["src"] ?>>
+                <img class="feature__image image" src=<?= $IMAGESPATH . $image["src"] ?>>
                 <?php if ($image["caption"]) : ?>
                   <p class="feature__caption"><?= $image["caption"] ?></p>
                 <?php endif ?>
@@ -273,7 +273,7 @@
 
 <script>
   const slideImages = <?= json_encode($slideImages) ?>;
-  const imgPath = <?= json_encode($imgPath) ?>;
+  const imgPath = <?= json_encode($IMAGESPATH) ?>;
   const slider = document.getElementById("slide-image");
   const modal = document.getElementById("modal");
   const modalImage = document.getElementById("modal-image");
