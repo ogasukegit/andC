@@ -10,8 +10,11 @@
   <meta name="keywords" content="<?= $metaData['keywords'] ?>">
   <!-- assets -->
   <link rel="stylesheet" type="text/css" href="<?= $ASSETSPATH ?>/styles/css/all_styles.css">
-  <link rel="shortcut icon" sizes="196x196" href="<?= $IMAGESPATH ?>/shared/favicon.png">
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?= $IMAGESPATH ?>/shared/favicon.png">
+  <link rel="shortcut icon" sizes="60x60" href="<?= $IMAGESPATH ?>/shared/favicon-60x60.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="<?= $IMAGESPATH ?>/shared/favicon-60x60.png">
+  <link rel="icon" type="image/png" href="<?= $IMAGESPATH ?>/shared/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="<?= $IMAGESPATH ?>/shared/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="<?= $IMAGESPATH ?>/shared/favicon-96x96.png" sizes="96x96">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
