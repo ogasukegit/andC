@@ -17,7 +17,7 @@
     </div>
     <?php if ($pageName != 'home' && $pageName != 'contact') : ?>
       <div class="button-container">
-        <a class="arrow-button" href="/">&C トップへ</a>
+        <a class="arrow-button" href="/">&C トップへ　</a>
       </div>
     <?php endif ?>
   </div>
