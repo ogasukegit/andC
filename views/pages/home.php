@@ -33,7 +33,7 @@
   <div class="slider-container">
     <div id="slideshow">
       <?php foreach ($slides as $x => $slide) : ?>
-        <div class="slide" style="background-image: url(<?= $imgPath . $slide ?>)">
+        <div class="slide" style="background-image: url(<?= $IMAGESPATH . $slide ?>)">
           <div class="slide-content layout">
             <p class="slide-title">優れたコーティング技術を<br>エクステリアに。</p>
             <p class="slide-description">「ユニーク（独創性）×バリュー（価値）」をコンセプトに、<br>機能的で、より美しい商品をお届けいたします。</p>
@@ -46,7 +46,7 @@
       <div class="scroll__arrow"></div>
     </div>
   </div>
-  <div class="section andc-background" style="background-image: url(<?= $imgPath ?>/home/logo-background.png)">
+  <div class="section andc-background" style="background-image: url(<?= $IMAGESPATH ?>/home/logo-background.png)">
     <div class="layout">
       <h2 class="main-title txt-center">商品の素材感、美しさを体感してください</h2>
       <p>＆C（アンド ・ シー）は、視界を程よく遮るスチールメッシュの『ブラインドメタル』と、屋外でも長期間キレイな外観を保つ『耐候性密着コーティング技術』を生かしたエクステリア製品ブランドとして、2019年秋に誕生しました。私たちが得意とする樹脂コーティング（Coating）技術を用いて、お客様 (Customer)の心に寄り添い、心地よい(Comfortable) 空間を演出する商品をご提案してまいります。</p>
@@ -60,15 +60,15 @@
       </h2>
       <div class="pickup-item">
         <div class="flex-child txt-center hide-sp">
-          <img class="image" src="<?= $imgPath ?>/home/pickup_item_1.png" alt="pickup_item_1">
-          <img class="image" src="<?= $imgPath ?>/home/pickup_item_2.png" alt="pickup_item_2">
+          <img class="image" src="<?= $IMAGESPATH ?>/home/pickup_item_1.png" alt="pickup_item_1">
+          <img class="image" src="<?= $IMAGESPATH ?>/home/pickup_item_2.png" alt="pickup_item_2">
         </div>
         <div class="flex-child">
           <h3 class="description-head">室外機をオシャレに隠す、<br>お庭のコーディネイトの新提案。</h3>
           <p class="green-text">エアコン室外機カバー（ホワイト・ブラウン）</p>
           <div class="txt-center hide-pc">
-            <img class="image" src="<?= $imgPath ?>/home/pickup_item_1.png" alt="pickup_item_1">
-            <img class="image" src="<?= $imgPath ?>/home/pickup_item_2.png" alt="pickup_item_2">
+            <img class="image" src="<?= $IMAGESPATH ?>/home/pickup_item_1.png" alt="pickup_item_1">
+            <img class="image" src="<?= $IMAGESPATH ?>/home/pickup_item_2.png" alt="pickup_item_2">
           </div>
           <p class="text">一般的な室外機カバーは数年で劣化し、また買いなおすことになりがちですが、この室外機カバーは、材質は強度に優れたスチール製。</p>
           <p class="text">サビ・腐食に強い耐候性密着コーティングを採用しているため、長期間安心してご利用いただけます。</p>
@@ -91,7 +91,7 @@
           <div class="article-wrapper">
             <div class="article">
               <div class="above-button">
-                <img class="image" src=<?= $imgPath . $article["Image"] ?>>
+                <img class="image" src=<?= $IMAGESPATH . $article["Image"] ?>>
                 <div class="title"><?= $article["Title"] ?></div>
                 <div class="description"><?= $article["Description"] ?></div>
               </div>
@@ -116,29 +116,29 @@
       <div class="points">
         <div class="point point1">
           <div class="point__blue-bg">
-            <img class="point__logo" src=<?= $imgPath . "/home/point1.png" ?>>
+            <img class="point__logo" src=<?= $IMAGESPATH . "/home/point1.png" ?>>
             <h3 class="point__title">厚い塗装膜が特徴の『耐候性密着コーティング』を得意としています。</h3>
             <p>私たちは流動浸漬塗装技法を用いて、耐候性密着コーティングを行っています。<br>この塗装方法は、昭和29年から半世紀以上の実績があり、環境負荷が少ない、サビに強く、滑らかで美しい塗膜が形成されます。</p>
           </div>
-          <img class="point__image image" src=<?= $imgPath . "/home/technology1.png" ?>>
+          <img class="point__image image" src=<?= $IMAGESPATH . "/home/technology1.png" ?>>
           <div class="point__square"></div>
         </div>
         <div class="point point2">
           <div class="point__blue-bg">
-            <img class="point__logo" src=<?= $imgPath . "/home/point2.png" ?>>
+            <img class="point__logo" src=<?= $IMAGESPATH . "/home/point2.png" ?>>
             <h3 class="point__title">国内にある自社工場で製造しています。</h3>
             <p>岩谷マテリアル株式会社のコーティング事業は、国内３拠点、海外２拠点の製造部門を有し、＆C（アンド・シー）の商品群は国内工場にて製造しております。</p>
           </div>
-          <img class="point__image image" src=<?= $imgPath . "/home/technology2.png" ?>>
+          <img class="point__image image" src=<?= $IMAGESPATH . "/home/technology2.png" ?>>
           <div class="point__square"></div>
         </div>
         <div class="point point3">
           <div class="point__blue-bg">
-            <img class="point__logo" src=<?= $imgPath . "/home/point3.png" ?>>
+            <img class="point__logo" src=<?= $IMAGESPATH . "/home/point3.png" ?>>
             <h3 class="point__title">皆さんの身近にあるものにも使われている技術です。</h3>
             <p>私たちの製品は、高速道路のフェンスをはじめ、エアコンの室外機部品や、コンビニの冷蔵ショーケースなどに使われています。</p>
           </div>
-          <img class="point__image image" src=<?= $imgPath . "/home/technology3.png" ?>>
+          <img class="point__image image" src=<?= $IMAGESPATH . "/home/technology3.png" ?>>
           <div class="point__square point__square-1"></div>
           <div class="point__square point__square-2"></div>
           <div class="point__square point__square-3"></div>
@@ -147,7 +147,7 @@
       </div>
       <div class="square-alone square-alone--variant hide-sp"></div>
       <div class="button-container layout">
-        <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html" target="_blank">私たちについて<img class="external-link" src=<?= $imgPath . "/shared/new-window.png" ?>></a>
+        <a class="arrow-button" href="https://www.imcjpn.co.jp/about/profile.html" target="_blank">私たちについて<img class="external-link" src=<?= $IMAGESPATH . "/shared/new-window.png" ?>></a>
       </div>
     </div>
     <div class="layout">
