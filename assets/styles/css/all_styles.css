@@ -1140,6 +1140,7 @@ a:link, a:visited, a:hover, a:active {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    height: 100%;
     padding: 60px 0 230px;
     background-color: #f2f1ee; }
   .ns-product .side-nav .side-nav__inner-top {
