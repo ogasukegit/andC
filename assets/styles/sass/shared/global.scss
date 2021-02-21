@@ -47,6 +47,9 @@ body {
   overflow-x: hidden;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -123,4 +126,12 @@ a {
 @keyframes fadeIn {
   0%  {opacity:0}
   100%{opacity:1}
+}
+
+
+// applied to all pages
+
+.page {
+  flex: 0 1 auto;
+  height: 100%;
 }

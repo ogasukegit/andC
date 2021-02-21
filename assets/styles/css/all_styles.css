@@ -56,6 +56,14 @@ body {
   overflow-x: hidden; }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -131,6 +139,12 @@ a:link, a:visited, a:hover, a:active {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.page {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  height: 100%; }
 
 .arrow-button {
   display: -webkit-inline-box;
@@ -1716,3 +1730,19 @@ a:link, a:visited, a:hover, a:active {
 .ns-contact .button-container {
   margin-bottom: 5rem;
   text-align: center; }
+
+.ns-error .layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%; }
