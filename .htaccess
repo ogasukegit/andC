@@ -1,11 +1,32 @@
 RewriteEngine On
+RewriteBase /
 
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 
+
+# routes
+
+# contact
 RewriteRule ^contact$ ./views/pages/contact.php
+
+# inquiry
 RewriteRule ^inquiry/complete$ ./views/pages/inquiry-complete.php
 RewriteRule ^inquiry/confirm$ ./views/pages/inquiry-confirm.php
 RewriteRule ^inquiry$ ./views/pages/inquiry-input.php
+
+# products
+# RewriteRule ^products ./views/pages/products.php
+
+# product
 RewriteRule ^products/.*$ ./views/pages/product.php
+
+# home
 RewriteRule ^$ ./views/pages/home.php
+
+# error
+RewriteRule ^/.*$ 404
+
+
+# handle 404
+ErrorDocument 404 /views/pages/error.php
