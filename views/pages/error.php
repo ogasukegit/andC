@@ -12,8 +12,8 @@
 <div class="ns-error page">
   <?php include('../shared/navigation.php'); ?>
   <div class="layout">
-    <h2 class="txt-center">Page does not exist</h2>
-    <p class="txt-center"><a href="/">Go home</a></p>
+    <h2 class="txt-center">お探しのページ、ファイルが見つかりませんでした。</h2>
+    <p class="txt-center"><a href="/">＆Cホームに行ってください。</a></p>
   </div>
 </div>
 <?php include('../shared/foot.php'); ?>
