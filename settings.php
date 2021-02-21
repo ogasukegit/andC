@@ -1,14 +1,12 @@
 <?php
+  /* environments */
+  $ENV = [
+    "prod" => "",
+    "test" => "/test/2021-02-18",
+  ];
+
   /* set root directory */
-
-  /* local */
-  $ROOTDIR = "";
-
-  /* test */
-  // $ROOTDIR = "/test/2021-02-18";
-  
-  /* prod */
-  // $ROOTDIR = $_SERVER['DOCUMENT_ROOT'];
+  $ROOTDIR = $ENV["prod"];
 
 
   /* set common paths */
