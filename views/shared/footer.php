@@ -48,7 +48,7 @@
 
       showImages();
 
-      $(document).scroll(function() {
+      $('body').on('scroll', function() {
         checkOffset();
         showImages();
       });
