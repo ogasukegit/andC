@@ -142,9 +142,8 @@ a:link, a:visited, a:hover, a:active {
 
 .page {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  height: 100%; }
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%; }
 
 .arrow-button {
   display: -webkit-inline-box;
@@ -1746,3 +1745,6 @@ a:link, a:visited, a:hover, a:active {
   -ms-flex-align: center;
   align-items: center;
   height: 100%; }
+
+.ns-error + .ns-footer .scroll-to-top-button {
+  display: none; }
