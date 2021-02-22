@@ -1734,4 +1734,5 @@ a:link, a:visited, a:hover, a:active {
   align-items: center;
   height: calc(100vh - 213px); }
   .ns-error + .ns-footer .scroll-to-top-button {
-    display: none; }
+    display: none;
+    color: red; }

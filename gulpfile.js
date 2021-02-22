@@ -5,12 +5,12 @@ const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 
 const srcFiles = [
-  './assets/styles/sass/styles.scss',
+  './assets/styles/sass/main.scss',
 ];
 const watchDirs = [
   './assets/styles/sass/*/*.scss',
 ];
-const destDir = './assets/styles/css';
+const destDir = './assets/styles';
 const concatFile = 'all_styles.css';
 
 // functions

@@ -11,7 +11,7 @@
   <meta name="keywords" content="<?= $metaData['keywords'] ?>">
 
   <!-- assets -->
-  <link rel="stylesheet" type="text/css" href="<?= $ASSETSPATH ?>/styles/css/all_styles.css">
+  <link rel="stylesheet" type="text/css" href="<?= $ASSETSPATH ?>/styles/all_styles.css">
   <link rel="shortcut icon" sizes="60x60" href="<?= $IMAGESPATH ?>/shared/favicon-60x60.png">
   <link rel="apple-touch-icon-precomposed" sizes="60x60" href="<?= $IMAGESPATH ?>/shared/favicon-60x60.png">
   <link rel="icon" type="image/png" href="<?= $IMAGESPATH ?>/shared/favicon-16x16.png" sizes="16x16">
