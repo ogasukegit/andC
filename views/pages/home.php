@@ -80,27 +80,29 @@
       </div>
     </div>
   </div>
-  <div class="section lineup-wrapper grey-background">
-    <div class="layout">
-      <h2>
-        <p class="english-title txt-center font-roboto">LINEUP</p>
-        <p class="main-title txt-center">ラインナップ</p>
-      </h2>
-      <div class="lineup">
-        <?php foreach ($lineup_articles as $article) : ?>
-          <div class="article-wrapper">
-            <div class="article">
-              <div class="above-button">
-                <img class="image" src=<?= $IMAGESPATH . $article["Image"] ?>>
-                <div class="title"><?= $article["Title"] ?></div>
-                <div class="description"><?= $article["Description"] ?></div>
-              </div>
-              <div class="lineup__button button-container">
-                <a class="arrow-button" href="">エアコン室外機カバー<br>商品詳細はこちら</a>
+  <div class="lineup-anchor" id="lineup">
+    <div class="section lineup-wrapper grey-background">
+      <div class="layout">
+        <h2>
+          <p class="english-title txt-center font-roboto">LINEUP</p>
+          <p class="main-title txt-center">ラインナップ</p>
+        </h2>
+        <div class="lineup">
+          <?php foreach ($lineup_articles as $article) : ?>
+            <div class="article-wrapper">
+              <div class="article">
+                <div class="above-button">
+                  <img class="image" src=<?= $IMAGESPATH . $article["Image"] ?>>
+                  <div class="title"><?= $article["Title"] ?></div>
+                  <div class="description"><?= $article["Description"] ?></div>
+                </div>
+                <div class="lineup__button button-container">
+                  <a class="arrow-button" href="">エアコン室外機カバー<br>商品詳細はこちら</a>
+                </div>
               </div>
             </div>
-          </div>
-        <?php endforeach ?>
+          <?php endforeach ?>
+        </div>
       </div>
     </div>
   </div>

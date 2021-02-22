@@ -8,7 +8,7 @@
       <div class="footer-right">
         <div class="footer-menu">
           <a class="footer-menu__link" href="/">TOP</a>
-          <a class="footer-menu__link" href="products">PRODUCTS</a>
+          <a class="footer-menu__link" href="/#lineup">PRODUCTS</a>
           <a class="footer-menu__link" href="https://www.imcjpn.co.jp/about/profile.html" target="_blank">私たちについて<img class="external-link" src="<?= $IMAGESPATH ?>/shared/new-window.png"></a>
           <a class="footer-menu__link" href="https://www.imcjpn.co.jp/policy/" target="_blank">プライバシーポリシー<img class="external-link" src="<?= $IMAGESPATH ?>/shared/new-window.png"></a>
           <a class="footer-menu__link" href="/inquiry">商品注文・お問い合わせ</a>

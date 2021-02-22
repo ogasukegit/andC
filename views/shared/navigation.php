@@ -26,7 +26,7 @@
           <a class="nav-item__link" href="/">TOP</a>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="/products">PRODUCTS</a>
+          <a class="nav-item__link" href="/#lineup">PRODUCTS</a>
           <span class="nav-item__submenu">
             <?php foreach ($navProducts as $product): ?>
               <a class="nav-item__submenu-link" href="<?= $product['url'] ?>"><?= $product['text'] ?></a>
@@ -55,6 +55,7 @@
       const $navMenu = $('#nav-menu');
       const $navHam = $('#nav-ham');
       const $overlay = $('#overlay');
+      const $navLinks = $('.nav-item__link');
   
       function toggleMenu() {
         if ($navMenu.hasClass('open')) {
@@ -68,6 +69,7 @@
   
       $navHam.on('click', toggleMenu);
       $overlay.on('click', toggleMenu);
+      $navLinks.on('click', toggleMenu);
     });
   </script>
 </div>

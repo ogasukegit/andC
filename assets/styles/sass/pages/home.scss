@@ -188,14 +188,20 @@
     .button-container {
     }
   }
-
+  
+  .lineup-anchor {
+    @include sp-only {
+      padding-top: 2rem;
+    }
+    @include pc-only {
+      padding-top: 3rem;
+    }
+  }
   .lineup-wrapper {
     @include sp-only {
-      margin-top: 2rem;
       padding-bottom: 3rem;
     }
     @include pc-only {
-      margin-top: 3rem;
       padding-bottom: 3rem;
     }
   }
