@@ -1,13 +1,6 @@
-# AndC Website front-end
+# AndC Website
 
-This is the front-end code for the AndC company website. This was developed on PHP to make use of templating and component includes, but there is no other back-end code. This is intended to be connected to a backend like a CMS.
-
----
-
-### IMPORTANT NOTES
-- Please remove the temporary data that is hard-coded in some of the views.
-- Please set the path to the assets directory in settings.php.
-- Other website settings can be found in settings.php, such as enabling/disabling the product page modal.
+This is the code for the AndC company website. This was developed on PHP to make use of templating and component includes, and uses very minimal back-end code (no proper routing or controller logic). Routing is currently handled in the .htaccess file. This code is intended to be connected to a proper backend like a CMS.
 
 ---
 
@@ -28,3 +21,7 @@ This is the front-end code for the AndC company website. This was developed on P
     - ```gulp watch``` to watch for changes as you develop
     - input dir: ```assets/styles/sass```
     - output file: ```assets/styles/css/all_styles.css```
+
+### Before releasing
+1. Set $ROOTDIR to "prod" in settings.php. (Currently it's set to "test" on the FTP server).
+1. Upload the .htaccess file to the FTP server.
