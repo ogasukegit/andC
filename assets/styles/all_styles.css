@@ -1,37 +1,37 @@
 @charset "UTF-8";
 @font-face {
   font-family: "NotoSerif";
-  src: url("../../fonts/NotoSerifJP-Regular.otf");
+  src: url("../fonts/NotoSerifJP-Regular.otf");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "NotoSerif";
-  src: url("../../fonts/NotoSerifJP-Bold.otf");
+  src: url("../fonts/NotoSerifJP-Bold.otf");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "NotoSans";
-  src: url("../../fonts/NotoSansJP-Regular.otf");
+  src: url("../fonts/NotoSansJP-Regular.otf");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "NotoSans";
-  src: url("../../fonts/NotoSansJP-Bold.otf");
+  src: url("../fonts/NotoSansJP-Bold.otf");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Bold.ttf");
   font-weight: bold;
   font-style: normal; }
 
@@ -1734,5 +1734,4 @@ a:link, a:visited, a:hover, a:active {
   align-items: center;
   height: calc(100vh - 213px); }
   .ns-error + .ns-footer .scroll-to-top-button {
-    display: none;
-    color: red; }
+    display: none; }
