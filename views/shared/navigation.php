@@ -2,7 +2,7 @@
   $navProducts = [
     [
       "text" => "エアコン室外機カバー",
-      "url" => "/products/product1",
+      "url" => "/products/exterior-unit",
     ],
   ];
 ?>

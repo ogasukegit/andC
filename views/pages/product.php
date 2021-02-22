@@ -21,7 +21,7 @@
   $asideProducts = [
     [
       "text" => "エアコン室外機カバー",
-      "link" => "/products/product1",
+      "link" => "/products/exterior-unit",
     ],
   ];
   $slideImages = [
