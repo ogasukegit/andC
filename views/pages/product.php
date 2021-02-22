@@ -160,8 +160,8 @@
       <?php endforeach ?>
     </div>
     <div class="product-buttons">
-      <a class="arrow-button" href="">一般のお客様<br>お問い合わせ</a>
-      <a class="arrow-button" href="">法人のお客様<br>お問い合わせ</a>
+      <a class="arrow-button" href="/contact">一般のお客様<br>お問い合わせ</a>
+      <a class="arrow-button" href="/inquiry">法人のお客様<br>お問い合わせ</a>
     </div>
     <div class="fashion">
       <h2 class="middle__title txt-center">おしゃれに隠し、長く使う</h2>
@@ -259,8 +259,8 @@
       </table>
     </div>
     <div class="product-buttons">
-      <a class="arrow-button" href="">一般のお客様<br>ご注文 ・ お問い合わせ</a>
-      <a class="arrow-button" href="">業務用(法人のお客様)<br>ご注文 ・ お問い合わせ</a>
+      <a class="arrow-button" href="/contact">一般のお客様<br>ご注文 ・ お問い合わせ</a>
+      <a class="arrow-button" href="/inquiry">業務用(法人のお客様)<br>ご注文 ・ お問い合わせ</a>
     </div>
   </div>
   <?php include('../shared/shop-section.php'); ?>
