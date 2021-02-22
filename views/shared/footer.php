@@ -28,13 +28,22 @@
       }
 
       function checkOffset() {
-        if ($('#scroll-to-top-button').offset().top + $('#scroll-to-top-button').height() >= $('#footer').offset().top) {
-          $('#scroll-to-top-button').css('position', 'absolute');
-          $('#scroll-to-top-button').css('top', `${0 - $('#scroll-to-top-button').height()}px`);
-        }
-        if ($(document).scrollTop() + window.innerHeight < $('#footer').offset().top) {
-          $('#scroll-to-top-button').css('position', 'fixed');
-          $('#scroll-to-top-button').css('top', 'auto');
+        const $scrollToTopBtn = $('#scroll-to-top-button');
+
+        const footerHeight = $('#footer').offset().top;
+        const scrollToTopBtnHeight = $scrollToTopBtn.height();
+        const scrollPosition = $(document).scrollTop();
+
+        if ((scrollPosition + window.innerHeight) < footerHeight) {
+          $scrollToTopBtn.css({
+            position: 'fixed',
+            top: 'auto',
+          });
+        } else {
+          $scrollToTopBtn.css({
+            position: 'absolute',
+            top: `${0 - scrollToTopBtnHeight}px`,
+          });
         }
       }
 
@@ -48,7 +57,7 @@
 
       showImages();
 
-      $('body').on('scroll', function() {
+      $(document).on('scroll', function() {
         checkOffset();
         showImages();
       });
