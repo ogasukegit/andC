@@ -449,21 +449,30 @@
     }
 
     .news-item {
-      display: flex;
-      align-items: flex-start;
-      padding: 2rem 1rem;
       border-bottom: 1px solid black;
       @include sp-only {
-        padding: 2rem 0;
+        padding: 1.5rem 0 2rem 0;
+      }
+      @include pc-only {
+        position: relative;
+        padding: 2rem 1rem;
       }
     }
 
     .news-item__date {
-      flex: 0 1 auto;
-      margin-right: 2rem;
+      @include sp-only {
+        margin-bottom: 1rem;
+      }
+      @include pc-only {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+      }
     }
     .news-item__content {
-      flex: 0 1 auto;
+      @include pc-only {
+        padding-left: 132px;
+      }
     }
   }
 
